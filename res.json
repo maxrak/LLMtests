@@ -1,0 +1,368 @@
+[
+  {
+    "id": "d001860f-511c-48ad-b21c-5c4eef65c656",
+    "created_at": "2025-12-20 12:21:57+00:00",
+    "updated_at": "2025-12-20 13:01:19+00:00",
+    "generated_macms": 0,
+    "llm_logs": 122,
+    "iterations": 30,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "JetRacer"
+    }
+  },
+  {
+    "id": "7778fbd0-1d81-40b8-8503-e713dd2e24cd",
+    "created_at": "2025-12-20 12:02:06+00:00",
+    "updated_at": "2025-12-20 12:21:57+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "JetRacer"
+    }
+  },
+  {
+    "id": "a38d5374-af80-4423-9d10-874195d780ea",
+    "created_at": "2025-12-20 11:23:31+00:00",
+    "updated_at": "2025-12-20 12:02:06+00:00",
+    "generated_macms": 0,
+    "llm_logs": 122,
+    "iterations": 30,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "JetRacer"
+    }
+  },
+  {
+    "id": "84eda8bf-f743-469a-a1e6-23e7043ddee0",
+    "created_at": "2025-12-20 10:58:04+00:00",
+    "updated_at": "2025-12-20 11:23:31+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "JetRacer"
+    }
+  },
+  {
+    "id": "aae560e7-59bc-4183-adb6-970dcc1bae78",
+    "created_at": "2025-12-20 10:13:54+00:00",
+    "updated_at": "2025-12-20 10:57:58+00:00",
+    "generated_macms": 1,
+    "llm_logs": 74,
+    "iterations": 18,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "b74c27f1-5240-4002-9d88-cfbf5acc941b",
+    "created_at": "2025-12-20 09:22:30+00:00",
+    "updated_at": "2025-12-20 10:13:53+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "07560d9e-fcd9-4979-aec7-94fb8857538e",
+    "created_at": "2025-12-20 08:06:23+00:00",
+    "updated_at": "2025-12-20 09:22:29+00:00",
+    "generated_macms": 0,
+    "llm_logs": 122,
+    "iterations": 30,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "97f96595-bdef-43a1-a6b3-72dd6c037f42",
+    "created_at": "2025-12-20 07:22:36+00:00",
+    "updated_at": "2025-12-20 08:06:23+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "9d503262-6e15-4067-a1f6-95c439285c95",
+    "created_at": "2025-12-20 06:13:11+00:00",
+    "updated_at": "2025-12-20 07:22:36+00:00",
+    "generated_macms": 0,
+    "llm_logs": 122,
+    "iterations": 30,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "9ad2aef3-d8f4-40cd-a6e5-1e8841671799",
+    "created_at": "2025-12-20 05:33:45+00:00",
+    "updated_at": "2025-12-20 06:13:11+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "00ff57e9-8da6-4c8f-89be-7dcc3636efe9",
+    "created_at": "2025-12-20 04:56:50+00:00",
+    "updated_at": "2025-12-20 05:31:07+00:00",
+    "generated_macms": 0,
+    "llm_logs": 82,
+    "iterations": 19,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "847a97b5-61f5-47b5-8433-623de71e2123",
+    "created_at": "2025-12-20 04:31:56+00:00",
+    "updated_at": "2025-12-20 04:56:49+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "6a4c54ad-2ff2-4778-9ef0-f5d4e3067967",
+    "created_at": "2025-12-20 03:56:54+00:00",
+    "updated_at": "2025-12-20 04:31:56+00:00",
+    "generated_macms": 0,
+    "llm_logs": 122,
+    "iterations": 30,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "847590c8-6a03-4c86-bdea-ca543d71d6c1",
+    "created_at": "2025-12-20 03:38:24+00:00",
+    "updated_at": "2025-12-20 03:56:54+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "f09e7c6c-a7d3-485a-bb51-b1813f823cb2",
+    "created_at": "2025-12-20 02:55:33+00:00",
+    "updated_at": "2025-12-20 03:38:23+00:00",
+    "generated_macms": 0,
+    "llm_logs": 122,
+    "iterations": 30,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "3f1831f3-bfd4-4aa7-a916-9bcfc582ef16",
+    "created_at": "2025-12-20 02:30:22+00:00",
+    "updated_at": "2025-12-20 02:55:33+00:00",
+    "generated_macms": 0,
+    "llm_logs": 120,
+    "iterations": 30,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "938a1c79-ce97-4c10-85aa-4d77732b8bf6",
+    "created_at": "2025-12-20 00:42:32+00:00",
+    "updated_at": "2025-12-20 01:35:46+00:00",
+    "generated_macms": 0,
+    "llm_logs": 82,
+    "iterations": 20,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "9c83d02a-5275-427f-b8c3-f5970208d1a4",
+    "created_at": "2025-12-19 23:52:10+00:00",
+    "updated_at": "2025-12-20 00:42:32+00:00",
+    "generated_macms": 0,
+    "llm_logs": 80,
+    "iterations": 20,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "7bb1881c-25ec-4a63-b7c3-bed5f427d975",
+    "created_at": "2025-12-19 23:06:35+00:00",
+    "updated_at": "2025-12-19 23:52:10+00:00",
+    "generated_macms": 0,
+    "llm_logs": 82,
+    "iterations": 20,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "13dc6168-6b05-4aed-b49e-76503a7acfdf",
+    "created_at": "2025-12-19 22:23:22+00:00",
+    "updated_at": "2025-12-19 23:06:35+00:00",
+    "generated_macms": 0,
+    "llm_logs": 80,
+    "iterations": 20,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "9377029e-216d-4e1f-b5f0-ce18f2316fad",
+    "created_at": "2025-12-19 21:44:50+00:00",
+    "updated_at": "2025-12-19 22:23:21+00:00",
+    "generated_macms": 0,
+    "llm_logs": 82,
+    "iterations": 20,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "34620232-48a1-4a08-a320-5e3140a236ef",
+    "created_at": "2025-12-19 20:53:41+00:00",
+    "updated_at": "2025-12-19 21:44:50+00:00",
+    "generated_macms": 0,
+    "llm_logs": 80,
+    "iterations": 20,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "957b4b72-94f5-469c-8cb0-24f54b3b34c5",
+    "created_at": "2025-12-19 20:46:42+00:00",
+    "updated_at": "2025-12-19 20:53:41+00:00",
+    "generated_macms": 1,
+    "llm_logs": 26,
+    "iterations": 6,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "d82ab5a1-933c-4e84-b5ca-e6fa86fb6b0d",
+    "created_at": "2025-12-19 20:42:51+00:00",
+    "updated_at": "2025-12-19 20:46:41+00:00",
+    "generated_macms": 1,
+    "llm_logs": 20,
+    "iterations": 5,
+    "version": "v3",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "43f20cc7-90b7-465e-8ef6-3615f5a77c83",
+    "created_at": "2025-12-19 20:27:52+00:00",
+    "updated_at": "2025-12-19 20:42:50+00:00",
+    "generated_macms": 0,
+    "llm_logs": 82,
+    "iterations": 20,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "af9896dc-6feb-4c54-88bb-ae5b8a12c482",
+    "created_at": "2025-12-19 20:14:10+00:00",
+    "updated_at": "2025-12-19 20:27:51+00:00",
+    "generated_macms": 0,
+    "llm_logs": 80,
+    "iterations": 20,
+    "version": "v2",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "b661383a-39ac-40e1-a6cc-0beb2209bb1e",
+    "created_at": "2025-12-19 19:58:20+00:00",
+    "updated_at": "2025-12-19 20:14:09+00:00",
+    "generated_macms": 0,
+    "llm_logs": 82,
+    "iterations": 20,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  },
+  {
+    "id": "b60e9f0f-4483-490e-9c6f-390a27bbb85a",
+    "created_at": "2025-12-19 19:53:04+00:00",
+    "updated_at": "2025-12-19 19:58:19+00:00",
+    "generated_macms": 1,
+    "llm_logs": 28,
+    "iterations": 7,
+    "version": "v1",
+    "tags": "",
+    "apps": {
+      "id": "BookInfo"
+    }
+  }
+]
+len: 28
+{'BookInfo', 'JetRacer'}

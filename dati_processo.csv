@@ -1,0 +1,270 @@
+case,version,mode,success,iterations
+Stack4Things,v2,notsummarized,1,11
+Stack4Things,v1,summarized,1,6
+Stack4Things,v1,notsummarized,1,22
+Stack4Things,v3,summarized,0,30
+Stack4Things,v3,notsummarized,0,30
+Stack4Things,v2,summarized,0,30
+Stack4Things,v2,notsummarized,0,30
+Stack4Things,v1,summarized,0,30
+Stack4Things,v1,notsummarized,0,30
+Open Energy Monitor,v3,summarized,1,10
+Open Energy Monitor,v3,notsummarized,1,5
+Open Energy Monitor,v2,summarized,1,13
+Open Energy Monitor,v2,notsummarized,0,30
+Open Energy Monitor,v1,summarized,1,8
+Open Energy Monitor,v1,notsummarized,0,30
+Open Energy Monitor,v3,summarized,1,18
+Open Energy Monitor,v3,notsummarized,1,10
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+BookInfo,v3,summarized,0,30
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+eWeLink,v3,summarized,1,9
+eWeLink,v3,notsummarized,1,4
+eWeLink,v2,summarized,0,30
+eWeLink,v2,notsummarized,1,24
+eWeLink,v1,summarized,1,7
+eWeLink,v1,notsummarized,1,4
+WordPress,v3,summarized,1,4
+WordPress,v3,notsummarized,1,27
+WordPress,v2,summarized,1,14
+WordPress,v2,notsummarized,1,14
+WordPress,v1,summarized,1,1
+WordPress,v1,notsummarized,1,5
+JetRacer,v2,summarized,1,26
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,1,4
+JetRacer,v1,notsummarized,0,30
+JetRacer,v3,summarized,1,20
+JetRacer,v3,notsummarized,1,12
+JetRacer,v2,summarized,0,30
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,0,30
+JetRacer,v1,notsummarized,0,30
+BookInfo,v3,summarized,0,30
+BookInfo,v3,notsummarized,1,25
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+BookInfo,v3,summarized,1,21
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+Stack4Things,v3,summarized,1,25
+Stack4Things,v3,notsummarized,1,21
+Stack4Things,v2,summarized,0,30
+Stack4Things,v2,notsummarized,0,30
+Stack4Things,v1,summarized,0,30
+Stack4Things,v1,notsummarized,0,30
+Stack4Things,v3,summarized,0,30
+Stack4Things,v3,notsummarized,0,30
+Stack4Things,v2,summarized,0,30
+Stack4Things,v2,notsummarized,0,30
+Stack4Things,v1,summarized,0,30
+Stack4Things,v1,notsummarized,0,30
+Open Energy Monitor,v3,summarized,1,20
+Open Energy Monitor,v3,notsummarized,0,30
+Open Energy Monitor,v2,summarized,0,30
+Open Energy Monitor,v2,notsummarized,0,30
+Open Energy Monitor,v1,summarized,1,9
+Open Energy Monitor,v1,notsummarized,1,19
+Open Energy Monitor,v3,summarized,0,30
+Open Energy Monitor,v3,notsummarized,0,30
+Open Energy Monitor,v2,summarized,0,30
+Open Energy Monitor,v2,notsummarized,1,9
+Open Energy Monitor,v1,summarized,1,1
+Open Energy Monitor,v1,notsummarized,1,8
+JetRacer,v3,summarized,1,4
+JetRacer,v3,notsummarized,1,3
+JetRacer,v2,summarized,1,6
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,1,11
+JetRacer,v1,notsummarized,1,15
+JetRacer,v3,summarized,1,5
+JetRacer,v3,notsummarized,0,30
+JetRacer,v2,summarized,1,11
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,1,26
+JetRacer,v1,notsummarized,1,29
+BookInfo,v3,summarized,0,30
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,1,21
+BookInfo,v1,summarized,1,29
+BookInfo,v1,notsummarized,1,10
+BookInfo,v3,summarized,1,13
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+eWeLink,v3,summarized,1,14
+eWeLink,v3,notsummarized,1,12
+eWeLink,v2,summarized,1,15
+eWeLink,v2,notsummarized,1,9
+eWeLink,v1,summarized,1,7
+eWeLink,v1,notsummarized,0,30
+WordPress,v3,summarized,0,30
+WordPress,v3,notsummarized,1,10
+WordPress,v2,summarized,1,7
+WordPress,v2,notsummarized,1,14
+WordPress,v1,summarized,1,3
+WordPress,v1,notsummarized,1,3
+Stack4Things,v3,summarized,0,30
+Stack4Things,v3,notsummarized,0,30
+Stack4Things,v2,summarized,0,30
+Stack4Things,v2,notsummarized,0,30
+Stack4Things,v1,summarized,0,30
+Stack4Things,v1,notsummarized,0,30
+Stack4Things,v3,summarized,0,30
+Stack4Things,v3,notsummarized,0,30
+Stack4Things,v2,summarized,0,30
+Stack4Things,v2,notsummarized,0,30
+Stack4Things,v1,summarized,0,30
+Stack4Things,v1,notsummarized,0,30
+Open Energy Monitor,v3,summarized,1,10
+Open Energy Monitor,v3,notsummarized,1,7
+Open Energy Monitor,v2,summarized,0,30
+Open Energy Monitor,v2,notsummarized,1,14
+Open Energy Monitor,v1,summarized,1,7
+Open Energy Monitor,v1,notsummarized,1,17
+Open Energy Monitor,v3,summarized,1,6
+Open Energy Monitor,v3,notsummarized,1,6
+Open Energy Monitor,v2,summarized,1,6
+Open Energy Monitor,v2,notsummarized,0,30
+Open Energy Monitor,v1,summarized,0,30
+Open Energy Monitor,v1,notsummarized,0,30
+JetRacer,v2,summarized,1,8
+JetRacer,v2,notsummarized,1,5
+JetRacer,v1,summarized,1,12
+JetRacer,v1,notsummarized,1,6
+JetRacer,v3,summarized,1,13
+JetRacer,v3,notsummarized,1,11
+JetRacer,v2,summarized,0,30
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,1,27
+JetRacer,v1,notsummarized,0,30
+BookInfo,v3,summarized,1,21
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+BookInfo,v3,notsummarized,1,5
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,1,27
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+JetRacer,v3,notsummarized,1,6
+JetRacer,v2,summarized,1,11
+JetRacer,v2,notsummarized,1,13
+JetRacer,v1,summarized,1,11
+JetRacer,v1,notsummarized,1,12
+JetRacer,v3,summarized,1,8
+JetRacer,v3,notsummarized,1,4
+JetRacer,v2,summarized,0,30
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,0,30
+JetRacer,v1,notsummarized,0,30
+BookInfo,v3,summarized,1,12
+BookInfo,v3,notsummarized,1,17
+BookInfo,v2,summarized,1,21
+BookInfo,v2,notsummarized,1,7
+BookInfo,v1,summarized,1,28
+BookInfo,v1,notsummarized,0,30
+BookInfo,v3,summarized,0,30
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,1,9
+BookInfo,v1,notsummarized,0,30
+eWeLink,v3,summarized,1,26
+eWeLink,v3,notsummarized,1,8
+eWeLink,v2,summarized,1,25
+eWeLink,v2,notsummarized,0,30
+eWeLink,v1,summarized,1,12
+eWeLink,v1,notsummarized,0,30
+WordPress,v3,summarized,1,6
+WordPress,v3,notsummarized,1,7
+WordPress,v2,summarized,1,11
+WordPress,v2,notsummarized,0,30
+WordPress,v1,summarized,0,30
+WordPress,v1,notsummarized,1,17
+Stack4Things,v3,summarized,0,30
+Stack4Things,v3,notsummarized,0,30
+Stack4Things,v2,summarized,0,30
+Stack4Things,v2,notsummarized,1,5
+Stack4Things,v1,summarized,1,13
+Stack4Things,v1,notsummarized,0,30
+Stack4Things,v3,summarized,0,30
+Stack4Things,v3,notsummarized,0,30
+Stack4Things,v2,summarized,0,30
+Stack4Things,v2,notsummarized,0,30
+Stack4Things,v1,summarized,0,30
+Stack4Things,v1,notsummarized,0,30
+Open Energy Monitor,v3,summarized,1,19
+Open Energy Monitor,v3,notsummarized,1,9
+Open Energy Monitor,v2,summarized,1,11
+Open Energy Monitor,v2,notsummarized,1,16
+Open Energy Monitor,v1,summarized,1,10
+Open Energy Monitor,v1,notsummarized,0,30
+Open Energy Monitor,v3,summarized,1,6
+Open Energy Monitor,v3,notsummarized,1,3
+Open Energy Monitor,v2,summarized,1,15
+Open Energy Monitor,v2,notsummarized,1,17
+Open Energy Monitor,v1,summarized,1,8
+Open Energy Monitor,v1,notsummarized,0,30
+JetRacer,v3,summarized,1,9
+JetRacer,v3,notsummarized,1,5
+JetRacer,v2,summarized,0,30
+JetRacer,v2,notsummarized,1,9
+JetRacer,v1,summarized,1,5
+JetRacer,v1,notsummarized,1,3
+JetRacer,v3,summarized,1,18
+JetRacer,v3,notsummarized,0,30
+JetRacer,v2,summarized,1,20
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,1,8
+JetRacer,v1,notsummarized,0,30
+JetRacer,v1,notsummarized,0,30
+JetRacer,v3,summarized,0,30
+JetRacer,v3,notsummarized,1,8
+JetRacer,v2,summarized,0,30
+JetRacer,v2,notsummarized,0,30
+JetRacer,v1,summarized,0,30
+JetRacer,v1,notsummarized,0,30
+BookInfo,v3,summarized,1,18
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+BookInfo,v3,summarized,1,19
+BookInfo,v3,notsummarized,0,30
+BookInfo,v2,summarized,0,30
+BookInfo,v2,notsummarized,0,30
+BookInfo,v1,summarized,0,30
+BookInfo,v1,notsummarized,0,30
+BookInfo,v3,summarized,1,20
+BookInfo,v3,notsummarized,1,20
+BookInfo,v2,summarized,1,20
+BookInfo,v2,notsummarized,1,20
+BookInfo,v1,summarized,1,20
+BookInfo,v1,notsummarized,1,20
+BookInfo,v3,summarized,1,6
+BookInfo,v3,notsummarized,1,5
+BookInfo,v2,summarized,1,20
+BookInfo,v2,notsummarized,1,20
+BookInfo,v1,summarized,1,20
+BookInfo,v1,notsummarized,1,7
