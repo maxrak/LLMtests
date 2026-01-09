@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Analisi DOE{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Risultati dell'Analisi DOE</h1>
+{% if result.error %}
+  <div class="alert alert-danger">{{ result.error }}</div>
+{% else %}
+  {% if result.descr_html %}
+    <div class="card mb-4">
+      <div class="card-header">Tabella Descrittiva</div>
+      <div class="card-body">
+        <div class="table-responsive">
+          {{ result.descr_html | safe }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  {% if result.logistic_text %}
+    <div class="card mb-4">
+      <div class="card-header">Risultati dell'analisi logistica</div>
+      <div class="card-body">
+        <pre class="mb-0">{{ result.logistic_text }}</pre>
+      </div>
+    </div>
+  {% endif %}
+  {% if result.linear_text %}
+    <div class="card mb-4">
+      <div class="card-header">Analisi del Modello Lineare (ANOVA &amp; OLS)</div>
+      <div class="card-body">
+        <pre class="mb-0">{{ result.linear_text }}</pre>
+      </div>
+    </div>
+  {% endif %}
+  {% if result.graphs %}
+    <div class="card mb-4">
+      <div class="card-header">Grafici</div>
+      <div class="card-body">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          {% for graph in result.graphs %}
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top graph-img" src="data:image/png;base64,{{ graph.data }}" alt="{{ graph.name }}">
+                <div class="card-body p-2">
+                  <p class="card-text small text-center">{{ graph.name }}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
+{% endblock %}

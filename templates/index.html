@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Home - DOE{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Benvenuto all'interfaccia DOE</h1>
+<p>Questa applicazione permette di scaricare i dati sperimentali (in formato CSV) e di eseguire l'analisi statistica DOE direttamente dal tuo browser. Utilizza il menu di navigazione oppure i pulsanti sottostanti per iniziare.</p>
+<div class="d-flex mt-4">
+  <a class="btn btn-primary me-2" href="{{ url_for('download_page') }}">Scarica dati</a>
+  <a class="btn btn-success" href="{{ url_for('analysis_page') }}">Avvia analisi</a>
+</div>
+{% endblock %}

@@ -1,8 +1,9 @@
 case,version,mode,RAG,success,iterations
+BookInfo,v1,notsummarized,0,0,30
 BookInfo,v1,summarized,1,1,25
 JetRacer,v3,notsummarized,0,0,30
 BookInfo,v2,notsummarized,1,0,30
-OpenEnergyMonitor,v1,notsummarized,0,0,30
+Open Energy Monitor,v1,notsummarized,0,0,30
 BookInfo,v1,notsummarized,1,1,8
 BookInfo,v3,notsummarized,0,0,30
 BookInfo,v2,notsummarized,0,0,30
@@ -231,7 +232,6 @@ JetRacer,v3,notsummarized,1,1,5
 JetRacer,v2,summarized,1,0,30
 JetRacer,v2,notsummarized,1,1,9
 JetRacer,v1,summarized,1,1,5
-JetRacer,v1,notsummarized,1,1,3
 JetRacer,v3,summarized,0,1,18
 JetRacer,v3,notsummarized,0,0,30
 JetRacer,v2,summarized,0,1,20

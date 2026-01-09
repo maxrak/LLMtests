@@ -373,7 +373,7 @@ def analyze_csv(
         ax.set_xlabel("Version")
         ax.set_ylabel("Predicted P(success)")
         ax.set_title("Marginal predicted success probability by version")
-        fname = "marginal_p_by_version.png"
+        fname = "imgs/marginal_p_by_version.png"
         fig.savefig(fname, dpi=150, bbox_inches="tight")
         plt.close(fig)
         print(f"Salvato: {fname}")
@@ -395,7 +395,7 @@ def analyze_csv(
         ax.set_xlabel("Mode")
         ax.set_ylabel("Predicted P(success)")
         ax.set_title("Marginal predicted success probability by mode")
-        fname = "marginal_p_by_mode.png"
+        fname = "imgs/marginal_p_by_mode.png"
         fig.savefig(fname, dpi=150, bbox_inches="tight")
         plt.close(fig)
         print(f"Salvato: {fname}")
@@ -418,7 +418,7 @@ def analyze_csv(
         ax.set_ylabel("Predicted P(success)")
         ax.set_title("Marginal predicted success probability by case")
         plt.xticks(rotation=45, ha="right")
-        fname = "marginal_p_by_case.png"
+        fname = "imgs/marginal_p_by_case.png"
         fig.savefig(fname, dpi=150, bbox_inches="tight")
         plt.close(fig)
         print(f"Salvato: {fname}")
@@ -440,7 +440,7 @@ def analyze_csv(
         ax.set_xlabel("RAG")
         ax.set_ylabel("Predicted P(success)")
         ax.set_title("Marginal predicted success probability by RAG")
-        fname = "marginal_p_by_RAG.png"
+        fname = "imgs/marginal_p_by_RAG.png"
         fig.savefig(fname, dpi=150, bbox_inches="tight")
         plt.close(fig)
         print(f"Salvato: {fname}")
@@ -459,7 +459,7 @@ def analyze_csv(
         ax.set_ylabel("Predicted P(success)")
         ax.set_title("Predicted success probability by Version and RAG")
         ax.legend()
-        fname = "p_by_version_and_RAG.png"
+        fname = "imgs/p_by_version_and_RAG.png"
         fig.savefig(fname, dpi=150, bbox_inches="tight")
         plt.close(fig)
         print(f"Salvato: {fname}")
@@ -489,7 +489,7 @@ def analyze_csv(
             ax.set_xlabel("Version")
             ax.set_ylabel("P(success)")
             ax.set_title(f"P(success) per version - case={c}")
-            fname = f"prob_success_by_version_case_{c}.png"
+            fname = f"imgs/prob_success_by_version_case_{c}.png"
             fig.savefig(fname, dpi=150, bbox_inches="tight")
             plt.close(fig)
             print(f"Salvato: {fname}")
@@ -513,7 +513,7 @@ def analyze_csv(
             ax.set_xlabel("RAG")
             ax.set_ylabel("P(success)")
             ax.set_title(f"P(success) per RAG - case={c}")
-            fname = f"prob_success_by_RAG_case_{c}.png"
+            fname = f"imgs/prob_success_by_RAG_case_{c}.png"
             fig.savefig(fname, dpi=150, bbox_inches="tight")
             plt.close(fig)
             print(f"Salvato: {fname}")
@@ -545,7 +545,7 @@ def analyze_csv(
         ax.set_ylabel("P(success)")
         ax.set_title("P(success) per mode e version")
         ax.legend(title="Mode")
-        fname = "prob_success_by_mode_version.png"
+        fname = "imgs/prob_success_by_mode_version.png"
         fig.savefig(fname, dpi=150, bbox_inches="tight")
         plt.close(fig)
         print(f"Salvato: {fname}")

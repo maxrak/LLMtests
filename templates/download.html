@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Scarica dati - DOE{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Scarica i dati</h1>
+{% if message %}
+  <div class="alert alert-info">{{ message }}</div>
+{% endif %}
+{% if csv_preview_html %}
+  <h2 class="mt-4">Anteprima del CSV scaricato</h2>
+  <p>Di seguito vengono mostrati i primi 20 record del file generato. Puoi visualizzare l'intero CSV sul disco locale.</p>
+  <div class="table-responsive">
+    {{ csv_preview_html | safe }}
+  </div>
+  <p class="mt-3">
+    <a class="btn btn-secondary" href="{{ url_for('download_page') }}">Scarica nuovamente</a>
+  </p>
+{% else %}
+  <p>Premi il pulsante qui sotto per scaricare i dati dal database e generare il CSV necessario per l'analisi.</p>
+  <form method="post">
+    <button class="btn btn-primary" type="submit">Scarica dati e genera CSV</button>
+  </form>
+{% endif %}
+{% endblock %}
