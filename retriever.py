@@ -12,7 +12,7 @@ INPUT_JSON = Path("res.json")          # o "res.txt" se il tuo file ha quel nome
 OUTPUT_CSV = Path("dati_processo.csv")
 
 # Nome delle colonne del CSV (compatibili con lo script di analisi)
-CSV_FIELDNAMES = ["case", "version", "mode", "success", "iterations"]
+CSV_FIELDNAMES = ["case", "version", "mode", "success", "iterations","rag"]
 
 def sessions():
     url = "https://database.vseclab.lan/api/v2/tables/mmzjs8j9yb88tsf/records?offset=0&limit=25&where=&viewId=vwpkfrf4ivtd846e"
@@ -46,8 +46,9 @@ COL_VERSION = "version"
 COL_MODE = "mode"
 COL_SUCCESS = "success"
 COL_ITER = "iterations"
+COL_RAG = "RAG"
 
-CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_SUCCESS, COL_ITER]
+CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_RAG, COL_SUCCESS, COL_ITER]
 
 
 def CSVgen(rows, output_csv_path="dati_processo.csv"):
@@ -72,6 +73,8 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
             case = rec.get("apps", {}).get("id", None)
             version = rec.get("version", None)
             iterations = rec.get("iterations", None)
+            macm = rec.get("generated_macms",None)
+            rag =  rec.get("rag",None)
 
             # --- mode da booleano 0/1 (campo 'summarized') ---
             raw_mode = rec.get("summarized", 0)
@@ -98,19 +101,23 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
 
             success = 1 if iters_int < 30 else 0
 
-            writer.writerow({
-                COL_CASE: case,
-                COL_VERSION: version,
-                COL_MODE: mode,
-                COL_SUCCESS: success,
-                COL_ITER: iterations,
-            })
+            if success == macm :
+                writer.writerow({
+                    COL_CASE: case,
+                    COL_VERSION: version,
+                    COL_MODE: mode,
+                    COL_RAG : rag,
+                    COL_SUCCESS: success,
+                    COL_ITER: iterations
+
+                })
 
     return output_csv_path
 
 
 def test():
     rows=sessions()
+    #pprint(rows)
     CSVgen(rows, "dati_processo.csv")
 
 test()

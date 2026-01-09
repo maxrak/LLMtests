@@ -1,0 +1,196 @@
+
+=== ANALISI DOE SU FILE: dati_processo.csv ===
+
+>>> Descrittiva per gruppo (case, version, mode, RAG)
+
+               case version          mode  RAG  n_total  n_success    p_hat  p_ci_lower  p_ci_upper  p_target_halfwidth  n_required_for_p  sufficient_for_p?  n_success_iter  mean_iterations_success  std_iterations_success  iter_ci_lower  iter_ci_upper  iter_target_halfwidth  n_required_for_iter  sufficient_for_iter?
+           BookInfo      v1 notsummarized    0        8          1 0.125000    0.037303    0.413360                0.15         10.073442              False             1.0                 7.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+           BookInfo      v1 notsummarized    1        7          2 0.285714    0.127881    0.627739                0.15         18.795926              False             2.0                 9.000000                1.414214       7.560469      10.439531                    4.0             0.259031                  True
+           BookInfo      v1    summarized    0        7          1 0.142857    0.043304    0.463439                0.15         11.277556              False             1.0                 9.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+           BookInfo      v1    summarized    1        7          3 0.428571    0.234605    0.769890                0.15         22.555111              False             3.0                27.333333                2.081666      25.603232      29.063435                    4.0             0.561235                  True
+           BookInfo      v2 notsummarized    0        7          1 0.142857    0.043304    0.463439                0.15         11.277556              False             1.0                27.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+           BookInfo      v2 notsummarized    1        7          2 0.285714    0.127881    0.627739                0.15         18.795926              False             2.0                14.000000                9.899495       3.923280      24.076720                    4.0            12.692536                 False
+           BookInfo      v2    summarized    0        6          0 0.000000    0.000000    0.294516                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+           BookInfo      v2    summarized    1        5          0 0.000000    0.000000    0.343308                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+           BookInfo      v3 notsummarized    0        8          2 0.250000    0.109687    0.562310                0.15         17.268757              False             2.0                 5.000000                0.000000       5.000000       5.000000                    4.0                  NaN                 False
+           BookInfo      v3 notsummarized    1        5          1 0.200000    0.063525    0.611122                0.15         14.736006              False             1.0                17.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+           BookInfo      v3    summarized    0        5          3 0.600000    0.356066    0.981257                0.15         22.104009              False             3.0                13.333333                7.505553       7.095364      19.571303                    4.0             7.296050                 False
+           BookInfo      v3    summarized    1        5          3 0.600000    0.356066    0.981257                0.15         22.104009              False             3.0                17.000000                4.582576      13.191358      20.808642                    4.0             2.719829                  True
+           JetRacer      v1 notsummarized    0        6          1 0.166667    0.051545    0.527218                0.15         12.791672              False             1.0                29.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+           JetRacer      v1 notsummarized    1        6          4 0.666667    0.437373    0.994132                0.15         20.466675              False             4.0                 9.000000                5.477226       5.057681      12.942319                    4.0             3.885470                  True
+           JetRacer      v1    summarized    0        5          2 0.400000    0.190397    0.815588                0.15         22.104009              False             2.0                26.500000                0.707107      25.780234      27.219766                    4.0             0.064758                  True
+           JetRacer      v1    summarized    1        5          5 1.000000    0.828346    1.171654                0.15          0.000000               True             5.0                 8.600000                3.781534       6.165531      11.034469                    4.0             1.852074                  True
+           JetRacer      v2 notsummarized    0        6          0 0.000000    0.000000    0.294516                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+           JetRacer      v2 notsummarized    1        5          3 0.600000    0.356066    0.981257                0.15         22.104009              False             3.0                 9.000000                4.000000       5.675544      12.324456                    4.0             2.072251                  True
+           JetRacer      v2    summarized    0        6          2 0.333333    0.153126    0.709885                0.15         20.466675              False             2.0                15.500000                6.363961       9.022108      21.977892                    4.0             5.245385                 False
+           JetRacer      v2    summarized    1        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                 8.500000                3.535534       4.901171      12.098829                    4.0             1.618946                  True
+           JetRacer      v3 notsummarized    0        7          4 0.571429    0.359043    0.894328                0.15         22.555111              False             4.0                 8.750000                3.593976       6.163179      11.336821                    4.0             1.672911                  True
+           JetRacer      v3 notsummarized    1        2          2 1.000000    0.658734    1.341266                0.15          0.000000               True             2.0                 4.000000                1.414214       2.560469       5.439531                    4.0             0.259031                  True
+           JetRacer      v3    summarized    0        6          5 0.833333    0.620040    1.095713                0.15         12.791672              False             5.0                12.800000                6.379655       8.692918      16.907082                    4.0             5.271288                 False
+           JetRacer      v3    summarized    1        2          2 1.000000    0.658734    1.341266                0.15          0.000000               True             2.0                 6.500000                3.535534       2.901171      10.098829                    4.0             1.618946                  True
+Open Energy Monitor      v1 notsummarized    0        3          1 0.333333    0.116266    0.892685                0.15         20.466675              False             1.0                 8.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+Open Energy Monitor      v1 notsummarized    1        3          1 0.333333    0.116266    0.892685                0.15         20.466675              False             1.0                17.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+Open Energy Monitor      v1    summarized    0        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                 4.500000                4.949747      -0.538360       9.538360                    4.0             3.173134                 False
+Open Energy Monitor      v1    summarized    1        4          4 1.000000    0.794261    1.205739                0.15          0.000000               True             4.0                 8.500000                1.290994       7.570786       9.429214                    4.0             0.215859                  True
+Open Energy Monitor      v2 notsummarized    0        2          1 0.500000    0.192236    1.149030                0.15         23.025010              False             1.0                17.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+Open Energy Monitor      v2 notsummarized    1        4          2 0.500000    0.250685    0.955053                0.15         23.025010              False             2.0                15.000000                1.414214      13.560469      16.439531                    4.0             0.259031                  True
+Open Energy Monitor      v2    summarized    0        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                10.500000                6.363961       4.022108      16.977892                    4.0             5.245385                 False
+Open Energy Monitor      v2    summarized    1        4          2 0.500000    0.250685    0.955053                0.15         23.025010              False             2.0                12.000000                1.414214      10.560469      13.439531                    4.0             0.259031                  True
+Open Energy Monitor      v3 notsummarized    0        4          3 0.750000    0.479554    1.123315                0.15         17.268757              False             3.0                 6.333333                3.511885       3.414557       9.252109                    4.0             1.597360                  True
+Open Energy Monitor      v3 notsummarized    1        4          3 0.750000    0.479554    1.123315                0.15         17.268757              False             3.0                 7.000000                2.000000       5.337772       8.662228                    4.0             0.518063                  True
+Open Energy Monitor      v3    summarized    0        4          3 0.750000    0.479554    1.123315                0.15         17.268757              False             3.0                10.000000                6.928203       4.241874      15.758126                    4.0             6.216753                 False
+Open Energy Monitor      v3    summarized    1        4          4 1.000000    0.794261    1.205739                0.15          0.000000               True             4.0                14.750000                5.500000      10.791288      18.708712                    4.0             3.917849                  True
+  OpenEnergyMonitor      v1 notsummarized    0        1          0 0.000000    0.000000    1.017742                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v1 notsummarized    0        4          0 0.000000    0.000000    0.411477                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v1 notsummarized    1        4          1 0.250000    0.082423    0.726185                0.15         17.268757              False             1.0                22.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v1    summarized    0        4          0 0.000000    0.000000    0.411477                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v1    summarized    1        4          2 0.500000    0.250685    0.955053                0.15         23.025010              False             2.0                 9.500000                4.949747       4.461640      14.538360                    4.0             3.173134                 False
+       Stack4Things      v2 notsummarized    0        4          0 0.000000    0.000000    0.411477                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v2 notsummarized    1        4          1 0.250000    0.082423    0.726185                0.15         17.268757              False             1.0                 5.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v2    summarized    0        4          0 0.000000    0.000000    0.411477                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v2    summarized    1        3          0 0.000000    0.000000    0.513426                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v3 notsummarized    0        4          0 0.000000    0.000000    0.411477                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v3 notsummarized    1        3          1 0.333333    0.116266    0.892685                0.15         20.466675              False             1.0                21.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v3    summarized    0        4          0 0.000000    0.000000    0.411477                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+       Stack4Things      v3    summarized    1        2          0 0.000000    0.000000    0.682531                0.15          0.000000               True             NaN                      NaN                     NaN            NaN            NaN                    4.0                  NaN                 False
+          WordPress      v1 notsummarized    0        3          3 1.000000    0.743287    1.256713                0.15          0.000000               True             3.0                 8.333333                7.571878       2.040241      14.626426                    4.0             7.425566                 False
+          WordPress      v1    summarized    0        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                 2.000000                1.414214       0.560469       3.439531                    4.0             0.259031                  True
+          WordPress      v2 notsummarized    0        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                14.000000                0.000000      14.000000      14.000000                    4.0                  NaN                 False
+          WordPress      v2    summarized    0        3          3 1.000000    0.743287    1.256713                0.15          0.000000               True             3.0                10.666667                3.511885       7.747891      13.585443                    4.0             1.597360                  True
+          WordPress      v3 notsummarized    0        3          3 1.000000    0.743287    1.256713                0.15          0.000000               True             3.0                14.666667               10.785793       5.702444      23.630889                    4.0            15.066991                 False
+          WordPress      v3    summarized    0        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                 5.000000                1.414214       3.560469       6.439531                    4.0             0.259031                  True
+            eWeLink      v1 notsummarized    0        3          1 0.333333    0.116266    0.892685                0.15         20.466675              False             1.0                 4.000000                0.000000            NaN            NaN                    4.0                  NaN                 False
+            eWeLink      v1    summarized    0        3          3 1.000000    0.743287    1.256713                0.15          0.000000               True             3.0                 8.666667                2.886751       6.267448      11.065886                    4.0             1.079297                  True
+            eWeLink      v2 notsummarized    0        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                16.500000               10.606602       5.703514      27.296486                    4.0            14.570514                 False
+            eWeLink      v2    summarized    0        3          2 0.666667    0.364028    1.140447                0.15         20.466675              False             2.0                20.000000                7.071068      12.802343      27.197657                    4.0             6.475784                 False
+            eWeLink      v3 notsummarized    0        3          3 1.000000    0.743287    1.256713                0.15          0.000000               True             3.0                 8.000000                4.000000       4.675544      11.324456                    4.0             2.072251                  True
+            eWeLink      v3    summarized    0        3          3 1.000000    0.743287    1.256713                0.15          0.000000               True             3.0                16.333333                8.736895       9.071979      23.594688                    4.0             9.886363                 False
+
+>>> Risultati descrittivi salvati in: risultati_DOE_descrittiva.csv
+
+
+>>> Regressione logistica: probabilità di successo
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:            success_num   No. Observations:                  259
+Model:                            GLM   Df Residuals:                      248
+Model Family:                Binomial   Df Model:                           10
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -126.84
+Date:                Fri, 09 Jan 2026   Deviance:                       253.69
+Time:                        16:30:27   Pearson chi2:                     265.
+No. Iterations:                    19   Pseudo R-squ. (CS):             0.3233
+Covariance Type:            nonrobust                                         
+==================================================================================================
+                                     coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                         -2.3210      0.461     -5.033      0.000      -3.225      -1.417
+C(version)[T.v2]                  -0.6767      0.380     -1.781      0.075      -1.421       0.068
+C(version)[T.v3]                   0.9376      0.383      2.445      0.014       0.186       1.689
+C(case)[T.JetRacer]                1.6519      0.418      3.951      0.000       0.832       2.472
+C(case)[T.Open Energy Monitor]     1.9169      0.463      4.138      0.000       1.009       2.825
+C(case)[T.OpenEnergyMonitor]     -18.2451   1.77e+04     -0.001      0.999   -3.48e+04    3.47e+04
+C(case)[T.Stack4Things]           -1.0283      0.574     -1.790      0.073      -2.154       0.097
+C(case)[T.WordPress]               3.6724      0.759      4.836      0.000       2.184       5.161
+C(case)[T.eWeLink]                 3.2877      0.703      4.674      0.000       1.909       4.666
+C(mode)[T.summarized]              0.6961      0.313      2.222      0.026       0.082       1.310
+C(RAG)[T.1]                        1.3166      0.349      3.775      0.000       0.633       2.000
+==================================================================================================
+
+--- Likelihood Ratio test per ciascun fattore (version, case, mode, RAG) ---
+Effetto di version: LR=17.238, df=2, p=0.0001806
+Effetto di case: LR=81.644, df=6, p=1.634e-15
+Effetto di mode: LR=5.046, df=1, p=0.02468
+Effetto di RAG: LR=15.406, df=1, p=8.673e-05
+
+
+>>> Modello lineare / ANOVA: iterazioni (solo successi)
+
+Formula modello iterazioni: iterations ~ C(version) + C(case) + C(mode) + C(RAG)
+
+--- ANOVA (Type II) ---
+                 sum_sq     df         F    PR(>F)
+C(version)   158.088205    2.0  1.658767  0.195418
+C(case)      448.788540    5.0  1.883595  0.103551
+C(mode)       62.545509    1.0  1.312538  0.254590
+C(RAG)         7.061909    1.0  0.148196  0.701059
+Residual    4908.190682  103.0       NaN       NaN
+
+--- Dettaglio modello lineare ---
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             iterations   R-squared:                       0.110
+Model:                            OLS   Adj. R-squared:                  0.032
+Method:                 Least Squares   F-statistic:                     1.414
+Date:                Fri, 09 Jan 2026   Prob (F-statistic):              0.192
+Time:                        16:30:27   Log-Likelihood:                -373.42
+No. Observations:                 113   AIC:                             766.8
+Df Residuals:                     103   BIC:                             794.1
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==================================================================================================
+                                     coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                         14.5367      2.276      6.387      0.000      10.023      19.051
+C(version)[T.v2]                   2.5873      1.756      1.474      0.144      -0.895       6.069
+C(version)[T.v3]                  -0.3662      1.551     -0.236      0.814      -3.443       2.711
+C(case)[T.JetRacer]               -4.3327      2.003     -2.163      0.033      -8.306      -0.360
+C(case)[T.Open Energy Monitor]    -5.2580      2.061     -2.551      0.012      -9.346      -1.170
+C(case)[T.Stack4Things]           -1.5674      3.545     -0.442      0.659      -8.597       5.463
+C(case)[T.WordPress]              -6.4509      2.589     -2.492      0.014     -11.585      -1.317
+C(case)[T.eWeLink]                -3.4134      2.613     -1.306      0.194      -8.597       1.770
+C(mode)[T.summarized]              1.5153      1.323      1.146      0.255      -1.108       4.138
+C(RAG)[T.1]                       -0.6197      1.610     -0.385      0.701      -3.812       2.573
+==============================================================================
+Omnibus:                       10.776   Durbin-Watson:                   1.967
+Prob(Omnibus):                  0.005   Jarque-Bera (JB):               11.579
+Skew:                           0.783   Prob(JB):                      0.00306
+Kurtosis:                       3.076   Cond. No.                         9.81
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+>>> Confronti multipli (Tukey HSD) sulle iterazioni tra version
+
+Multiple Comparison of Means - Tukey HSD, FWER=0.15
+===================================================
+group1 group2 meandiff p-adj   lower  upper  reject
+---------------------------------------------------
+    v1     v2   1.9231 0.5192 -1.3747 5.2208  False
+    v1     v3  -0.4528 0.9522  -3.306 2.4004  False
+    v2     v3  -2.3759 0.3431 -5.5568  0.805  False
+---------------------------------------------------
+
+
+>>> Generazione grafici marginali (salvati su file)
+
+Salvato: marginal_p_by_version.png
+Salvato: marginal_p_by_mode.png
+Salvato: marginal_p_by_case.png
+Salvato: marginal_p_by_RAG.png
+Creo anche il plot Version × RAG...
+Salvato: p_by_version_and_RAG.png
+Creo grafici: P(success) per version e case...
+Salvato: prob_success_by_version_case_BookInfo.png
+Salvato: prob_success_by_version_case_JetRacer.png
+Salvato: prob_success_by_version_case_Open Energy Monitor.png
+Salvato: prob_success_by_version_case_OpenEnergyMonitor.png
+Salvato: prob_success_by_version_case_Stack4Things.png
+Salvato: prob_success_by_version_case_WordPress.png
+Salvato: prob_success_by_version_case_eWeLink.png
+Creo grafici: P(success) per RAG e case...
+Salvato: prob_success_by_RAG_case_BookInfo.png
+Salvato: prob_success_by_RAG_case_JetRacer.png
+Salvato: prob_success_by_RAG_case_Open Energy Monitor.png
+Salvato: prob_success_by_RAG_case_OpenEnergyMonitor.png
+Salvato: prob_success_by_RAG_case_Stack4Things.png
+Salvato: prob_success_by_RAG_case_WordPress.png
+Salvato: prob_success_by_RAG_case_eWeLink.png
+Creo grafico: P(success) per mode e version...
+Salvato: prob_success_by_mode_version.png
+
+=== Analisi DOE completata ===
+

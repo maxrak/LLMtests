@@ -23,6 +23,8 @@ COL_VERSION = "version"
 COL_MODE = "mode"
 COL_SUCCESS = "success"
 COL_ITER = "iterations"
+COL_MACM = "generated_macm"
+
 
 GROUP_COLS = [COL_CASE, COL_VERSION, COL_MODE]
 
@@ -30,78 +32,6 @@ GROUP_COLS = [COL_CASE, COL_VERSION, COL_MODE]
 ALPHA_DEFAULT = 0.05
 H_P_DEFAULT = 0.05     # ampiezza target ± per p (probabilità di successo)
 H_ITER_DEFAULT = 2.0   # ampiezza target ± per la media iterazioni (successi)
-
-
-import csv
-
-# campi richiesti per l'analisi
-COL_CASE = "case"
-COL_VERSION = "version"
-COL_MODE = "mode"
-COL_SUCCESS = "success"
-COL_ITER = "iterations"
-
-CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_SUCCESS, COL_ITER]
-
-
-def CSVgen(rows, output_csv_path="dati_processo.csv"):
-    """
-    Genera un CSV per l'analisi a partire da 'rows'.
-
-    Mappatura:
-      case       -> rec["apps"]["id"]
-      version    -> rec["version"]
-      iterations -> rec["iterations"]
-      mode       -> rec["summarized"]:
-                       0 -> "notsummarized"
-                       1 -> "summarized"
-      success    -> 1 se iterations < 30, altrimenti 0
-    """
-    with open(output_csv_path, "w", newline="", encoding="utf-8") as f_out:
-        writer = csv.DictWriter(f_out, fieldnames=CSV_FIELDNAMES)
-        writer.writeheader()
-
-        for rec in rows:
-            # case, version, iterations
-            case = rec.get("apps", {}).get("id", None)
-            version = rec.get("version", None)
-            iterations = rec.get("iterations", None)
-
-            # --- mode da booleano 0/1 (campo 'summarized') ---
-            raw_mode = rec.get("summarized", 0)
-
-            # gestiamo int, bool, stringhe "0"/"1"
-            try:
-                # True -> 1, False -> 0, "0"/"1" -> 0/1, ecc.
-                raw_val = int(raw_mode)
-            except (TypeError, ValueError):
-                # fallback: consideriamo non summarized
-                raw_val = 0
-
-            if raw_val == 1:
-                mode = "summarized"
-            else:
-                mode = "notsummarized"
-
-            # --- successo/fallimento in base alle iterations ---
-            try:
-                iters_int = int(iterations)
-            except Exception:
-                # se non convertibile, trattiamo come fallimento
-                iters_int = 30
-
-            success = 1 if iters_int < 30 else 0
-
-            writer.writerow({
-                COL_CASE: case,
-                COL_VERSION: version,
-                COL_MODE: mode,
-                COL_SUCCESS: success,
-                COL_ITER: iterations,
-            })
-
-    return output_csv_path
-
 
 # ==========================
 # FUNZIONI DI SUPPORTO STIMA
