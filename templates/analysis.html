@@ -11,21 +11,69 @@
     <div class="card mb-4">
       <div class="card-header">Tabella Descrittiva</div>
       <div class="card-body">
-        <div class="table-responsive">
+        <div class="table-responsive scroll-table">
           {{ result.descr_html | safe }}
         </div>
       </div>
     </div>
   {% endif %}
-  {% if result.logistic_text %}
+  {% if result.logistic_summary_html or result.logistic_params_html or result.logistic_lr_html %}
     <div class="card mb-4">
       <div class="card-header">Risultati dell'analisi logistica</div>
       <div class="card-body">
-        <pre class="mb-0">{{ result.logistic_text }}</pre>
+        {% if result.logistic_summary_html %}
+          <h5>Caratteristiche del modello</h5>
+          <div class="table-responsive">
+            {{ result.logistic_summary_html | safe }}
+          </div>
+        {% endif %}
+        {% if result.logistic_params_html %}
+          <h5 class="mt-3">Parametri del modello</h5>
+          <div class="table-responsive">
+            {{ result.logistic_params_html | safe }}
+          </div>
+        {% endif %}
+        {% if result.logistic_lr_html %}
+          <h5 class="mt-3">Test del Rapporto di Verosimiglianza per fattore</h5>
+          <div class="table-responsive">
+            {{ result.logistic_lr_html | safe }}
+          </div>
+        {% endif %}
       </div>
     </div>
   {% endif %}
-  {% if result.linear_text %}
+  {% if result.linear_anova_html or result.linear_params_html %}
+    <div class="card mb-4">
+      <div class="card-header">Analisi del Modello Lineare (ANOVA &amp; OLS)</div>
+      <div class="card-body">
+        {% if result.linear_anova_html %}
+          <h5>ANOVA (Type II)</h5>
+          <div class="table-responsive">
+            {{ result.linear_anova_html | safe }}
+          </div>
+        {% endif %}
+        {% if result.linear_params_html %}
+          <h5 class="mt-3">Parametri del modello lineare (OLS)</h5>
+          <div class="table-responsive">
+            {{ result.linear_params_html | safe }}
+          </div>
+        {% endif %}
+        {% if result.linear_stats_html %}
+          <h5 class="mt-3">Valutazioni del modello</h5>
+          <div class="table-responsive">
+            {{ result.linear_stats_html | safe }}
+          </div>
+        {% endif %}
+        {% if result.tukey_html %}
+          <h5 class="mt-3">Confronti multipli (Tukey HSD)</h5>
+          <div class="table-responsive">
+            {{ result.tukey_html | safe }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% elif result.linear_text %}
+    <!-- Fallback to raw text if parsing fails -->
     <div class="card mb-4">
       <div class="card-header">Analisi del Modello Lineare (ANOVA &amp; OLS)</div>
       <div class="card-body">
@@ -37,14 +85,13 @@
     <div class="card mb-4">
       <div class="card-header">Grafici</div>
       <div class="card-body">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Use a CSS grid for responsive graph layout rather than Bootstrap's row/col utilities -->
+        <div class="graph-grid">
           {% for graph in result.graphs %}
-            <div class="col">
-              <div class="card h-100">
-                <img class="card-img-top graph-img" src="data:image/png;base64,{{ graph.data }}" alt="{{ graph.name }}">
-                <div class="card-body p-2">
-                  <p class="card-text small text-center">{{ graph.name }}</p>
-                </div>
+            <div class="card h-100">
+              <img class="card-img-top graph-img" src="data:image/png;base64,{{ graph.data }}" alt="{{ graph.name }}">
+              <div class="card-body p-2">
+                <p class="card-text small text-center">{{ graph.name }}</p>
               </div>
             </div>
           {% endfor %}
