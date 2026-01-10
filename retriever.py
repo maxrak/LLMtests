@@ -47,8 +47,10 @@ COL_MODE = "mode"
 COL_SUCCESS = "success"
 COL_ITER = "iterations"
 COL_RAG = "RAG"
+COL_CREATED = "created at"
+COL_UPDATED = "updated at"
 
-CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_RAG, COL_SUCCESS, COL_ITER]
+CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_RAG, COL_SUCCESS, COL_ITER,COL_CREATED,COL_UPDATED]
 
 
 def CSVgen(rows, output_csv_path="dati_processo.csv"):
@@ -75,7 +77,8 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
             iterations = rec.get("iterations", None)
             macm = rec.get("generated_macms",None)
             rag =  rec.get("rag",None)
-
+            created = rec.get("created_at",None)
+            updated = rec.get("updated_at", None)
             # --- mode da booleano 0/1 (campo 'summarized') ---
             raw_mode = rec.get("summarized", 0)
 
@@ -108,7 +111,9 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
                     COL_MODE: mode,
                     COL_RAG : rag,
                     COL_SUCCESS: success,
-                    COL_ITER: iterations
+                    COL_ITER: iterations,
+                    COL_CREATED: created,
+                    COL_UPDATED: updated
 
                 })
 

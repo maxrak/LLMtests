@@ -26,8 +26,8 @@ COL_ITER = "iterations"
 GROUP_COLS = [COL_CASE, COL_VERSION, COL_MODE, COL_RAG]
 
 # parametri statistici
-ALPHA_DEFAULT = 0.15           # livello di confidenza / significatività
-H_P_DEFAULT = 0.15             # ampiezza target ± per p (probabilità di successo)
+ALPHA_DEFAULT = 0.20           # livello di confidenza / significatività
+H_P_DEFAULT = 0.20            # ampiezza target ± per p (probabilità di successo)
 H_ITER_DEFAULT = 4.0           # ampiezza target ± per media iterazioni (successi)
 
 

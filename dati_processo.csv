@@ -1,261 +1,308 @@
-case,version,mode,RAG,success,iterations
-BookInfo,v3,notsummarized,0,0,30
-BookInfo,v1,notsummarized,0,0,30
-BookInfo,v1,summarized,1,1,25
-JetRacer,v3,notsummarized,0,0,30
-BookInfo,v2,notsummarized,1,0,30
-Open Energy Monitor,v1,notsummarized,0,0,30
-BookInfo,v1,notsummarized,1,1,8
-BookInfo,v3,notsummarized,0,0,30
-BookInfo,v2,notsummarized,0,0,30
-BookInfo,v1,summarized,0,0,30
-BookInfo,v1,notsummarized,0,0,30
-Stack4Things,v2,notsummarized,1,0,30
-Stack4Things,v1,summarized,1,1,6
-Stack4Things,v1,notsummarized,1,1,22
-Stack4Things,v3,summarized,0,0,30
-Stack4Things,v3,notsummarized,0,0,30
-Stack4Things,v2,summarized,0,0,30
-Stack4Things,v2,notsummarized,0,0,30
-Stack4Things,v1,summarized,0,0,30
-Stack4Things,v1,notsummarized,0,0,30
-Open Energy Monitor,v3,summarized,1,1,10
-Open Energy Monitor,v3,notsummarized,1,1,5
-Open Energy Monitor,v2,summarized,1,1,13
-Open Energy Monitor,v2,notsummarized,1,0,30
-Open Energy Monitor,v1,summarized,1,1,8
-Open Energy Monitor,v1,notsummarized,1,0,30
-Open Energy Monitor,v3,summarized,0,1,18
-Open Energy Monitor,v3,notsummarized,0,1,10
-BookInfo,v3,notsummarized,1,0,30
-BookInfo,v2,summarized,1,0,30
-BookInfo,v2,notsummarized,1,0,30
-BookInfo,v1,summarized,1,0,30
-BookInfo,v1,notsummarized,1,0,30
-BookInfo,v3,summarized,0,0,30
-BookInfo,v3,notsummarized,0,0,30
-BookInfo,v2,summarized,0,0,30
-BookInfo,v2,notsummarized,0,0,30
-BookInfo,v1,summarized,0,0,30
-BookInfo,v1,notsummarized,0,0,30
-eWeLink,v3,summarized,0,1,9
-eWeLink,v3,notsummarized,0,1,4
-eWeLink,v2,summarized,0,0,30
-eWeLink,v2,notsummarized,0,1,24
-eWeLink,v1,summarized,0,1,7
-eWeLink,v1,notsummarized,0,1,4
-WordPress,v3,summarized,0,1,4
-WordPress,v3,notsummarized,0,1,27
-WordPress,v2,summarized,0,1,14
-WordPress,v2,notsummarized,0,1,14
-WordPress,v1,summarized,0,1,1
-WordPress,v1,notsummarized,0,1,5
-JetRacer,v2,notsummarized,1,0,30
-JetRacer,v1,summarized,1,1,4
-JetRacer,v1,notsummarized,1,0,30
-JetRacer,v3,summarized,0,1,20
-JetRacer,v3,notsummarized,0,1,12
-JetRacer,v2,summarized,0,0,30
-JetRacer,v2,notsummarized,0,0,30
-JetRacer,v1,summarized,0,0,30
-JetRacer,v1,notsummarized,0,0,30
-BookInfo,v3,summarized,1,0,30
-BookInfo,v2,summarized,1,0,30
-BookInfo,v2,notsummarized,1,0,30
-BookInfo,v1,summarized,1,0,30
-BookInfo,v1,notsummarized,1,0,30
-BookInfo,v3,summarized,0,1,21
-BookInfo,v3,notsummarized,0,0,30
-BookInfo,v2,summarized,0,0,30
-BookInfo,v2,notsummarized,0,0,30
-BookInfo,v1,summarized,0,0,30
-BookInfo,v1,notsummarized,0,0,30
-Stack4Things,v3,notsummarized,1,1,21
-Stack4Things,v2,summarized,1,0,30
-Stack4Things,v2,notsummarized,1,0,30
-Stack4Things,v1,summarized,1,0,30
-Stack4Things,v1,notsummarized,1,0,30
-Stack4Things,v3,summarized,0,0,30
-Stack4Things,v3,notsummarized,0,0,30
-Stack4Things,v2,summarized,0,0,30
-Stack4Things,v2,notsummarized,0,0,30
-Stack4Things,v1,summarized,0,0,30
-Stack4Things,v1,notsummarized,0,0,30
-Open Energy Monitor,v3,summarized,1,1,20
-Open Energy Monitor,v3,notsummarized,1,0,30
-Open Energy Monitor,v2,summarized,1,0,30
-Open Energy Monitor,v2,notsummarized,1,0,30
-Open Energy Monitor,v1,summarized,1,1,9
-Open Energy Monitor,v3,summarized,0,0,30
-Open Energy Monitor,v3,notsummarized,0,0,30
-Open Energy Monitor,v2,summarized,0,0,30
-Open Energy Monitor,v1,summarized,0,1,1
-Open Energy Monitor,v1,notsummarized,0,1,8
-JetRacer,v3,summarized,1,1,4
-JetRacer,v3,notsummarized,1,1,3
-JetRacer,v2,summarized,1,1,6
-JetRacer,v2,notsummarized,1,0,30
-JetRacer,v1,summarized,1,1,11
-JetRacer,v1,notsummarized,1,1,15
-JetRacer,v3,summarized,0,1,5
-JetRacer,v3,notsummarized,0,0,30
-JetRacer,v2,summarized,0,1,11
-JetRacer,v2,notsummarized,0,0,30
-JetRacer,v1,summarized,0,1,26
-JetRacer,v1,notsummarized,0,1,29
-BookInfo,v3,summarized,1,0,30
-BookInfo,v3,notsummarized,1,0,30
-BookInfo,v2,summarized,1,0,30
-BookInfo,v2,notsummarized,1,1,21
-BookInfo,v1,summarized,1,1,29
-BookInfo,v1,notsummarized,1,1,10
-BookInfo,v3,summarized,0,1,13
-BookInfo,v3,notsummarized,0,0,30
-BookInfo,v2,summarized,0,0,30
-BookInfo,v2,notsummarized,0,0,30
-BookInfo,v1,summarized,0,0,30
-BookInfo,v1,notsummarized,0,0,30
-eWeLink,v3,summarized,0,1,14
-eWeLink,v3,notsummarized,0,1,12
-eWeLink,v2,summarized,0,1,15
-eWeLink,v2,notsummarized,0,1,9
-eWeLink,v1,summarized,0,1,7
-eWeLink,v1,notsummarized,0,0,30
-WordPress,v3,summarized,0,0,30
-WordPress,v3,notsummarized,0,1,10
-WordPress,v2,summarized,0,1,7
-WordPress,v2,notsummarized,0,1,14
-WordPress,v1,summarized,0,1,3
-WordPress,v1,notsummarized,0,1,3
-Stack4Things,v3,summarized,1,0,30
-Stack4Things,v3,notsummarized,1,0,30
-Stack4Things,v2,summarized,1,0,30
-Stack4Things,v2,notsummarized,1,0,30
-Stack4Things,v1,summarized,1,0,30
-Stack4Things,v1,notsummarized,1,0,30
-Stack4Things,v3,summarized,0,0,30
-Stack4Things,v3,notsummarized,0,0,30
-Stack4Things,v2,summarized,0,0,30
-Stack4Things,v2,notsummarized,0,0,30
-Stack4Things,v1,summarized,0,0,30
-Stack4Things,v1,notsummarized,0,0,30
-Open Energy Monitor,v3,summarized,1,1,10
-Open Energy Monitor,v3,notsummarized,1,1,7
-Open Energy Monitor,v2,summarized,1,0,30
-Open Energy Monitor,v2,notsummarized,1,1,14
-Open Energy Monitor,v1,summarized,1,1,7
-Open Energy Monitor,v1,notsummarized,1,1,17
-Open Energy Monitor,v3,summarized,0,1,6
-Open Energy Monitor,v3,notsummarized,0,1,6
-Open Energy Monitor,v2,summarized,0,1,6
-Open Energy Monitor,v2,notsummarized,0,0,30
-Open Energy Monitor,v1,summarized,0,0,30
-Open Energy Monitor,v1,notsummarized,0,0,30
-JetRacer,v2,notsummarized,1,1,5
-JetRacer,v1,summarized,1,1,12
-JetRacer,v1,notsummarized,1,1,6
-JetRacer,v3,summarized,0,1,13
-JetRacer,v3,notsummarized,0,1,11
-JetRacer,v2,summarized,0,0,30
-JetRacer,v2,notsummarized,0,0,30
-JetRacer,v1,summarized,0,1,27
-JetRacer,v1,notsummarized,0,0,30
-BookInfo,v3,summarized,1,1,21
-BookInfo,v3,notsummarized,1,0,30
-BookInfo,v2,summarized,1,0,30
-BookInfo,v2,notsummarized,1,0,30
-BookInfo,v1,summarized,1,0,30
-BookInfo,v1,notsummarized,1,0,30
-BookInfo,v3,notsummarized,0,1,5
-BookInfo,v2,summarized,0,0,30
-BookInfo,v2,notsummarized,0,1,27
-BookInfo,v1,summarized,0,0,30
-BookInfo,v1,notsummarized,0,0,30
-JetRacer,v2,summarized,1,1,11
-JetRacer,v2,notsummarized,1,1,13
-JetRacer,v1,summarized,1,1,11
-JetRacer,v1,notsummarized,1,1,12
-JetRacer,v3,summarized,0,1,8
-JetRacer,v3,notsummarized,0,1,4
-JetRacer,v2,summarized,0,0,30
-JetRacer,v2,notsummarized,0,0,30
-JetRacer,v1,summarized,0,0,30
-JetRacer,v1,notsummarized,0,0,30
-BookInfo,v3,summarized,1,1,12
-BookInfo,v3,notsummarized,1,1,17
-BookInfo,v2,notsummarized,1,1,7
-BookInfo,v1,summarized,1,1,28
-BookInfo,v1,notsummarized,1,0,30
-BookInfo,v3,summarized,0,0,30
-BookInfo,v3,notsummarized,0,0,30
-BookInfo,v2,summarized,0,0,30
-BookInfo,v2,notsummarized,0,0,30
-BookInfo,v1,summarized,0,1,9
-BookInfo,v1,notsummarized,0,0,30
-eWeLink,v3,summarized,0,1,26
-eWeLink,v3,notsummarized,0,1,8
-eWeLink,v2,summarized,0,1,25
-eWeLink,v2,notsummarized,0,0,30
-eWeLink,v1,summarized,0,1,12
-eWeLink,v1,notsummarized,0,0,30
-WordPress,v3,summarized,0,1,6
-WordPress,v3,notsummarized,0,1,7
-WordPress,v2,summarized,0,1,11
-WordPress,v2,notsummarized,0,0,30
-WordPress,v1,summarized,0,0,30
-WordPress,v1,notsummarized,0,1,17
-Stack4Things,v3,summarized,1,0,30
-Stack4Things,v3,notsummarized,1,0,30
-Stack4Things,v2,summarized,1,0,30
-Stack4Things,v2,notsummarized,1,1,5
-Stack4Things,v1,summarized,1,1,13
-Stack4Things,v1,notsummarized,1,0,30
-Stack4Things,v3,summarized,0,0,30
-Stack4Things,v3,notsummarized,0,0,30
-Stack4Things,v2,summarized,0,0,30
-Stack4Things,v2,notsummarized,0,0,30
-Stack4Things,v1,summarized,0,0,30
-Stack4Things,v1,notsummarized,0,0,30
-Open Energy Monitor,v3,summarized,1,1,19
-Open Energy Monitor,v3,notsummarized,1,1,9
-Open Energy Monitor,v2,summarized,1,1,11
-Open Energy Monitor,v2,notsummarized,1,1,16
-Open Energy Monitor,v1,summarized,1,1,10
-Open Energy Monitor,v1,notsummarized,1,0,30
-Open Energy Monitor,v3,summarized,0,1,6
-Open Energy Monitor,v3,notsummarized,0,1,3
-Open Energy Monitor,v2,summarized,0,1,15
-Open Energy Monitor,v2,notsummarized,0,1,17
-Open Energy Monitor,v1,summarized,0,1,8
-Open Energy Monitor,v1,notsummarized,0,0,30
-JetRacer,v3,summarized,1,1,9
-JetRacer,v3,notsummarized,1,1,5
-JetRacer,v2,summarized,1,0,30
-JetRacer,v2,notsummarized,1,1,9
-JetRacer,v1,summarized,1,1,5
-JetRacer,v3,summarized,0,1,18
-JetRacer,v3,notsummarized,0,0,30
-JetRacer,v2,summarized,0,1,20
-JetRacer,v2,notsummarized,0,0,30
-JetRacer,v1,notsummarized,0,0,30
-JetRacer,v1,notsummarized,1,0,30
-JetRacer,v3,summarized,0,0,30
-JetRacer,v3,notsummarized,0,1,8
-JetRacer,v2,summarized,0,0,30
-JetRacer,v2,notsummarized,0,0,30
-JetRacer,v1,summarized,0,0,30
-JetRacer,v1,notsummarized,0,0,30
-BookInfo,v3,summarized,1,1,18
-BookInfo,v3,notsummarized,1,0,30
-BookInfo,v2,summarized,1,0,30
-BookInfo,v2,notsummarized,1,0,30
-BookInfo,v1,summarized,1,0,30
-BookInfo,v1,notsummarized,1,0,30
-BookInfo,v3,notsummarized,0,0,30
-BookInfo,v2,summarized,0,0,30
-BookInfo,v2,notsummarized,0,0,30
-BookInfo,v1,summarized,0,0,30
-BookInfo,v1,notsummarized,0,0,30
-BookInfo,v3,summarized,0,1,6
-BookInfo,v3,notsummarized,0,1,5
-BookInfo,v1,notsummarized,0,1,7
+case,version,mode,RAG,success,iterations,created at,updated at
+BookInfo,v2,summarized,0,1,12,2026-01-10 09:36:10+00:00,2026-01-10 09:55:02+00:00
+eWeLink,v3,notsummarized,0,1,21,2026-01-10 09:09:14+00:00,2026-01-10 09:36:04+00:00
+Open Energy Monitor,v2,summarized,0,1,16,2026-01-10 09:05:31+00:00,2026-01-10 09:45:37+00:00
+Open Energy Monitor,v1,notsummarized,0,1,2,2026-01-10 09:02:35+00:00,2026-01-10 09:05:25+00:00
+JetRacer,v3,notsummarized,1,0,30,2026-01-10 08:12:58+00:00,2026-01-10 09:09:09+00:00
+JetRacer,v2,notsummarized,1,0,30,2026-01-10 07:44:38+00:00,2026-01-10 09:02:30+00:00
+WordPress,v2,summarized,0,0,30,2026-01-10 06:02:47+00:00,2026-01-10 06:52:58+00:00
+JetRacer,v2,notsummarized,0,1,5,2026-01-10 05:57:47+00:00,2026-01-10 06:02:42+00:00
+JetRacer,v1,notsummarized,1,1,18,2026-01-10 05:15:11+00:00,2026-01-10 05:57:42+00:00
+JetRacer,v3,summarized,0,1,6,2026-01-10 04:56:36+00:00,2026-01-10 05:15:06+00:00
+Open Energy Monitor,v1,notsummarized,1,1,23,2026-01-10 03:58:36+00:00,2026-01-10 04:25:23+00:00
+BookInfo,v2,summarized,1,0,30,2026-01-10 02:57:46+00:00,2026-01-10 03:58:31+00:00
+JetRacer,v1,summarized,0,0,30,2026-01-10 02:52:01+00:00,2026-01-10 04:23:49+00:00
+BookInfo,v1,notsummarized,0,1,17,2026-01-10 02:33:37+00:00,2026-01-10 02:51:56+00:00
+BookInfo,v1,notsummarized,1,0,30,2026-01-10 02:03:26+00:00,2026-01-10 02:57:41+00:00
+eWeLink,v2,summarized,0,1,10,2026-01-10 01:49:49+00:00,2026-01-10 02:03:21+00:00
+Open Energy Monitor,v1,summarized,0,1,7,2026-01-10 01:41:16+00:00,2026-01-10 01:49:44+00:00
+eWeLink,v3,summarized,0,1,8,2026-01-10 01:30:07+00:00,2026-01-10 01:41:11+00:00
+JetRacer,v1,summarized,0,0,30,2026-01-10 01:26:00+00:00,2026-01-10 02:33:32+00:00
+Open Energy Monitor,v3,summarized,0,1,4,2026-01-10 01:24:11+00:00,2026-01-10 01:30:02+00:00
+eWeLink,v3,notsummarized,0,1,16,2026-01-10 01:01:20+00:00,2026-01-10 01:18:29+00:00
+Open Energy Monitor,v2,notsummarized,0,0,30,2026-01-10 00:39:53+00:00,2026-01-10 01:01:15+00:00
+JetRacer,v2,notsummarized,1,0,30,2026-01-10 00:27:31+00:00,2026-01-10 01:25:55+00:00
+Open Energy Monitor,v1,notsummarized,1,1,14,2026-01-10 00:22:39+00:00,2026-01-10 00:39:47+00:00
+JetRacer,v1,notsummarized,0,0,30,2026-01-10 00:06:38+00:00,2026-01-10 00:22:34+00:00
+BookInfo,v3,notsummarized,1,0,30,2026-01-09 23:14:36+00:00,2026-01-10 00:06:33+00:00
+Open Energy Monitor,v3,summarized,1,0,30,2026-01-09 23:01:34+00:00,2026-01-10 00:27:26+00:00
+Open Energy Monitor,v1,summarized,0,0,30,2026-01-09 22:31:52+00:00,2026-01-09 23:14:31+00:00
+BookInfo,v2,notsummarized,1,1,19,2026-01-09 22:05:22+00:00,2026-01-09 23:01:28+00:00
+eWeLink,v2,summarized,0,0,30,2026-01-09 21:54:45+00:00,2026-01-09 22:31:47+00:00
+eWeLink,v3,notsummarized,0,1,14,2026-01-09 21:36:54+00:00,2026-01-09 22:05:17+00:00
+Open Energy Monitor,v1,notsummarized,1,0,30,2026-01-09 21:11:06+00:00,2026-01-09 21:54:40+00:00
+Open Energy Monitor,v2,notsummarized,1,0,30,2026-01-09 21:02:36+00:00,2026-01-09 21:36:49+00:00
+eWeLink,v3,summarized,0,1,4,2026-01-09 20:31:53+00:00,2026-01-09 20:43:08+00:00
+BookInfo,v3,summarized,0,0,30,2026-01-09 20:23:42+00:00,2026-01-09 21:11:01+00:00
+WordPress,v2,notsummarized,0,1,9,2026-01-09 20:23:06+00:00,2026-01-09 20:31:47+00:00
+eWeLink,v1,notsummarized,0,1,15,2026-01-09 20:02:59+00:00,2026-01-09 20:23:01+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-09 20:01:24+00:00,2026-01-09 20:23:37+00:00
+JetRacer,v2,notsummarized,1,1,17,2026-01-09 19:28:14+00:00,2026-01-09 20:01:19+00:00
+JetRacer,v3,summarized,0,0,30,2026-01-09 19:15:34+00:00,2026-01-09 20:02:54+00:00
+JetRacer,v2,notsummarized,0,0,30,2026-01-09 19:10:14+00:00,2026-01-09 19:28:09+00:00
+Open Energy Monitor,v3,summarized,0,1,3,2026-01-09 19:05:55+00:00,2026-01-09 19:10:08+00:00
+Open Energy Monitor,v2,notsummarized,0,1,17,2026-01-09 18:54:48+00:00,2026-01-09 19:15:29+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-09 18:44:32+00:00,2026-01-09 19:05:50+00:00
+JetRacer,v1,notsummarized,1,1,10,2026-01-09 18:24:32+00:00,2026-01-09 18:44:26+00:00
+JetRacer,v3,summarized,1,1,5,2026-01-09 18:16:14+00:00,2026-01-09 18:24:27+00:00
+WordPress,v1,summarized,0,0,30,2026-01-09 17:58:18+00:00,2026-01-09 18:54:43+00:00
+BookInfo,v3,notsummarized,0,0,30,2026-01-09 17:08:14+00:00,2026-01-09 17:31:38+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-09 16:16:18+00:00,2026-01-09 16:47:42+00:00
+BookInfo,v1,summarized,1,1,25,2026-01-09 14:18:18+00:00,2026-01-09 15:01:29+00:00
+JetRacer,v3,notsummarized,0,0,30,2026-01-09 13:59:54+00:00,2026-01-09 14:18:13+00:00
+BookInfo,v2,notsummarized,1,0,30,2026-01-09 13:24:36+00:00,2026-01-09 13:59:49+00:00
+Open Energy Monitor,v1,notsummarized,0,0,30,2026-01-09 12:59:35+00:00,2026-01-09 13:24:31+00:00
+BookInfo,v1,notsummarized,1,1,8,2026-01-08 15:43:57+00:00,2026-01-08 15:54:10+00:00
+BookInfo,v3,notsummarized,0,0,30,2026-01-08 14:53:51+00:00,2026-01-08 15:17:49+00:00
+BookInfo,v2,notsummarized,0,0,30,2026-01-08 13:47:27+00:00,2026-01-08 14:06:10+00:00
+BookInfo,v1,summarized,0,0,30,2026-01-08 13:08:24+00:00,2026-01-08 13:47:27+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-08 12:48:54+00:00,2026-01-08 13:08:24+00:00
+Stack4Things,v2,notsummarized,1,0,30,2026-01-08 11:58:54+00:00,2026-01-08 12:36:27+00:00
+Stack4Things,v1,summarized,1,1,6,2026-01-08 11:50:33+00:00,2026-01-08 11:58:54+00:00
+Stack4Things,v1,notsummarized,1,1,22,2026-01-08 11:28:24+00:00,2026-01-08 11:50:33+00:00
+Stack4Things,v3,summarized,0,0,30,2026-01-08 11:23:49+00:00,2026-01-08 11:28:24+00:00
+Stack4Things,v3,notsummarized,0,0,30,2026-01-08 11:19:45+00:00,2026-01-08 11:23:49+00:00
+Stack4Things,v2,summarized,0,0,30,2026-01-08 11:15:10+00:00,2026-01-08 11:19:45+00:00
+Stack4Things,v2,notsummarized,0,0,30,2026-01-08 11:11:07+00:00,2026-01-08 11:15:10+00:00
+Stack4Things,v1,summarized,0,0,30,2026-01-08 11:06:32+00:00,2026-01-08 11:11:06+00:00
+Stack4Things,v1,notsummarized,0,0,30,2026-01-08 11:02:34+00:00,2026-01-08 11:06:32+00:00
+Open Energy Monitor,v3,summarized,1,1,10,2026-01-08 10:48:31+00:00,2026-01-08 11:02:28+00:00
+Open Energy Monitor,v3,notsummarized,1,1,5,2026-01-08 10:40:59+00:00,2026-01-08 10:48:31+00:00
+Open Energy Monitor,v2,summarized,1,1,13,2026-01-08 10:26:33+00:00,2026-01-08 10:40:59+00:00
+Open Energy Monitor,v2,notsummarized,1,0,30,2026-01-08 09:51:50+00:00,2026-01-08 10:26:33+00:00
+Open Energy Monitor,v1,summarized,1,1,8,2026-01-08 09:41:47+00:00,2026-01-08 09:51:50+00:00
+Open Energy Monitor,v1,notsummarized,1,0,30,2026-01-08 09:09:30+00:00,2026-01-08 09:41:47+00:00
+Open Energy Monitor,v3,summarized,0,1,18,2026-01-08 08:51:24+00:00,2026-01-08 09:09:29+00:00
+Open Energy Monitor,v3,notsummarized,0,1,10,2026-01-08 08:40:33+00:00,2026-01-08 08:51:24+00:00
+BookInfo,v3,notsummarized,1,0,30,2026-01-08 07:42:26+00:00,2026-01-08 08:28:09+00:00
+BookInfo,v2,summarized,1,0,30,2026-01-08 06:40:09+00:00,2026-01-08 07:42:26+00:00
+BookInfo,v2,notsummarized,1,0,30,2026-01-08 05:58:42+00:00,2026-01-08 06:40:09+00:00
+BookInfo,v1,summarized,1,0,30,2026-01-08 05:06:40+00:00,2026-01-08 05:58:42+00:00
+BookInfo,v1,notsummarized,1,0,30,2026-01-08 04:22:32+00:00,2026-01-08 05:06:40+00:00
+BookInfo,v3,summarized,0,0,30,2026-01-08 03:52:41+00:00,2026-01-08 04:22:32+00:00
+BookInfo,v3,notsummarized,0,0,30,2026-01-08 03:31:53+00:00,2026-01-08 03:52:41+00:00
+BookInfo,v2,summarized,0,0,30,2026-01-08 02:59:39+00:00,2026-01-08 03:31:53+00:00
+BookInfo,v2,notsummarized,0,0,30,2026-01-08 02:40:08+00:00,2026-01-08 02:59:39+00:00
+BookInfo,v1,summarized,0,0,30,2026-01-08 02:11:49+00:00,2026-01-08 02:40:08+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-08 01:52:52+00:00,2026-01-08 02:11:49+00:00
+eWeLink,v3,summarized,0,1,9,2026-01-08 01:44:20+00:00,2026-01-08 01:52:47+00:00
+eWeLink,v3,notsummarized,0,1,4,2026-01-08 01:40:13+00:00,2026-01-08 01:44:19+00:00
+eWeLink,v2,summarized,0,0,30,2026-01-08 01:10:32+00:00,2026-01-08 01:40:13+00:00
+eWeLink,v2,notsummarized,0,1,24,2026-01-08 00:55:25+00:00,2026-01-08 01:10:32+00:00
+eWeLink,v1,summarized,0,1,7,2026-01-08 00:48:51+00:00,2026-01-08 00:55:24+00:00
+eWeLink,v1,notsummarized,0,1,4,2026-01-08 00:46:00+00:00,2026-01-08 00:48:50+00:00
+WordPress,v3,summarized,0,1,4,2026-01-08 00:40:04+00:00,2026-01-08 00:45:55+00:00
+WordPress,v3,notsummarized,0,1,27,2026-01-08 00:16:02+00:00,2026-01-08 00:40:03+00:00
+WordPress,v2,summarized,0,1,14,2026-01-08 00:01:12+00:00,2026-01-08 00:16:01+00:00
+WordPress,v2,notsummarized,0,1,14,2026-01-07 23:53:57+00:00,2026-01-08 00:01:11+00:00
+WordPress,v1,summarized,0,1,1,2026-01-07 23:52:22+00:00,2026-01-07 23:53:57+00:00
+WordPress,v1,notsummarized,0,1,5,2026-01-07 23:48:00+00:00,2026-01-07 23:52:22+00:00
+JetRacer,v2,notsummarized,1,0,30,2026-01-07 22:12:25+00:00,2026-01-07 22:48:49+00:00
+JetRacer,v1,summarized,1,1,4,2026-01-07 22:01:34+00:00,2026-01-07 22:12:25+00:00
+JetRacer,v1,notsummarized,1,0,30,2026-01-07 21:16:29+00:00,2026-01-07 22:01:34+00:00
+JetRacer,v3,summarized,0,1,20,2026-01-07 20:41:09+00:00,2026-01-07 21:16:29+00:00
+JetRacer,v3,notsummarized,0,1,12,2026-01-07 20:32:01+00:00,2026-01-07 20:41:09+00:00
+JetRacer,v2,summarized,0,0,30,2026-01-07 19:20:13+00:00,2026-01-07 20:32:01+00:00
+JetRacer,v2,notsummarized,0,0,30,2026-01-07 18:59:49+00:00,2026-01-07 19:20:13+00:00
+JetRacer,v1,summarized,0,0,30,2026-01-07 17:49:43+00:00,2026-01-07 18:59:49+00:00
+JetRacer,v1,notsummarized,0,0,30,2026-01-07 17:28:30+00:00,2026-01-07 17:49:42+00:00
+BookInfo,v3,summarized,1,0,30,2026-01-07 16:04:21+00:00,2026-01-07 17:28:25+00:00
+BookInfo,v2,summarized,1,0,30,2026-01-07 13:59:35+00:00,2026-01-07 15:15:32+00:00
+BookInfo,v2,notsummarized,1,0,30,2026-01-07 13:00:13+00:00,2026-01-07 13:59:35+00:00
+BookInfo,v1,summarized,1,0,30,2026-01-07 11:44:00+00:00,2026-01-07 13:00:13+00:00
+BookInfo,v1,notsummarized,1,0,30,2026-01-07 10:47:13+00:00,2026-01-07 11:44:00+00:00
+BookInfo,v3,summarized,0,1,21,2026-01-07 10:13:15+00:00,2026-01-07 10:47:12+00:00
+BookInfo,v3,notsummarized,0,0,30,2026-01-07 09:49:39+00:00,2026-01-07 10:13:15+00:00
+BookInfo,v2,summarized,0,0,30,2026-01-07 09:09:20+00:00,2026-01-07 09:49:39+00:00
+BookInfo,v2,notsummarized,0,0,30,2026-01-07 08:46:40+00:00,2026-01-07 09:09:20+00:00
+BookInfo,v1,summarized,0,0,30,2026-01-07 08:12:42+00:00,2026-01-07 08:46:40+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-07 07:56:15+00:00,2026-01-07 08:12:42+00:00
+Stack4Things,v3,notsummarized,1,1,21,2026-01-07 02:57:07+00:00,2026-01-07 03:24:33+00:00
+Stack4Things,v2,summarized,1,0,30,2026-01-07 02:02:38+00:00,2026-01-07 02:57:07+00:00
+Stack4Things,v2,notsummarized,1,0,30,2026-01-07 01:27:36+00:00,2026-01-07 02:02:38+00:00
+Stack4Things,v1,summarized,1,0,30,2026-01-07 00:25:47+00:00,2026-01-07 01:27:36+00:00
+Stack4Things,v1,notsummarized,1,0,30,2026-01-06 23:52:33+00:00,2026-01-07 00:25:47+00:00
+Stack4Things,v3,summarized,0,0,30,2026-01-06 23:49:22+00:00,2026-01-06 23:52:33+00:00
+Stack4Things,v3,notsummarized,0,0,30,2026-01-06 23:45:12+00:00,2026-01-06 23:49:22+00:00
+Stack4Things,v2,summarized,0,0,30,2026-01-06 23:42:03+00:00,2026-01-06 23:45:12+00:00
+Stack4Things,v2,notsummarized,0,0,30,2026-01-06 23:37:45+00:00,2026-01-06 23:42:03+00:00
+Stack4Things,v1,summarized,0,0,30,2026-01-06 23:34:40+00:00,2026-01-06 23:37:45+00:00
+Stack4Things,v1,notsummarized,0,0,30,2026-01-06 23:30:26+00:00,2026-01-06 23:34:40+00:00
+Open Energy Monitor,v3,summarized,1,1,20,2026-01-06 23:03:30+00:00,2026-01-06 23:30:21+00:00
+Open Energy Monitor,v3,notsummarized,1,0,30,2026-01-06 22:28:24+00:00,2026-01-06 23:03:30+00:00
+Open Energy Monitor,v2,summarized,1,0,30,2026-01-06 21:48:29+00:00,2026-01-06 22:28:24+00:00
+Open Energy Monitor,v2,notsummarized,1,0,30,2026-01-06 21:29:54+00:00,2026-01-06 21:48:29+00:00
+Open Energy Monitor,v1,summarized,1,1,9,2026-01-06 21:18:29+00:00,2026-01-06 21:29:54+00:00
+Open Energy Monitor,v3,summarized,0,0,30,2026-01-06 19:56:10+00:00,2026-01-06 20:55:51+00:00
+Open Energy Monitor,v3,notsummarized,0,0,30,2026-01-06 19:24:08+00:00,2026-01-06 19:56:10+00:00
+Open Energy Monitor,v2,summarized,0,0,30,2026-01-06 18:24:27+00:00,2026-01-06 19:24:08+00:00
+Open Energy Monitor,v1,summarized,0,1,1,2026-01-06 18:14:38+00:00,2026-01-06 18:17:03+00:00
+Open Energy Monitor,v1,notsummarized,0,1,8,2026-01-06 18:08:18+00:00,2026-01-06 18:14:37+00:00
+JetRacer,v3,summarized,1,1,4,2026-01-06 18:00:39+00:00,2026-01-06 18:08:13+00:00
+JetRacer,v3,notsummarized,1,1,3,2026-01-06 17:56:22+00:00,2026-01-06 18:00:39+00:00
+JetRacer,v2,summarized,1,1,6,2026-01-06 17:45:38+00:00,2026-01-06 17:56:21+00:00
+JetRacer,v2,notsummarized,1,0,30,2026-01-06 16:59:41+00:00,2026-01-06 17:45:38+00:00
+JetRacer,v1,summarized,1,1,11,2026-01-06 16:40:41+00:00,2026-01-06 16:59:41+00:00
+JetRacer,v1,notsummarized,1,1,15,2026-01-06 16:23:08+00:00,2026-01-06 16:40:41+00:00
+JetRacer,v3,summarized,0,1,5,2026-01-06 16:17:16+00:00,2026-01-06 16:23:08+00:00
+JetRacer,v3,notsummarized,0,0,30,2026-01-06 15:57:17+00:00,2026-01-06 16:17:16+00:00
+JetRacer,v2,summarized,0,1,11,2026-01-06 15:42:40+00:00,2026-01-06 15:57:17+00:00
+JetRacer,v2,notsummarized,0,0,30,2026-01-06 15:22:45+00:00,2026-01-06 15:42:40+00:00
+JetRacer,v1,summarized,0,1,26,2026-01-06 14:45:13+00:00,2026-01-06 15:22:45+00:00
+JetRacer,v1,notsummarized,0,1,29,2026-01-06 14:24:27+00:00,2026-01-06 14:45:13+00:00
+BookInfo,v3,summarized,1,0,30,2026-01-06 13:18:16+00:00,2026-01-06 14:24:22+00:00
+BookInfo,v3,notsummarized,1,0,30,2026-01-06 12:34:32+00:00,2026-01-06 13:18:16+00:00
+BookInfo,v2,summarized,1,0,30,2026-01-06 11:40:18+00:00,2026-01-06 12:34:32+00:00
+BookInfo,v2,notsummarized,1,1,21,2026-01-06 11:12:47+00:00,2026-01-06 11:40:17+00:00
+BookInfo,v1,summarized,1,1,29,2026-01-06 10:19:28+00:00,2026-01-06 11:12:46+00:00
+BookInfo,v1,notsummarized,1,1,10,2026-01-06 10:06:11+00:00,2026-01-06 10:19:28+00:00
+BookInfo,v3,summarized,0,1,13,2026-01-06 09:47:50+00:00,2026-01-06 10:06:11+00:00
+BookInfo,v3,notsummarized,0,0,30,2026-01-06 09:27:47+00:00,2026-01-06 09:47:50+00:00
+BookInfo,v2,summarized,0,0,30,2026-01-06 08:48:31+00:00,2026-01-06 09:27:47+00:00
+BookInfo,v2,notsummarized,0,0,30,2026-01-06 08:27:33+00:00,2026-01-06 08:48:31+00:00
+BookInfo,v1,summarized,0,0,30,2026-01-06 07:57:59+00:00,2026-01-06 08:27:33+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-06 07:33:45+00:00,2026-01-06 07:57:59+00:00
+eWeLink,v3,summarized,0,1,14,2026-01-06 07:16:06+00:00,2026-01-06 07:33:40+00:00
+eWeLink,v3,notsummarized,0,1,12,2026-01-06 07:03:54+00:00,2026-01-06 07:16:06+00:00
+eWeLink,v2,summarized,0,1,15,2026-01-06 06:47:08+00:00,2026-01-06 07:03:54+00:00
+eWeLink,v2,notsummarized,0,1,9,2026-01-06 06:40:58+00:00,2026-01-06 06:47:07+00:00
+eWeLink,v1,summarized,0,1,7,2026-01-06 06:34:04+00:00,2026-01-06 06:40:58+00:00
+eWeLink,v1,notsummarized,0,0,30,2026-01-06 06:12:09+00:00,2026-01-06 06:34:04+00:00
+WordPress,v3,summarized,0,0,30,2026-01-06 05:38:03+00:00,2026-01-06 06:12:04+00:00
+WordPress,v3,notsummarized,0,1,10,2026-01-06 05:27:36+00:00,2026-01-06 05:38:03+00:00
+WordPress,v2,summarized,0,1,7,2026-01-06 05:19:20+00:00,2026-01-06 05:27:36+00:00
+WordPress,v2,notsummarized,0,1,14,2026-01-06 05:10:17+00:00,2026-01-06 05:19:20+00:00
+WordPress,v1,summarized,0,1,3,2026-01-06 05:06:53+00:00,2026-01-06 05:10:17+00:00
+WordPress,v1,notsummarized,0,1,3,2026-01-06 05:04:57+00:00,2026-01-06 05:06:53+00:00
+Stack4Things,v3,summarized,1,0,30,2026-01-06 04:06:35+00:00,2026-01-06 05:04:52+00:00
+Stack4Things,v3,notsummarized,1,0,30,2026-01-06 03:26:26+00:00,2026-01-06 04:06:35+00:00
+Stack4Things,v2,summarized,1,0,30,2026-01-06 02:40:01+00:00,2026-01-06 03:26:26+00:00
+Stack4Things,v2,notsummarized,1,0,30,2026-01-06 02:02:12+00:00,2026-01-06 02:40:01+00:00
+Stack4Things,v1,summarized,1,0,30,2026-01-06 01:16:03+00:00,2026-01-06 02:02:12+00:00
+Stack4Things,v1,notsummarized,1,0,30,2026-01-06 00:41:25+00:00,2026-01-06 01:16:03+00:00
+Stack4Things,v3,summarized,0,0,30,2026-01-06 00:36:17+00:00,2026-01-06 00:41:25+00:00
+Stack4Things,v3,notsummarized,0,0,30,2026-01-06 00:32:45+00:00,2026-01-06 00:36:17+00:00
+Stack4Things,v2,summarized,0,0,30,2026-01-06 00:27:37+00:00,2026-01-06 00:32:45+00:00
+Stack4Things,v2,notsummarized,0,0,30,2026-01-06 00:24:14+00:00,2026-01-06 00:27:37+00:00
+Stack4Things,v1,summarized,0,0,30,2026-01-06 00:19:06+00:00,2026-01-06 00:24:14+00:00
+Stack4Things,v1,notsummarized,0,0,30,2026-01-06 00:16:13+00:00,2026-01-06 00:19:06+00:00
+Open Energy Monitor,v3,summarized,1,1,10,2026-01-06 00:01:51+00:00,2026-01-06 00:16:08+00:00
+Open Energy Monitor,v3,notsummarized,1,1,7,2026-01-05 23:53:37+00:00,2026-01-06 00:01:51+00:00
+Open Energy Monitor,v2,summarized,1,0,30,2026-01-05 23:14:05+00:00,2026-01-05 23:53:37+00:00
+Open Energy Monitor,v2,notsummarized,1,1,14,2026-01-05 22:58:20+00:00,2026-01-05 23:14:04+00:00
+Open Energy Monitor,v1,summarized,1,1,7,2026-01-05 22:49:10+00:00,2026-01-05 22:58:19+00:00
+Open Energy Monitor,v1,notsummarized,1,1,17,2026-01-05 22:30:58+00:00,2026-01-05 22:49:10+00:00
+Open Energy Monitor,v3,summarized,0,1,6,2026-01-05 22:24:29+00:00,2026-01-05 22:30:57+00:00
+Open Energy Monitor,v3,notsummarized,0,1,6,2026-01-05 22:19:00+00:00,2026-01-05 22:24:29+00:00
+Open Energy Monitor,v2,summarized,0,1,6,2026-01-05 22:13:10+00:00,2026-01-05 22:19:00+00:00
+Open Energy Monitor,v2,notsummarized,0,0,30,2026-01-05 21:40:57+00:00,2026-01-05 22:13:10+00:00
+Open Energy Monitor,v1,summarized,0,0,30,2026-01-05 21:06:38+00:00,2026-01-05 21:40:57+00:00
+Open Energy Monitor,v1,notsummarized,0,0,30,2026-01-05 20:29:08+00:00,2026-01-05 21:06:38+00:00
+JetRacer,v2,notsummarized,1,1,5,2026-01-05 19:53:23+00:00,2026-01-05 20:00:51+00:00
+JetRacer,v1,summarized,1,1,12,2026-01-05 19:25:51+00:00,2026-01-05 19:53:22+00:00
+JetRacer,v1,notsummarized,1,1,6,2026-01-05 19:17:38+00:00,2026-01-05 19:25:51+00:00
+JetRacer,v3,summarized,0,1,13,2026-01-05 19:03:54+00:00,2026-01-05 19:17:38+00:00
+JetRacer,v3,notsummarized,0,1,11,2026-01-05 18:55:56+00:00,2026-01-05 19:03:54+00:00
+JetRacer,v2,summarized,0,0,30,2026-01-05 18:32:19+00:00,2026-01-05 18:55:56+00:00
+JetRacer,v2,notsummarized,0,0,30,2026-01-05 18:15:09+00:00,2026-01-05 18:32:19+00:00
+JetRacer,v1,summarized,0,1,27,2026-01-05 17:48:13+00:00,2026-01-05 18:15:09+00:00
+JetRacer,v1,notsummarized,0,0,30,2026-01-05 17:27:27+00:00,2026-01-05 17:48:13+00:00
+BookInfo,v3,summarized,1,1,21,2026-01-05 16:43:27+00:00,2026-01-05 17:27:21+00:00
+BookInfo,v3,notsummarized,1,0,30,2026-01-05 15:52:35+00:00,2026-01-05 16:43:27+00:00
+BookInfo,v2,summarized,1,0,30,2026-01-05 14:59:21+00:00,2026-01-05 15:52:35+00:00
+BookInfo,v2,notsummarized,1,0,30,2026-01-05 14:07:53+00:00,2026-01-05 14:59:21+00:00
+BookInfo,v1,summarized,1,0,30,2026-01-05 13:16:00+00:00,2026-01-05 14:07:53+00:00
+BookInfo,v1,notsummarized,1,0,30,2026-01-05 12:31:28+00:00,2026-01-05 13:16:00+00:00
+BookInfo,v3,notsummarized,0,1,5,2026-01-05 12:23:55+00:00,2026-01-05 12:28:13+00:00
+BookInfo,v2,summarized,0,0,30,2026-01-05 11:51:51+00:00,2026-01-05 12:23:55+00:00
+BookInfo,v2,notsummarized,0,1,27,2026-01-05 11:32:34+00:00,2026-01-05 11:51:50+00:00
+BookInfo,v1,summarized,0,0,30,2026-01-05 10:53:23+00:00,2026-01-05 11:32:34+00:00
+BookInfo,v1,notsummarized,0,0,30,2026-01-05 10:32:20+00:00,2026-01-05 10:53:23+00:00
+JetRacer,v2,summarized,1,1,11,2025-12-21 20:40:18+00:00,2025-12-21 21:09:24+00:00
+JetRacer,v2,notsummarized,1,1,13,2025-12-21 20:10:19+00:00,2025-12-21 20:40:15+00:00
+JetRacer,v1,summarized,1,1,11,2025-12-21 19:42:30+00:00,2025-12-21 20:10:19+00:00
+JetRacer,v1,notsummarized,1,1,12,2025-12-21 19:18:16+00:00,2025-12-21 19:42:30+00:00
+JetRacer,v3,summarized,0,1,8,2025-12-21 19:05:00+00:00,2025-12-21 19:18:16+00:00
+JetRacer,v3,notsummarized,0,1,4,2025-12-21 19:01:10+00:00,2025-12-21 19:04:59+00:00
+JetRacer,v2,summarized,0,0,30,2025-12-21 18:17:00+00:00,2025-12-21 19:01:10+00:00
+JetRacer,v2,notsummarized,0,0,30,2025-12-21 17:58:50+00:00,2025-12-21 18:17:00+00:00
+JetRacer,v1,summarized,0,0,30,2025-12-21 17:11:56+00:00,2025-12-21 17:58:50+00:00
+JetRacer,v1,notsummarized,0,0,30,2025-12-21 16:44:56+00:00,2025-12-21 17:11:56+00:00
+BookInfo,v3,summarized,1,1,12,2025-12-21 16:13:37+00:00,2025-12-21 16:44:50+00:00
+BookInfo,v3,notsummarized,1,1,17,2025-12-21 15:38:59+00:00,2025-12-21 16:13:37+00:00
+BookInfo,v2,notsummarized,1,1,7,2025-12-21 14:34:36+00:00,2025-12-21 14:45:26+00:00
+BookInfo,v1,summarized,1,1,28,2025-12-21 13:34:38+00:00,2025-12-21 14:34:35+00:00
+BookInfo,v1,notsummarized,1,0,30,2025-12-21 12:46:33+00:00,2025-12-21 13:34:38+00:00
+BookInfo,v3,summarized,0,0,30,2025-12-21 12:06:45+00:00,2025-12-21 12:46:32+00:00
+BookInfo,v3,notsummarized,0,0,30,2025-12-21 11:40:57+00:00,2025-12-21 12:06:45+00:00
+BookInfo,v2,summarized,0,0,30,2025-12-21 10:52:16+00:00,2025-12-21 11:40:56+00:00
+BookInfo,v2,notsummarized,0,0,30,2025-12-21 10:28:38+00:00,2025-12-21 10:52:16+00:00
+BookInfo,v1,summarized,0,1,9,2025-12-21 10:18:53+00:00,2025-12-21 10:28:38+00:00
+BookInfo,v1,notsummarized,0,0,30,2025-12-21 09:58:35+00:00,2025-12-21 10:18:53+00:00
+eWeLink,v3,summarized,0,1,26,2025-12-21 09:24:48+00:00,2025-12-21 09:58:29+00:00
+eWeLink,v3,notsummarized,0,1,8,2025-12-21 09:16:39+00:00,2025-12-21 09:24:47+00:00
+eWeLink,v2,summarized,0,1,25,2025-12-21 08:50:57+00:00,2025-12-21 09:16:38+00:00
+eWeLink,v2,notsummarized,0,0,30,2025-12-21 08:26:11+00:00,2025-12-21 08:50:56+00:00
+eWeLink,v1,summarized,0,1,12,2025-12-21 08:12:34+00:00,2025-12-21 08:26:10+00:00
+eWeLink,v1,notsummarized,0,0,30,2025-12-21 07:48:45+00:00,2025-12-21 08:12:34+00:00
+WordPress,v3,summarized,0,1,6,2025-12-21 07:40:53+00:00,2025-12-21 07:48:40+00:00
+WordPress,v3,notsummarized,0,1,7,2025-12-21 07:34:12+00:00,2025-12-21 07:40:52+00:00
+WordPress,v2,summarized,0,1,11,2025-12-21 07:22:55+00:00,2025-12-21 07:34:11+00:00
+WordPress,v2,notsummarized,0,0,30,2025-12-21 07:08:36+00:00,2025-12-21 07:22:55+00:00
+WordPress,v1,summarized,0,0,30,2025-12-21 06:39:08+00:00,2025-12-21 07:08:36+00:00
+WordPress,v1,notsummarized,0,1,17,2025-12-21 06:29:59+00:00,2025-12-21 06:39:08+00:00
+Stack4Things,v3,summarized,1,0,30,2025-12-21 05:32:46+00:00,2025-12-21 06:29:54+00:00
+Stack4Things,v3,notsummarized,1,0,30,2025-12-21 04:56:32+00:00,2025-12-21 05:32:45+00:00
+Stack4Things,v2,summarized,1,0,30,2025-12-21 03:56:07+00:00,2025-12-21 04:56:32+00:00
+Stack4Things,v2,notsummarized,1,1,5,2025-12-21 03:50:33+00:00,2025-12-21 03:56:07+00:00
+Stack4Things,v1,summarized,1,1,13,2025-12-21 03:32:40+00:00,2025-12-21 03:50:33+00:00
+Stack4Things,v1,notsummarized,1,0,30,2025-12-21 02:56:55+00:00,2025-12-21 03:32:40+00:00
+Stack4Things,v3,summarized,0,0,30,2025-12-21 02:53:44+00:00,2025-12-21 02:56:55+00:00
+Stack4Things,v3,notsummarized,0,0,30,2025-12-21 02:49:01+00:00,2025-12-21 02:53:44+00:00
+Stack4Things,v2,summarized,0,0,30,2025-12-21 02:45:51+00:00,2025-12-21 02:49:01+00:00
+Stack4Things,v2,notsummarized,0,0,30,2025-12-21 02:41:16+00:00,2025-12-21 02:45:51+00:00
+Stack4Things,v1,summarized,0,0,30,2025-12-21 02:38:01+00:00,2025-12-21 02:41:16+00:00
+Stack4Things,v1,notsummarized,0,0,30,2025-12-21 02:34:36+00:00,2025-12-21 02:38:01+00:00
+Open Energy Monitor,v3,summarized,1,1,19,2025-12-21 02:09:14+00:00,2025-12-21 02:34:31+00:00
+Open Energy Monitor,v3,notsummarized,1,1,9,2025-12-21 01:59:25+00:00,2025-12-21 02:09:13+00:00
+Open Energy Monitor,v2,summarized,1,1,11,2025-12-21 01:44:49+00:00,2025-12-21 01:59:25+00:00
+Open Energy Monitor,v2,notsummarized,1,1,16,2025-12-21 01:26:41+00:00,2025-12-21 01:44:48+00:00
+Open Energy Monitor,v1,summarized,1,1,10,2025-12-21 01:14:05+00:00,2025-12-21 01:26:41+00:00
+Open Energy Monitor,v1,notsummarized,1,0,30,2025-12-21 00:42:12+00:00,2025-12-21 01:14:05+00:00
+Open Energy Monitor,v3,summarized,0,1,6,2025-12-21 00:34:23+00:00,2025-12-21 00:42:12+00:00
+Open Energy Monitor,v3,notsummarized,0,1,3,2025-12-21 00:31:02+00:00,2025-12-21 00:34:22+00:00
+Open Energy Monitor,v2,summarized,0,1,15,2025-12-21 00:12:23+00:00,2025-12-21 00:31:02+00:00
+Open Energy Monitor,v2,notsummarized,0,1,17,2025-12-20 23:47:59+00:00,2025-12-21 00:12:22+00:00
+Open Energy Monitor,v1,summarized,0,1,8,2025-12-20 23:30:51+00:00,2025-12-20 23:47:59+00:00
+Open Energy Monitor,v1,notsummarized,0,0,30,2025-12-20 22:49:29+00:00,2025-12-20 23:30:51+00:00
+JetRacer,v3,summarized,1,1,9,2025-12-20 22:27:37+00:00,2025-12-20 22:49:23+00:00
+JetRacer,v3,notsummarized,1,1,5,2025-12-20 22:18:52+00:00,2025-12-20 22:27:37+00:00
+JetRacer,v2,summarized,1,0,30,2025-12-20 20:49:27+00:00,2025-12-20 22:18:52+00:00
+JetRacer,v2,notsummarized,1,1,9,2025-12-20 20:32:55+00:00,2025-12-20 20:49:26+00:00
+JetRacer,v1,summarized,1,1,5,2025-12-20 20:19:31+00:00,2025-12-20 20:32:55+00:00
+JetRacer,v3,summarized,0,1,18,2025-12-20 19:50:47+00:00,2025-12-20 20:14:22+00:00
+JetRacer,v3,notsummarized,0,0,30,2025-12-20 19:25:25+00:00,2025-12-20 19:50:46+00:00
+JetRacer,v2,summarized,0,1,20,2025-12-20 18:55:34+00:00,2025-12-20 19:25:25+00:00
+JetRacer,v2,notsummarized,0,0,30,2025-12-20 18:35:16+00:00,2025-12-20 18:55:34+00:00
+JetRacer,v1,notsummarized,0,0,30,2025-12-20 18:08:09+00:00,2025-12-20 18:24:25+00:00
+JetRacer,v1,notsummarized,1,0,30,2025-12-20 13:51:56+00:00,2025-12-20 14:47:49+00:00
+JetRacer,v3,summarized,0,0,30,2025-12-20 13:07:57+00:00,2025-12-20 13:51:56+00:00
+JetRacer,v3,notsummarized,0,1,8,2025-12-20 13:01:20+00:00,2025-12-20 13:07:57+00:00
+JetRacer,v2,summarized,0,0,30,2025-12-20 12:21:57+00:00,2025-12-20 13:01:19+00:00
+JetRacer,v2,notsummarized,0,0,30,2025-12-20 12:02:06+00:00,2025-12-20 12:21:57+00:00
+JetRacer,v1,summarized,0,0,30,2025-12-20 11:23:31+00:00,2025-12-20 12:02:06+00:00
+JetRacer,v1,notsummarized,0,0,30,2025-12-20 10:58:04+00:00,2025-12-20 11:23:31+00:00
+BookInfo,v3,summarized,1,1,18,2025-12-20 10:13:54+00:00,2025-12-20 10:57:58+00:00
+BookInfo,v3,notsummarized,1,0,30,2025-12-20 09:22:30+00:00,2025-12-20 10:13:53+00:00
+BookInfo,v2,summarized,1,0,30,2025-12-20 08:06:23+00:00,2025-12-20 09:22:29+00:00
+BookInfo,v2,notsummarized,1,0,30,2025-12-20 07:22:36+00:00,2025-12-20 08:06:23+00:00
+BookInfo,v1,summarized,1,0,30,2025-12-20 06:13:11+00:00,2025-12-20 07:22:36+00:00
+BookInfo,v1,notsummarized,1,0,30,2025-12-20 05:33:45+00:00,2025-12-20 06:13:11+00:00
+BookInfo,v3,notsummarized,0,0,30,2025-12-20 04:31:56+00:00,2025-12-20 04:56:49+00:00
+BookInfo,v2,summarized,0,0,30,2025-12-20 03:56:54+00:00,2025-12-20 04:31:56+00:00
+BookInfo,v2,notsummarized,0,0,30,2025-12-20 03:38:24+00:00,2025-12-20 03:56:54+00:00
+BookInfo,v1,summarized,0,0,30,2025-12-20 02:55:33+00:00,2025-12-20 03:38:23+00:00
+BookInfo,v1,notsummarized,0,0,30,2025-12-20 02:30:22+00:00,2025-12-20 02:55:33+00:00
+BookInfo,v3,summarized,0,1,6,2025-12-19 20:46:42+00:00,2025-12-19 20:53:41+00:00
+BookInfo,v3,notsummarized,0,1,5,2025-12-19 20:42:51+00:00,2025-12-19 20:46:41+00:00
+BookInfo,v1,notsummarized,0,1,7,2025-12-19 19:53:04+00:00,2025-12-19 19:58:19+00:00
