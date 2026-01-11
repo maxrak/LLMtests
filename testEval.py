@@ -1,6 +1,6 @@
 import pandas as pd
 
-# === 0. Opzioni di stampa: niente '...' ===
+# === 0. Opzioni di stampa ===
 pd.set_option("display.max_rows", None)
 pd.set_option("display.max_columns", None)
 pd.set_option("display.width", None)
@@ -20,8 +20,6 @@ df["exec_time_min"] = df["exec_time_sec"] / 60.0
 # === 4. Raggruppamento per combinazione ===
 group_cols = ["case", "version", "mode", "RAG", "success"]
 
-grouped = df.groupby(group_cols)["exec_time_sec"]
-
 result = (
     df.groupby(group_cols)
       .agg(
@@ -34,10 +32,10 @@ result = (
       .reset_index()
 )
 
-# === 5. Coefficiente di variazione per combinazione ===
+# === 5. Coefficiente di variazione (CV) ===
 result["cv"] = result["std_exec_time_sec"] / result["avg_exec_time_sec"]
 
-# === 6. Stampa completa ===
+# === 6. Stampa result completo ===
 print(result.to_string(index=False))
 
 # === 7. Statistiche globali ===
@@ -47,9 +45,20 @@ global_min = df["exec_time_sec"].min()
 global_max = df["exec_time_sec"].max()
 global_cv = global_std / global_mean if global_mean != 0 else float("nan")
 
+# Totale test globali
+global_count = len(df)
+
+# Totale test per case
+tests_per_case = df.groupby("case").size()
+
 print("\n=== STATISTICHE GLOBALI ===")
+print(f"Numero totale test: {global_count}")
 print(f"Min tempo: {global_min:.2f} s")
 print(f"Max tempo: {global_max:.2f} s")
 print(f"Media tempo: {global_mean:.2f} s ({global_mean/60:.2f} min)")
 print(f"Deviazione standard: {global_std:.2f} s")
 print(f"Coefficiente di variazione: {global_cv:.4f} ({global_cv*100:.2f}%)")
+
+print("\n=== TEST PER CASE ===")
+for case_name, count in tests_per_case.items():
+    print(f"{case_name}: {count} test")

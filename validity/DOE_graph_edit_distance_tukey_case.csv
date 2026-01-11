@@ -1,0 +1,16 @@
+group1,group2,meandiff,p-adj,lower,upper,reject
+BookInfo,JetRacer,-10.7294,0.003,-18.9078,-2.551,True
+BookInfo,Open Energy Monitor,-39.8532,0.0,-48.3081,-31.3984,True
+BookInfo,Stack4Things,47.3182,0.0,31.9225,62.7139,True
+BookInfo,WordPress,-66.6263,0.0,-76.5026,-56.7499,True
+BookInfo,eWeLink,-69.8992,0.0,-79.1663,-60.6321,True
+JetRacer,Open Energy Monitor,-29.1238,0.0,-36.236,-22.0117,True
+JetRacer,Stack4Things,58.0476,0.0,43.3464,72.7488,True
+JetRacer,WordPress,-55.8968,0.0,-64.6513,-47.1424,True
+JetRacer,eWeLink,-59.1698,0.0,-67.2306,-51.1089,True
+Open Energy Monitor,Stack4Things,87.1714,0.0,72.3146,102.0282,True
+Open Energy Monitor,WordPress,-26.773,0.0,-35.7863,-17.7598,True
+Open Energy Monitor,eWeLink,-30.046,0.0,-38.3872,-21.7047,True
+Stack4Things,WordPress,-113.9444,0.0,-129.6537,-98.2352,True
+Stack4Things,eWeLink,-117.2174,0.0,-132.551,-101.8838,True
+WordPress,eWeLink,-3.2729,0.9275,-13.0522,6.5063,False
