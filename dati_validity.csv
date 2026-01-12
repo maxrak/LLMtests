@@ -1,146 +1,195 @@
-case,version,iterations,created at,updated at,graph_edit_distance,validity_edit_distance
-BookInfo,v1,7,,,88,20
-BookInfo,v3,5,,,89,19
-BookInfo,v3,6,,,66,4
-BookInfo,v3,18,,,107,51
-JetRacer,v3,8,,,77,10
-JetRacer,v2,20,,,77,25
-JetRacer,v3,18,,,78,15
-JetRacer,v1,5,,,84,42
-JetRacer,v2,9,,,90,28
-JetRacer,v3,5,,,82,17
-JetRacer,v3,9,,,100,52
-Open Energy Monitor,v1,8,,,63,34
-Open Energy Monitor,v2,17,,,61,21
-Open Energy Monitor,v2,15,,,56,16
-Open Energy Monitor,v3,3,,,56,11
-Open Energy Monitor,v3,6,,,69,17
-Open Energy Monitor,v1,10,,,52,13
-Open Energy Monitor,v2,16,,,38,10
-Open Energy Monitor,v2,11,,,52,11
-Open Energy Monitor,v3,9,,,40,2
-Open Energy Monitor,v3,19,,,49,11
-Stack4Things,v1,13,,,139,32
-Stack4Things,v2,5,,,145,13
-WordPress,v1,17,,,22,6
-WordPress,v2,11,,,13,14
-WordPress,v3,7,,,23,11
-WordPress,v3,6,,,35,26
-eWeLink,v1,12,,,21,12
-eWeLink,v2,25,,,14,3
-eWeLink,v3,8,,,19,13
-eWeLink,v3,26,,,28,20
-BookInfo,v1,9,,,96,34
-BookInfo,v1,28,,,84,40
-BookInfo,v2,7,,,105,45
-BookInfo,v3,17,,,101,44
-BookInfo,v3,12,,,78,25
-JetRacer,v3,4,,,79,10
-JetRacer,v3,8,,,83,26
-JetRacer,v1,12,,,103,17
-JetRacer,v1,11,,,112,68
-JetRacer,v2,13,,,98,36
-JetRacer,v2,11,,,97,67
-BookInfo,v2,27,,,85,8
-BookInfo,v3,5,,,74,17
-BookInfo,v3,21,,,104,49
-JetRacer,v1,27,,,74,11
-JetRacer,v3,11,,,78,13
-JetRacer,v3,13,,,75,11
-JetRacer,v1,6,,,83,19
-JetRacer,v1,12,,,94,29
-JetRacer,v2,5,,,83,20
-Open Energy Monitor,v2,6,,,54,9
-Open Energy Monitor,v3,6,,,55,7
-Open Energy Monitor,v3,6,,,52,9
-Open Energy Monitor,v1,17,,,34,7
-Open Energy Monitor,v1,7,,,117,16
-Open Energy Monitor,v2,14,,,28,4
-Open Energy Monitor,v3,7,,,45,10
-Open Energy Monitor,v3,10,,,46,5
-WordPress,v1,3,,,24,9
-WordPress,v1,3,,,35,21
-WordPress,v2,14,,,20,10
-WordPress,v2,7,,,29,25
-WordPress,v3,10,,,35,20
-eWeLink,v1,7,,,14,5
-eWeLink,v2,9,,,24,10
-eWeLink,v2,15,,,35,24
-eWeLink,v3,12,,,21,13
-eWeLink,v3,14,,,28,19
-BookInfo,v3,13,,,99,41
-BookInfo,v1,10,,,102,36
-BookInfo,v1,29,,,108,57
-BookInfo,v2,21,,,95,29
-JetRacer,v1,29,,,75,12
-JetRacer,v1,26,,,82,27
-JetRacer,v2,11,,,81,20
-JetRacer,v3,5,,,78,27
-JetRacer,v1,15,,,61,13
-JetRacer,v2,6,,,74,27
-JetRacer,v3,3,,,63,16
-JetRacer,v3,4,,,95,18
-Open Energy Monitor,v1,8,,,54,11
-Open Energy Monitor,v1,9,,,50,11
-Open Energy Monitor,v3,20,,,57,15
-Stack4Things,v3,21,,,142,16
-BookInfo,v3,21,,,87,32
-JetRacer,v3,12,,,74,14
-JetRacer,v3,20,,,92,37
-WordPress,v1,5,,,22,9
-WordPress,v2,14,,,26,11
-WordPress,v2,14,,,24,19
-WordPress,v3,27,,,42,25
-WordPress,v3,4,,,33,30
-eWeLink,v1,4,,,18,6
-eWeLink,v1,7,,,23,14
-eWeLink,v2,24,,,21,7
-eWeLink,v3,4,,,17,6
-eWeLink,v3,9,,,21,14
-Open Energy Monitor,v3,10,,,54,17
-Open Energy Monitor,v3,18,,,49,10
-Open Energy Monitor,v1,8,,,45,8
-Open Energy Monitor,v2,13,,,48,7
-Open Energy Monitor,v3,5,,,45,3
-Open Energy Monitor,v3,10,,,48,9
-Stack4Things,v1,22,,,137,13
-Stack4Things,v1,6,,,137,25
-BookInfo,v1,8,,,95,30
-BookInfo,v1,25,,,84,13
-JetRacer,v3,5,,,73,26
-JetRacer,v1,10,,,62,22
-Open Energy Monitor,v3,3,,,63,23
-Open Energy Monitor,v2,17,,,55,12
-JetRacer,v2,17,,,85,42
-eWeLink,v1,15,,,25,16
-WordPress,v2,9,,,19,5
-eWeLink,v3,4,,,26,15
-eWeLink,v3,14,,,22,17
-BookInfo,v2,19,,,109,54
-Open Energy Monitor,v1,14,,,42,16
-eWeLink,v3,16,,,23,19
-Open Energy Monitor,v3,4,,,65,28
-eWeLink,v3,8,,,35,26
-Open Energy Monitor,v1,7,,,52,21
-eWeLink,v2,10,,,32,23
-BookInfo,v1,17,,,89,14
-JetRacer,v3,6,,,74,10
-JetRacer,v1,18,,,90,36
-JetRacer,v2,5,,,78,9
-eWeLink,v3,21,,,18,17
-Open Energy Monitor,v2,16,,,58,26
-BookInfo,v2,12,,,94,36
-JetRacer,v3,9,,,86,40
-Open Energy Monitor,v3,11,,,57,19
-WordPress,v2,10,,,28,16
-JetRacer,v3,4,,,88,41
-eWeLink,v3,7,,,22,13
-JetRacer,v1,14,,,82,24
-WordPress,v3,6,,,20,8
-Open Energy Monitor,v3,23,,,40,6
-JetRacer,v3,4,,,73,10
-WordPress,v3,16,,,19,11
-JetRacer,v2,9,,,77,17
-JetRacer,v3,5,,,78,9
-JetRacer,v3,4,,,74,29
-eWeLink,v1,15,,,17,6
+case,version,RAG,mode,iterations,created at,updated at,graph_edit_distance,validity_edit_distance
+BookInfo,v1,0,notsummarized,7,,,88,20
+BookInfo,v3,0,notsummarized,5,,,89,19
+BookInfo,v3,0,summarized,6,,,66,4
+BookInfo,v3,1,summarized,18,,,107,51
+JetRacer,v3,0,notsummarized,8,,,77,10
+JetRacer,v2,0,summarized,20,,,77,25
+JetRacer,v3,0,summarized,18,,,78,15
+JetRacer,v1,1,summarized,5,,,84,42
+JetRacer,v2,1,notsummarized,9,,,90,28
+JetRacer,v3,1,notsummarized,5,,,82,17
+JetRacer,v3,1,summarized,9,,,100,52
+Open Energy Monitor,v1,0,summarized,8,,,63,34
+Open Energy Monitor,v2,0,notsummarized,17,,,61,21
+Open Energy Monitor,v2,0,summarized,15,,,56,16
+Open Energy Monitor,v3,0,notsummarized,3,,,56,11
+Open Energy Monitor,v3,0,summarized,6,,,69,17
+Open Energy Monitor,v1,1,summarized,10,,,52,13
+Open Energy Monitor,v2,1,notsummarized,16,,,38,10
+Open Energy Monitor,v2,1,summarized,11,,,52,11
+Open Energy Monitor,v3,1,notsummarized,9,,,40,2
+Open Energy Monitor,v3,1,summarized,19,,,49,11
+Stack4Things,v1,1,summarized,13,,,139,32
+Stack4Things,v2,1,notsummarized,5,,,145,13
+WordPress,v1,0,notsummarized,17,,,22,6
+WordPress,v2,0,summarized,11,,,13,14
+WordPress,v3,0,notsummarized,7,,,23,11
+WordPress,v3,0,summarized,6,,,35,26
+eWeLink,v1,0,summarized,12,,,21,12
+eWeLink,v2,0,summarized,25,,,14,3
+eWeLink,v3,0,notsummarized,8,,,19,13
+eWeLink,v3,0,summarized,26,,,28,20
+BookInfo,v1,0,summarized,9,,,96,34
+BookInfo,v1,1,summarized,28,,,84,40
+BookInfo,v2,1,notsummarized,7,,,105,45
+BookInfo,v3,1,notsummarized,17,,,101,44
+BookInfo,v3,1,summarized,12,,,78,25
+JetRacer,v3,0,notsummarized,4,,,79,10
+JetRacer,v3,0,summarized,8,,,83,26
+JetRacer,v1,1,notsummarized,12,,,103,17
+JetRacer,v1,1,summarized,11,,,112,68
+JetRacer,v2,1,notsummarized,13,,,98,36
+JetRacer,v2,1,summarized,11,,,97,67
+BookInfo,v2,0,notsummarized,27,,,85,8
+BookInfo,v3,0,notsummarized,5,,,74,17
+BookInfo,v3,1,summarized,21,,,104,49
+JetRacer,v1,0,summarized,27,,,74,11
+JetRacer,v3,0,notsummarized,11,,,78,13
+JetRacer,v3,0,summarized,13,,,75,11
+JetRacer,v1,1,notsummarized,6,,,83,19
+JetRacer,v1,1,summarized,12,,,94,29
+JetRacer,v2,1,notsummarized,5,,,83,20
+Open Energy Monitor,v2,0,summarized,6,,,54,9
+Open Energy Monitor,v3,0,notsummarized,6,,,55,7
+Open Energy Monitor,v3,0,summarized,6,,,52,9
+Open Energy Monitor,v1,1,notsummarized,17,,,34,7
+Open Energy Monitor,v1,1,summarized,7,,,117,16
+Open Energy Monitor,v2,1,notsummarized,14,,,28,4
+Open Energy Monitor,v3,1,notsummarized,7,,,45,10
+Open Energy Monitor,v3,1,summarized,10,,,46,5
+WordPress,v1,0,notsummarized,3,,,24,9
+WordPress,v1,0,summarized,3,,,35,21
+WordPress,v2,0,notsummarized,14,,,20,10
+WordPress,v2,0,summarized,7,,,29,25
+WordPress,v3,0,notsummarized,10,,,35,20
+eWeLink,v1,0,summarized,7,,,14,5
+eWeLink,v2,0,notsummarized,9,,,24,10
+eWeLink,v2,0,summarized,15,,,35,24
+eWeLink,v3,0,notsummarized,12,,,21,13
+eWeLink,v3,0,summarized,14,,,28,19
+BookInfo,v3,0,summarized,13,,,99,41
+BookInfo,v1,1,notsummarized,10,,,102,36
+BookInfo,v1,1,summarized,29,,,108,57
+BookInfo,v2,1,notsummarized,21,,,95,29
+JetRacer,v1,0,notsummarized,29,,,75,12
+JetRacer,v1,0,summarized,26,,,82,27
+JetRacer,v2,0,summarized,11,,,81,20
+JetRacer,v3,0,summarized,5,,,78,27
+JetRacer,v1,1,notsummarized,15,,,61,13
+JetRacer,v2,1,summarized,6,,,74,27
+JetRacer,v3,1,notsummarized,3,,,63,16
+JetRacer,v3,1,summarized,4,,,95,18
+Open Energy Monitor,v1,0,notsummarized,8,,,54,11
+Open Energy Monitor,v3,1,summarized,20,,,57,15
+Stack4Things,v3,1,notsummarized,21,,,142,16
+BookInfo,v3,0,summarized,21,,,87,32
+JetRacer,v3,0,notsummarized,12,,,74,14
+JetRacer,v3,0,summarized,20,,,92,37
+WordPress,v1,0,notsummarized,5,,,22,9
+WordPress,v2,0,notsummarized,14,,,26,11
+WordPress,v2,0,summarized,14,,,24,19
+WordPress,v3,0,notsummarized,27,,,42,25
+WordPress,v3,0,summarized,4,,,33,30
+eWeLink,v1,0,notsummarized,4,,,18,6
+eWeLink,v1,0,summarized,7,,,23,14
+eWeLink,v2,0,notsummarized,24,,,21,7
+eWeLink,v3,0,notsummarized,4,,,17,6
+eWeLink,v3,0,summarized,9,,,21,14
+Open Energy Monitor,v3,0,notsummarized,10,,,54,17
+Open Energy Monitor,v3,0,summarized,18,,,49,10
+Open Energy Monitor,v1,1,summarized,8,,,45,8
+Open Energy Monitor,v2,1,summarized,13,,,48,7
+Open Energy Monitor,v3,1,notsummarized,5,,,45,3
+Open Energy Monitor,v3,1,summarized,10,,,48,9
+Stack4Things,v1,1,notsummarized,22,,,137,13
+Stack4Things,v1,1,summarized,6,,,137,25
+BookInfo,v1,1,notsummarized,8,,,95,30
+BookInfo,v1,1,summarized,25,,,84,13
+JetRacer,v3,1,summarized,5,,,73,26
+JetRacer,v1,1,notsummarized,10,,,62,22
+Open Energy Monitor,v3,0,summarized,3,,,63,23
+Open Energy Monitor,v2,0,notsummarized,17,,,55,12
+JetRacer,v2,1,notsummarized,17,,,85,42
+eWeLink,v1,0,notsummarized,15,,,25,16
+WordPress,v2,0,notsummarized,9,,,19,5
+eWeLink,v3,0,summarized,4,,,26,15
+eWeLink,v3,0,notsummarized,14,,,22,17
+BookInfo,v2,1,notsummarized,19,,,109,54
+Open Energy Monitor,v1,1,notsummarized,14,,,42,16
+eWeLink,v3,0,notsummarized,16,,,23,19
+Open Energy Monitor,v3,0,summarized,4,,,65,28
+eWeLink,v3,0,summarized,8,,,35,26
+Open Energy Monitor,v1,0,summarized,7,,,52,21
+eWeLink,v2,0,summarized,10,,,32,23
+BookInfo,v1,0,notsummarized,17,,,89,14
+JetRacer,v3,0,summarized,6,,,74,10
+JetRacer,v1,1,notsummarized,18,,,90,36
+JetRacer,v2,0,notsummarized,5,,,78,9
+eWeLink,v3,0,notsummarized,21,,,18,17
+Open Energy Monitor,v2,0,summarized,16,,,58,26
+BookInfo,v2,0,summarized,12,,,94,36
+JetRacer,v3,1,notsummarized,9,,,86,40
+Open Energy Monitor,v3,0,notsummarized,11,,,57,19
+WordPress,v2,0,notsummarized,10,,,28,16
+JetRacer,v3,1,notsummarized,4,,,88,41
+eWeLink,v3,0,summarized,7,,,22,13
+JetRacer,v1,1,notsummarized,14,,,82,24
+WordPress,v3,0,notsummarized,6,,,20,8
+Open Energy Monitor,v3,0,notsummarized,23,,,40,6
+JetRacer,v3,0,notsummarized,4,,,73,10
+WordPress,v3,0,notsummarized,16,,,19,11
+JetRacer,v2,0,summarized,9,,,77,17
+JetRacer,v3,0,notsummarized,5,,,78,9
+JetRacer,v3,1,notsummarized,4,,,74,29
+eWeLink,v1,0,notsummarized,15,,,17,6
+eWeLink,v2,0,summarized,20,,,31,19
+WordPress,v3,0,notsummarized,9,,,27,17
+BookInfo,v1,0,summarized,16,,,104,48
+WordPress,v1,0,summarized,15,,,28,26
+eWeLink,v3,0,notsummarized,5,,,22,8
+WordPress,v1,0,summarized,8,,,30,28
+Open Energy Monitor,v2,0,notsummarized,7,,,44,3
+Open Energy Monitor,v1,0,summarized,10,,,51,18
+Open Energy Monitor,v1,0,summarized,22,,,59,15
+Open Energy Monitor,v2,1,notsummarized,16,,,50,10
+Open Energy Monitor,v1,1,summarized,12,,,33,12
+JetRacer,v1,0,notsummarized,10,,,74,11
+JetRacer,v2,0,summarized,4,,,83,19
+eWeLink,v2,0,summarized,9,,,34,30
+Open Energy Monitor,v1,0,summarized,21,,,51,14
+Open Energy Monitor,v3,1,summarized,4,,,56,11
+Open Energy Monitor,v2,1,notsummarized,5,,,56,7
+BookInfo,v3,1,summarized,21,,,103,48
+WordPress,v2,0,summarized,7,,,38,31
+WordPress,v1,0,summarized,10,,,51,33
+Open Energy Monitor,v3,1,notsummarized,7,,,48,9
+Open Energy Monitor,v3,0,summarized,4,,,58,22
+eWeLink,v3,0,notsummarized,29,,,16,7
+WordPress,v3,0,summarized,1,,,25,21
+WordPress,v3,0,summarized,15,,,42,29
+WordPress,v2,0,notsummarized,14,,,20,9
+WordPress,v3,0,summarized,5,,,23,24
+WordPress,v3,0,summarized,10,,,22,22
+eWeLink,v3,0,notsummarized,7,,,19,4
+JetRacer,v2,1,summarized,25,,,67,36
+Open Energy Monitor,v3,1,notsummarized,3,,,45,9
+Open Energy Monitor,v3,1,summarized,14,,,36,6
+WordPress,v3,0,summarized,27,,,49,35
+Open Energy Monitor,v2,1,notsummarized,24,,,39,11
+Open Energy Monitor,v3,0,summarized,7,,,60,34
+eWeLink,v3,0,summarized,3,,,17,17
+Open Energy Monitor,v3,1,summarized,18,,,45,13
+Open Energy Monitor,v2,1,summarized,13,,,53,13
+eWeLink,v1,0,notsummarized,14,,,17,10
+WordPress,v1,0,notsummarized,8,,,21,9
+JetRacer,v3,1,notsummarized,11,,,85,34
+WordPress,v1,0,summarized,5,,,27,13
+Open Energy Monitor,v2,0,summarized,19,,,58,21
+Open Energy Monitor,v2,1,notsummarized,11,,,51,11
+JetRacer,v3,1,summarized,4,,,71,22
+WordPress,v2,0,summarized,13,,,30,24
+WordPress,v3,0,summarized,20,,,54,45
+Open Energy Monitor,v3,0,notsummarized,4,,,55,7
+Open Energy Monitor,v3,1,summarized,11,,,46,9
+WordPress,v1,0,notsummarized,18,,,19,10

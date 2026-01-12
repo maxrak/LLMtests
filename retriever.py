@@ -169,7 +169,7 @@ def CSVvalidity(rows, output_csv_path="dati_validity.csv"):
     COL_GED ="graph_edit_distance"
     COL_VED = "validity_edit_distance"
 
-    CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_ITER,COL_CREATED,COL_UPDATED,COL_GED,COL_VED]
+    CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_RAG,  COL_MODE, COL_ITER,COL_CREATED,COL_UPDATED,COL_GED,COL_VED]
     with open(output_csv_path, "w", newline="", encoding="utf-8") as f_out:
         writer = csv.DictWriter(f_out, fieldnames=CSV_FIELDNAMES)
         writer.writeheader()
@@ -179,26 +179,26 @@ def CSVvalidity(rows, output_csv_path="dati_validity.csv"):
             case = rec.get("apps", {}).get("id", None)
             version = rec.get("version", None)
             iterations = rec.get("iterations", None)
-            #rag =  rec.get("rag",None)
+            rag =  rec.get("rag (from sessions)",None)
             created = rec.get("created_at",None)
             updated = rec.get("updated_at", None)
             # --- mode da booleano 0/1 (campo 'summarized') ---
-            # raw_mode = rec.get("summarized", 0)
+            raw_mode = rec.get("summarized (from sessions)", 0)
             graph_edit_distance=rec.get("graph_edit_distance",None)
             validity_edit_distance=rec.get("validity_edit_distance",None)
 
-            # # gestiamo int, bool, stringhe "0"/"1"
-            # try:
-            #     # True -> 1, False -> 0, "0"/"1" -> 0/1, ecc.
-            #     raw_val = int(raw_mode)
-            # except (TypeError, ValueError):
-            #     # fallback: consideriamo non summarized
-            #     raw_val = 0
+            # gestiamo int, bool, stringhe "0"/"1"
+            try:
+                # True -> 1, False -> 0, "0"/"1" -> 0/1, ecc.
+                raw_val = int(raw_mode)
+            except (TypeError, ValueError):
+                # fallback: consideriamo non summarized
+                raw_val = 0
 
-            # if raw_val == 1:
-            #     mode = "summarized"
-            # else:
-            #     mode = "notsummarized"
+            if raw_val == 1:
+                mode = "summarized"
+            else:
+                mode = "notsummarized"
 
             # --- successo/fallimento in base alle iterations ---
             try:
@@ -214,8 +214,8 @@ def CSVvalidity(rows, output_csv_path="dati_validity.csv"):
                 writer.writerow({
                     COL_CASE: case,
                     COL_VERSION: version,
-                    #COL_MODE: mode,
-                    #COL_RAG : rag,
+                    COL_MODE: mode,
+                    COL_RAG : rag,
                     #COL_SUCCESS: success,
                     COL_ITER: iterations,
                     COL_CREATED: created,
@@ -232,7 +232,7 @@ def test():
     #pprint(rows)
     CSVgen(rows, "dati_processo.csv")
     rows=macmvalidity()
-    #pprint(rows)
+    pprint(rows)
     CSVvalidity(rows,"dati_validity.csv")
 
 test()

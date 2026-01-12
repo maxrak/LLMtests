@@ -1,124 +1,194 @@
 
-================================================================================
-DOE per metrica: graph_edit_distance
-================================================================================
+================= METRICA: graph_edit_distance =================
 
 [ANOVA]
-                           sum_sq     df           F        PR(>F)
-C(case)             126890.791836    5.0  211.966079  7.736651e-60
-C(version)              54.993164    2.0    0.229660  7.951333e-01
-C(case):C(version)     812.126920   10.0    0.678313  7.428961e-01
-Residual             15205.386321  127.0         NaN           NaN
+                   sum_sq     df           F        PR(>F)
+C(case)     117798.429038    5.0  224.525400  2.572743e-76
+C(mode)       1188.339947    1.0   11.324960  9.307781e-04
+C(version)      12.943532    2.0    0.061676  9.402065e-01
+C(RAG)          42.797396    1.0    0.407862  5.238508e-01
+Residual     19307.313091  184.0         NaN           NaN
 
 [Effect sizes (eta², ω²)]
-               effect    eta_sq  eta_sq_pct  omega_sq  omega_sq_pct
-0             C(case)  0.887576   88.757600  0.882649     88.264945
-1          C(version)  0.000385    0.038467 -0.001289     -0.128919
-2  C(case):C(version)  0.005681    0.568067 -0.002692     -0.269178
+       effect    eta_sq  eta_sq_pct  omega_sq  omega_sq_pct
+0     C(case)  0.851453   85.145341  0.847019     84.701876
+1     C(mode)  0.008589    0.858939  0.007825      0.782500
+2  C(version)  0.000094    0.009356 -0.001422     -0.142226
+3      C(RAG)  0.000309    0.030934 -0.000449     -0.044877
 
 [Effetti marginali - case]
                   case        mean
-0             BookInfo   92.681818
-1             JetRacer   81.952381
-2  Open Energy Monitor   52.828571
+0             BookInfo   93.583333
+1             JetRacer   81.319149
+2  Open Energy Monitor   51.722222
 3         Stack4Things  140.000000
-4            WordPress   26.055556
-5              eWeLink   22.782609
+4            WordPress   28.676471
+5              eWeLink   22.666667
+
+[Effetti marginali - mode]
+            mode       mean
+0  notsummarized  56.290323
+1     summarized  59.217822
 
 [Effetti marginali - version]
   version       mean
-0      v1  68.833333
-1      v2  59.675676
-2      v3  59.454545
+0      v1  63.074074
+1      v2  56.117647
+2      v3  55.595506
+
+[Effetti marginali - RAG]
+   RAG       mean
+0    0  46.844262
+1    1  76.402778
 
 [Post-hoc Tukey HSD - case]
-                 group1               group2  ...     upper  reject
-0              BookInfo             JetRacer  ...   -2.5510    True
-1              BookInfo  Open Energy Monitor  ...  -31.3984    True
-2              BookInfo         Stack4Things  ...   62.7139    True
-3              BookInfo            WordPress  ...  -56.7499    True
-4              BookInfo              eWeLink  ...  -60.6321    True
-5              JetRacer  Open Energy Monitor  ...  -22.0117    True
-6              JetRacer         Stack4Things  ...   72.7488    True
-7              JetRacer            WordPress  ...  -47.1424    True
-8              JetRacer              eWeLink  ...  -51.1089    True
-9   Open Energy Monitor         Stack4Things  ...  102.0282    True
-10  Open Energy Monitor            WordPress  ...  -17.7598    True
-11  Open Energy Monitor              eWeLink  ...  -21.7047    True
-12         Stack4Things            WordPress  ...  -98.2352    True
-13         Stack4Things              eWeLink  ... -101.8838    True
-14            WordPress              eWeLink  ...    6.5063   False
+                 group1               group2  meandiff   p-adj     lower  \
+0              BookInfo             JetRacer  -12.2642  0.0001  -19.8122   
+1              BookInfo  Open Energy Monitor  -41.8611  0.0000  -49.2419   
+2              BookInfo         Stack4Things   46.4167  0.0000   31.6268   
+3              BookInfo            WordPress  -64.9069  0.0000  -72.9278   
+4              BookInfo              eWeLink  -70.9167  0.0000  -79.1559   
+5              JetRacer  Open Energy Monitor  -29.5969  0.0000  -35.5986   
+6              JetRacer         Stack4Things   58.6809  0.0000   44.5287   
+7              JetRacer            WordPress  -52.6427  0.0000  -59.4161   
+8              JetRacer              eWeLink  -58.6525  0.0000  -65.6831   
+9   Open Energy Monitor         Stack4Things   88.2778  0.0000   74.2141   
+10  Open Energy Monitor            WordPress  -23.0458  0.0000  -29.6323   
+11  Open Energy Monitor              eWeLink  -29.0556  0.0000  -35.9063   
+12         Stack4Things            WordPress -111.3235  0.0000 -125.7335   
+13         Stack4Things              eWeLink -117.3333  0.0000 -131.8660   
+14            WordPress              eWeLink   -6.0098  0.2008  -13.5459   
 
-[15 rows x 7 columns]
+       upper  reject  
+0    -4.7162    True  
+1   -34.4804    True  
+2    61.2065    True  
+3   -56.8859    True  
+4   -62.6774    True  
+5   -23.5953    True  
+6    72.8330    True  
+7   -45.8692    True  
+8   -51.6219    True  
+9   102.3415    True  
+10  -16.4592    True  
+11  -22.2048    True  
+12  -96.9135    True  
+13 -102.8007    True  
+14    1.5263   False  
+
+[Post-hoc Tukey HSD - mode]
+          group1      group2  meandiff   p-adj   lower    upper  reject
+0  notsummarized  summarized    2.9275  0.5049 -5.7151  11.5701   False
 
 [Post-hoc Tukey HSD - version]
   group1 group2  meandiff   p-adj    lower    upper  reject
-0     v1     v2   -9.1577  0.4086 -26.0993   7.7839   False
-1     v1     v3   -9.3788  0.2951 -24.2102   5.4526   False
-2     v2     v3   -0.2211  0.9994 -15.6528  15.2105   False
+0     v1     v2   -6.9564  0.4720 -20.9900   7.0772   False
+1     v1     v3   -7.4786  0.3301 -19.8760   4.9189   False
+2     v2     v3   -0.5221  0.9948 -13.1445  12.1002   False
+
+[Post-hoc Tukey HSD - RAG]
+   group1  group2  meandiff  p-adj    lower    upper  reject
+0       0       1   29.5585    0.0  21.6619  37.4551    True
 
 [OK] File CSV salvati per la metrica: graph_edit_distance
 [OK] Grafico main effect (case) salvato in: imgs/DOE_graph_edit_distance_main_case.png
+[OK] Grafico main effect (mode) salvato in: imgs/DOE_graph_edit_distance_main_mode.png
 [OK] Grafico main effect (version) salvato in: imgs/DOE_graph_edit_distance_main_version.png
+[OK] Grafico main effect (RAG) salvato in: imgs/DOE_graph_edit_distance_main_RAG.png
 
-================================================================================
-DOE per metrica: validity_edit_distance
-================================================================================
+================= METRICA: validity_edit_distance =================
 
 [ANOVA]
-                          sum_sq     df          F        PR(>F)
-C(case)              6944.763541    5.0  10.585365  1.633152e-08
-C(version)             68.631139    2.0   0.261523  7.702919e-01
-C(case):C(version)    890.080076   10.0   0.678340  7.428715e-01
-Residual            16664.232960  127.0        NaN           NaN
+                  sum_sq     df          F        PR(>F)
+C(case)      8495.988345    5.0  17.898128  1.913984e-14
+C(mode)      3616.983347    1.0  38.098704  4.189222e-09
+C(version)     39.853924    2.0   0.209896  8.108621e-01
+C(RAG)       1302.342259    1.0  13.717938  2.807029e-04
+Residual    17468.440162  184.0        NaN           NaN
 
 [Effect sizes (eta², ω²)]
-               effect    eta_sq  eta_sq_pct  omega_sq  omega_sq_pct
-0             C(case)  0.282679   28.267853  0.254614     25.461400
-1          C(version)  0.002794    0.279355 -0.007846     -0.784640
-2  C(case):C(version)  0.036230    3.622968 -0.017088     -1.708837
+       effect    eta_sq  eta_sq_pct  omega_sq  omega_sq_pct
+0     C(case)  0.274741   27.474117  0.258597     25.859699
+1     C(mode)  0.116965   11.696511  0.113546     11.354647
+2  C(version)  0.001289    0.128879 -0.004836     -0.483648
+3      C(RAG)  0.042115    4.211482  0.038925      3.892526
 
 [Effetti marginali - case]
                   case       mean
-0             BookInfo  31.727273
-1             JetRacer  24.809524
-2  Open Energy Monitor  13.000000
+0             BookInfo  33.083333
+1             JetRacer  24.765957
+2  Open Energy Monitor  12.944444
 3         Stack4Things  19.800000
-4            WordPress  15.333333
-5              eWeLink  13.826087
+4            WordPress  19.176471
+5              eWeLink  13.766667
+
+[Effetti marginali - mode]
+            mode       mean
+0  notsummarized  15.677419
+1     summarized  23.396040
 
 [Effetti marginali - version]
   version       mean
-0      v1  20.833333
-1      v2  20.513514
-2      v3  19.000000
+0      v1  20.574074
+1      v2  19.666667
+2      v3  19.179775
+
+[Effetti marginali - RAG]
+   RAG       mean
+0    0  17.311475
+1    1  23.736111
 
 [Post-hoc Tukey HSD - case]
-                 group1               group2  ...    upper  reject
-0              BookInfo             JetRacer  ...   1.6460   False
-1              BookInfo  Open Energy Monitor  ...  -9.8740    True
-2              BookInfo         Stack4Things  ...   4.1939   False
-3              BookInfo            WordPress  ...  -6.0522    True
-4              BookInfo              eWeLink  ...  -8.1974    True
-5              JetRacer  Open Energy Monitor  ...  -4.3622    True
-6              JetRacer         Stack4Things  ...  10.3844   False
-7              JetRacer            WordPress  ...  -0.3092    True
-8              JetRacer              eWeLink  ...  -2.5427    True
-9   Open Energy Monitor         Stack4Things  ...  22.3569   False
-10  Open Energy Monitor            WordPress  ...  11.7713   False
-11  Open Energy Monitor              eWeLink  ...   9.5604   False
-12         Stack4Things            WordPress  ...  11.9829   False
-13         Stack4Things              eWeLink  ...  10.0822   False
-14            WordPress              eWeLink  ...   8.7328   False
+                 group1               group2  meandiff   p-adj    lower  \
+0              BookInfo             JetRacer   -8.3174  0.0301 -16.1443   
+1              BookInfo  Open Energy Monitor  -20.1389  0.0000 -27.7924   
+2              BookInfo         Stack4Things  -13.2833  0.1312 -28.6198   
+3              BookInfo            WordPress  -13.9069  0.0000 -22.2242   
+4              BookInfo              eWeLink  -19.3167  0.0000 -27.8604   
+5              JetRacer  Open Energy Monitor  -11.8215  0.0000 -18.0450   
+6              JetRacer         Stack4Things   -4.9660  0.9256 -19.6412   
+7              JetRacer            WordPress   -5.5895  0.2028 -12.6133   
+8              JetRacer              eWeLink  -10.9993  0.0003 -18.2897   
+9   Open Energy Monitor         Stack4Things    6.8556  0.7545  -7.7279   
+10  Open Energy Monitor            WordPress    6.2320  0.0958  -0.5980   
+11  Open Energy Monitor              eWeLink    0.8222  0.9994  -6.2817   
+12         Stack4Things            WordPress   -0.6235  1.0000 -15.5661   
+13         Stack4Things              eWeLink   -6.0333  0.8584 -21.1031   
+14            WordPress              eWeLink   -5.4098  0.3501 -13.2244   
 
-[15 rows x 7 columns]
+      upper  reject  
+0   -0.4904    True  
+1  -12.4853    True  
+2    2.0532   False  
+3   -5.5895    True  
+4  -10.7729    True  
+5   -5.5980    True  
+6    9.7093   False  
+7    1.4343   False  
+8   -3.7089    True  
+9   21.4391   False  
+10  13.0621   False  
+11   7.9262   False  
+12  14.3190   False  
+13   9.0364   False  
+14   2.4048   False  
+
+[Post-hoc Tukey HSD - mode]
+          group1      group2  meandiff  p-adj   lower    upper  reject
+0  notsummarized  summarized    7.7186    0.0  4.2821  11.1552    True
 
 [Post-hoc Tukey HSD - version]
   group1 group2  meandiff   p-adj   lower   upper  reject
-0     v1     v2   -0.3198  0.9936 -7.3344  6.6947   False
-1     v1     v3   -1.8333  0.7597 -7.9742  4.3075   False
-2     v2     v3   -1.5135  0.8409 -7.9029  4.8759   False
+0     v1     v2   -0.9074  0.9294 -6.7871  4.9723   False
+1     v1     v3   -1.3943  0.8015 -6.5885  3.7999   False
+2     v2     v3   -0.4869  0.9743 -5.7754  4.8016   False
+
+[Post-hoc Tukey HSD - RAG]
+   group1  group2  meandiff   p-adj   lower    upper  reject
+0       0       1    6.4246  0.0006  2.8076  10.0417    True
 
 [OK] File CSV salvati per la metrica: validity_edit_distance
 [OK] Grafico main effect (case) salvato in: imgs/DOE_validity_edit_distance_main_case.png
+[OK] Grafico main effect (mode) salvato in: imgs/DOE_validity_edit_distance_main_mode.png
 [OK] Grafico main effect (version) salvato in: imgs/DOE_validity_edit_distance_main_version.png
+[OK] Grafico main effect (RAG) salvato in: imgs/DOE_validity_edit_distance_main_RAG.png

@@ -4,9 +4,13 @@
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
+import sys
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
+np.set_printoptions(threshold=sys.maxsize, linewidth=np.inf, edgeitems=1000)
+pd.set_option('display.max_rows', None) # Mostra tutte le righe
+pd.set_option('display.max_columns', None) # Mostra tutte le colonne
 
 def run_anova(df, metric):
     """

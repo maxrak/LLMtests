@@ -1,16 +1,16 @@
 group1,group2,meandiff,p-adj,lower,upper,reject
-BookInfo,JetRacer,-6.9177,0.1875,-15.4815,1.646,False
-BookInfo,Open Energy Monitor,-18.7273,0.0,-27.5805,-9.874,True
-BookInfo,Stack4Things,-11.9273,0.2741,-28.0485,4.1939,False
-BookInfo,WordPress,-16.3939,0.0001,-26.7357,-6.0522,True
-BookInfo,eWeLink,-17.9012,0.0,-27.605,-8.1974,True
-JetRacer,Open Energy Monitor,-11.8095,0.0001,-19.2568,-4.3622,True
-JetRacer,Stack4Things,-5.0095,0.9353,-20.4035,10.3844,False
-JetRacer,WordPress,-9.4762,0.0383,-18.6432,-0.3092,True
-JetRacer,eWeLink,-10.9834,0.0033,-19.4242,-2.5427,True
-Open Energy Monitor,Stack4Things,6.8,0.8044,-8.7569,22.3569,False
-Open Energy Monitor,WordPress,2.3333,0.9799,-7.1046,11.7713,False
-Open Energy Monitor,eWeLink,0.8261,0.9998,-7.9082,9.5604,False
-Stack4Things,WordPress,-4.4667,0.9697,-20.9162,11.9829,False
-Stack4Things,eWeLink,-5.9739,0.8905,-22.0301,10.0822,False
-WordPress,eWeLink,-1.5072,0.9982,-11.7473,8.7328,False
+BookInfo,JetRacer,-8.3174,0.0301,-16.1443,-0.4904,True
+BookInfo,Open Energy Monitor,-20.1389,0.0,-27.7924,-12.4853,True
+BookInfo,Stack4Things,-13.2833,0.1312,-28.6198,2.0532,False
+BookInfo,WordPress,-13.9069,0.0,-22.2242,-5.5895,True
+BookInfo,eWeLink,-19.3167,0.0,-27.8604,-10.7729,True
+JetRacer,Open Energy Monitor,-11.8215,0.0,-18.045,-5.598,True
+JetRacer,Stack4Things,-4.966,0.9256,-19.6412,9.7093,False
+JetRacer,WordPress,-5.5895,0.2028,-12.6133,1.4343,False
+JetRacer,eWeLink,-10.9993,0.0003,-18.2897,-3.7089,True
+Open Energy Monitor,Stack4Things,6.8556,0.7545,-7.7279,21.4391,False
+Open Energy Monitor,WordPress,6.232,0.0958,-0.598,13.0621,False
+Open Energy Monitor,eWeLink,0.8222,0.9994,-6.2817,7.9262,False
+Stack4Things,WordPress,-0.6235,1.0,-15.5661,14.319,False
+Stack4Things,eWeLink,-6.0333,0.8584,-21.1031,9.0364,False
+WordPress,eWeLink,-5.4098,0.3501,-13.2244,2.4048,False
