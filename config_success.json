@@ -1,0 +1,18 @@
+{
+  "csv_file": "dati_processo.csv",
+  "separator": ",",
+  "factors": [
+    "case",
+    "version",
+    "mode",
+    "RAG"
+  ],
+  "indices": {
+    "success": {
+      "better": "high"
+    }
+  },
+  "confidence_level": 0.90,
+  "max_combination_order": 2,
+  "output_prefix": "results/doe_processo"
+}

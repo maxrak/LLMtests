@@ -46,10 +46,13 @@ COL_MODE = "mode"
 COL_SUCCESS = "success"
 COL_ITER = "iterations"
 COL_RAG = "RAG"
+COL_TOTTOK="TotalToken"
+COL_INTOK="inputToken"
+COL_OUTTOK="outputToken"
 COL_CREATED = "created at"
 COL_UPDATED = "updated at"
 
-CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_RAG, COL_SUCCESS, COL_ITER,COL_CREATED,COL_UPDATED]
+CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_RAG, COL_SUCCESS, COL_ITER,COL_CREATED,COL_UPDATED, COL_TOTTOK, COL_INTOK,COL_OUTTOK]
 
 
 def CSVgen(rows, output_csv_path="dati_processo.csv"):
@@ -78,6 +81,9 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
             rag =  rec.get("rag",None)
             created = rec.get("created_at",None)
             updated = rec.get("updated_at", None)
+            totaltok = rec.get("total_tokens_sum",None)
+            inputtok = rec.get("input_tokens_sum",None)
+            outputtok = rec.get("output_tokens_sum",None)
             # --- mode da booleano 0/1 (campo 'summarized') ---
             raw_mode = rec.get("summarized", 0)
 
@@ -112,8 +118,82 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
                     COL_SUCCESS: success,
                     COL_ITER: iterations,
                     COL_CREATED: created,
-                    COL_UPDATED: updated
+                    COL_UPDATED: updated,
+                    COL_TOTTOK: totaltok,
+                    COL_OUTTOK: inputtok,
+                    COL_INTOK: outputtok,
+                })
 
+    return output_csv_path
+
+
+def CSVgenSelected(rows, output_csv_path="dati_processo.csv",selection=1):
+    """
+    Genera un CSV per l'analisi a partire da 'rows'.
+
+    Mappatura:
+      case       -> rec["apps"]["id"]
+      version    -> rec["version"]
+      iterations -> rec["iterations"]
+      mode       -> rec["summarized"]:
+                       0 -> "notsummarized"
+                       1 -> "summarized"
+      success    -> 1 se iterations < 30, altrimenti 0
+    """
+    with open(output_csv_path, "w", newline="", encoding="utf-8") as f_out:
+        writer = csv.DictWriter(f_out, fieldnames=CSV_FIELDNAMES)
+        writer.writeheader()
+
+        for rec in rows:
+            # case, version, iterations
+            case = rec.get("apps", {}).get("id", None)
+            version = rec.get("version", None)
+            iterations = rec.get("iterations", None)
+            macm = rec.get("generated_macms",None)
+            rag =  rec.get("rag",None)
+            created = rec.get("created_at",None)
+            updated = rec.get("updated_at", None)
+            # --- mode da booleano 0/1 (campo 'summarized') ---
+            raw_mode = rec.get("summarized", 0)
+            totaltok = rec.get("total_tokens_sum",None)
+            inputtok = rec.get("input_tokens_sum",None)
+            outputtok = rec.get("output_tokens_sum",None)
+
+            # gestiamo int, bool, stringhe "0"/"1"
+            try:
+                # True -> 1, False -> 0, "0"/"1" -> 0/1, ecc.
+                raw_val = int(raw_mode)
+            except (TypeError, ValueError):
+                # fallback: consideriamo non summarized
+                raw_val = 0
+
+            if raw_val == 1:
+                mode = "summarized"
+            else:
+                mode = "notsummarized"
+
+            # --- successo/fallimento in base alle iterations ---
+            try:
+                iters_int = int(iterations)
+            except Exception:
+                # se non convertibile, trattiamo come fallimento
+                iters_int = 30
+
+            success = 1 if iters_int < 30 else 0
+
+            if (success == macm) and success==selection :
+                writer.writerow({
+                    COL_CASE: case,
+                    COL_VERSION: version,
+                    COL_MODE: mode,
+                    COL_RAG : rag,
+                    COL_SUCCESS: success,
+                    COL_ITER: iterations,
+                    COL_CREATED: created,
+                    COL_UPDATED: updated,
+                    COL_TOTTOK: totaltok,
+                    COL_OUTTOK: inputtok,
+                    COL_INTOK: outputtok
                 })
 
     return output_csv_path
@@ -230,9 +310,10 @@ def CSVvalidity(rows, output_csv_path="dati_validity.csv"):
 def test():
     rows=sessions()
     #pprint(rows)
-    CSVgen(rows, "dati_processo.csv")
+    CSVgen(rows, "dati_success.csv")
+    CSVgenSelected(rows, "dati_iter.csv",1)
     rows=macmvalidity()
-    pprint(rows)
+    #pprint(rows)
     CSVvalidity(rows,"dati_validity.csv")
 
 test()

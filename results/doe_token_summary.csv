@@ -1,0 +1,43 @@
+index,index_type,test_type,factors_or_combination,p_value,significant
+TotalToken,continuous,ANOVA_combination,case + RAG,6.060496519916107e-35,True
+TotalToken,continuous,ANOVA_combination,mode + RAG,1.3425002943606754e-26,True
+TotalToken,continuous,ANOVA_combination,case + mode,1.5601867516544123e-26,True
+TotalToken,continuous,ANOVA_combination,case + version,3.4188290402833516e-17,True
+TotalToken,continuous,ANOVA_main,C(case),4.244948503994403e-17,True
+TotalToken,continuous,ANOVA_combination,case,4.244948503994946e-17,True
+TotalToken,continuous,ANOVA_main,RAG,1.0617349803820412e-16,True
+TotalToken,continuous,ANOVA_combination,RAG,1.0617349803822373e-16,True
+TotalToken,continuous,ANOVA_combination,version + RAG,3.368406344197065e-16,True
+TotalToken,continuous,ANOVA_main,C(mode),5.160167104130486e-15,True
+TotalToken,continuous,ANOVA_combination,mode,5.160167104132319e-15,True
+TotalToken,continuous,ANOVA_combination,version + mode,1.663100712421232e-14,True
+TotalToken,continuous,ANOVA_main,C(version),0.037024135802463616,True
+TotalToken,continuous,ANOVA_combination,version,0.03702413580246848,True
+inputToken,continuous,ANOVA_combination,case + RAG,3.4082746434002272e-31,True
+inputToken,continuous,ANOVA_combination,mode + RAG,1.2853071136171702e-23,True
+inputToken,continuous,ANOVA_combination,case + mode,4.139834619149331e-23,True
+inputToken,continuous,ANOVA_combination,case + version,5.21365508207999e-18,True
+inputToken,continuous,ANOVA_combination,version + RAG,1.169861576495248e-17,True
+inputToken,continuous,ANOVA_combination,version + mode,7.202641163207777e-16,True
+inputToken,continuous,ANOVA_main,RAG,4.8788482747221075e-15,True
+inputToken,continuous,ANOVA_combination,RAG,4.8788482747231125e-15,True
+inputToken,continuous,ANOVA_main,C(case),5.970674252635667e-15,True
+inputToken,continuous,ANOVA_combination,case,5.970674252636176e-15,True
+inputToken,continuous,ANOVA_main,C(mode),3.3769149515906497e-13,True
+inputToken,continuous,ANOVA_combination,mode,3.3769149515911535e-13,True
+inputToken,continuous,ANOVA_main,C(version),1.165933878669501e-05,True
+inputToken,continuous,ANOVA_combination,version,1.1659338786695901e-05,True
+outputToken,continuous,ANOVA_combination,case + RAG,2.7884208387909776e-35,True
+outputToken,continuous,ANOVA_combination,case + mode,6.251297498201268e-27,True
+outputToken,continuous,ANOVA_combination,mode + RAG,1.0549795548641062e-26,True
+outputToken,continuous,ANOVA_main,C(case),1.8621744999207587e-17,True
+outputToken,continuous,ANOVA_combination,case,1.8621744999207587e-17,True
+outputToken,continuous,ANOVA_combination,case + version,2.816421028565086e-17,True
+outputToken,continuous,ANOVA_main,RAG,9.660627071816342e-17,True
+outputToken,continuous,ANOVA_combination,RAG,9.660627071818333e-17,True
+outputToken,continuous,ANOVA_combination,version + RAG,5.600746960077943e-16,True
+outputToken,continuous,ANOVA_main,C(mode),4.2706907499217575e-15,True
+outputToken,continuous,ANOVA_combination,mode,4.270690749922638e-15,True
+outputToken,continuous,ANOVA_combination,version + mode,2.538963510528954e-14,True
+outputToken,continuous,ANOVA_main,C(version),0.07407226358274166,True
+outputToken,continuous,ANOVA_combination,version,0.07407226358274166,True

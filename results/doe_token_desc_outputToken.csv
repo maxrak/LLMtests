@@ -1,0 +1,61 @@
+case,version,mode,RAG,n,mean_value,is_binary_index,global_mean,p_value,significant,direction_raw,direction_vs_better,n_too_small_for_test,low_variance_group
+BookInfo,v1,notsummarized,0,12,405380.4166666667,False,475476.4715789474,0.09986177328467762,True,lower,better,False,False
+BookInfo,v1,notsummarized,1,9,647077.2222222222,False,475476.4715789474,0.09933428589677223,True,higher,worse,False,False
+BookInfo,v1,summarized,0,9,638814.4444444445,False,475476.4715789474,0.05041969636346205,True,higher,worse,False,False
+BookInfo,v1,summarized,1,8,1003293.875,False,475476.4715789474,4.3554287956924625e-05,True,higher,worse,False,False
+BookInfo,v2,notsummarized,0,8,445942.75,False,475476.4715789474,0.03977590387172892,True,lower,better,False,False
+BookInfo,v2,notsummarized,1,9,664495.6666666666,False,475476.4715789474,0.056112682769860076,True,higher,worse,False,False
+BookInfo,v2,summarized,0,8,751940.0,False,475476.4715789474,0.006772773900520468,True,higher,worse,False,False
+BookInfo,v2,summarized,1,8,1145571.5,False,475476.4715789474,3.08955875265196e-07,True,higher,worse,False,False
+BookInfo,v3,notsummarized,0,10,470838.5,False,475476.4715789474,0.9444868496099924,False,not_significant,,False,False
+BookInfo,v3,notsummarized,1,8,973137.0,False,475476.4715789474,5.4902104351940545e-05,True,higher,worse,False,False
+BookInfo,v3,summarized,0,6,611611.0,False,475476.4715789474,0.3341129014426688,False,not_significant,,False,False
+BookInfo,v3,summarized,1,7,1144470.0,False,475476.4715789474,0.00914435095717264,True,higher,worse,False,False
+JetRacer,v1,notsummarized,0,10,332136.4,False,475476.4715789474,0.0006078684626420362,True,lower,better,False,False
+JetRacer,v1,notsummarized,1,10,523713.1,False,475476.4715789474,0.6171666093425536,False,not_significant,,False,False
+JetRacer,v1,summarized,0,9,781065.1111111111,False,475476.4715789474,0.0016222007161226341,True,higher,worse,False,False
+JetRacer,v1,summarized,1,5,580033.2,False,475476.4715789474,0.5089603913010201,False,not_significant,,False,False
+JetRacer,v2,notsummarized,0,10,307043.4,False,475476.4715789474,0.0002738027874785198,True,lower,better,False,False
+JetRacer,v2,notsummarized,1,10,597384.7,False,475476.4715789474,0.1860976282143653,False,not_significant,,False,False
+JetRacer,v2,summarized,0,10,513980.7,False,475476.4715789474,0.7106216250604342,False,not_significant,,False,False
+JetRacer,v2,summarized,1,6,856353.3333333334,False,475476.4715789474,0.1743075393189872,False,not_significant,,False,False
+JetRacer,v3,notsummarized,0,10,213465.5,False,475476.4715789474,0.000528707809755261,True,lower,better,False,False
+JetRacer,v3,notsummarized,1,9,340032.3333333333,False,475476.4715789474,0.31524680697090235,False,not_significant,,False,False
+JetRacer,v3,summarized,0,10,425924.6,False,475476.4715789474,0.6139846046926879,False,not_significant,,False,False
+JetRacer,v3,summarized,1,7,637409.2857142857,False,475476.4715789474,0.47341194322461777,False,not_significant,,False,False
+Open Energy Monitor,v1,notsummarized,0,7,443647.71428571426,False,475476.4715789474,0.7693933009077168,False,not_significant,,False,False
+Open Energy Monitor,v1,notsummarized,1,7,486347.85714285716,False,475476.4715789474,0.8831827840606703,False,not_significant,,False,False
+Open Energy Monitor,v1,summarized,0,10,563365.0,False,475476.4715789474,0.3724027882952222,False,not_significant,,False,False
+Open Energy Monitor,v1,summarized,1,10,543815.3,False,475476.4715789474,0.48257198852198857,False,not_significant,,False,False
+Open Energy Monitor,v2,notsummarized,0,10,403449.7,False,475476.4715789474,0.22791456917096947,False,not_significant,,False,False
+Open Energy Monitor,v2,notsummarized,1,10,397283.8,False,475476.4715789474,0.1819903147338282,False,not_significant,,False,False
+Open Energy Monitor,v2,summarized,0,9,473859.3333333333,False,475476.4715789474,0.9853260292769739,False,not_significant,,False,False
+Open Energy Monitor,v2,summarized,1,9,720375.6666666666,False,475476.4715789474,0.055036225359891465,True,higher,worse,False,False
+Open Energy Monitor,v3,notsummarized,0,10,260216.1,False,475476.4715789474,0.010686548852565248,True,lower,better,False,False
+Open Energy Monitor,v3,notsummarized,1,10,243737.5,False,475476.4715789474,0.01049418537177546,True,lower,better,False,False
+Open Energy Monitor,v3,summarized,0,10,257870.6,False,475476.4715789474,0.029716943849890456,True,lower,better,False,False
+Open Energy Monitor,v3,summarized,1,9,447902.77777777775,False,475476.4715789474,0.7398283655199698,False,not_significant,,False,False
+Stack4Things,v1,notsummarized,0,4,111586.25,False,475476.4715789474,3.019181989008745e-07,True,lower,better,False,False
+Stack4Things,v1,notsummarized,1,4,514588.75,False,475476.4715789474,0.5152499327302161,False,not_significant,,False,False
+Stack4Things,v1,summarized,0,4,125314.25,False,475476.4715789474,7.505733072709997e-06,True,lower,better,False,False
+Stack4Things,v1,summarized,1,3,672099.3333333334,False,475476.4715789474,0.5506467348223635,False,not_significant,,False,False
+Stack4Things,v2,notsummarized,0,4,114221.0,False,475476.4715789474,1.0296871753595779e-07,True,lower,better,False,False
+Stack4Things,v2,notsummarized,1,4,467970.25,False,475476.4715789474,0.957527209791148,False,not_significant,,False,False
+Stack4Things,v2,summarized,0,4,125314.25,False,475476.4715789474,7.505733072709997e-06,True,lower,better,False,False
+Stack4Things,v2,summarized,1,3,978717.6666666666,False,475476.4715789474,0.0131067941317161,True,higher,worse,False,False
+Stack4Things,v3,notsummarized,0,4,114221.0,False,475476.4715789474,1.0296871753595779e-07,True,lower,better,False,False
+Stack4Things,v3,notsummarized,1,3,596254.0,False,475476.4715789474,0.21500906940635936,False,not_significant,,False,False
+Stack4Things,v3,summarized,0,4,125314.25,False,475476.4715789474,7.505733072709997e-06,True,lower,better,False,False
+Stack4Things,v3,summarized,1,2,1076005.0,False,475476.4715789474,0.053863014016330445,True,higher,worse,False,False
+WordPress,v1,notsummarized,0,10,232933.5,False,475476.4715789474,0.00040060841601996197,True,lower,better,False,False
+WordPress,v1,summarized,0,11,343661.0,False,475476.4715789474,0.1190784105255548,False,not_significant,,False,False
+WordPress,v2,notsummarized,0,10,172255.3,False,475476.4715789474,1.7982684368897617e-05,True,lower,better,False,False
+WordPress,v2,summarized,0,10,355586.7,False,475476.4715789474,0.1521104661985681,False,not_significant,,False,False
+WordPress,v3,notsummarized,0,10,338454.2,False,475476.4715789474,0.05575009593122954,True,lower,better,False,False
+WordPress,v3,summarized,0,10,334924.3,False,475476.4715789474,0.17184597631452952,False,not_significant,,False,False
+eWeLink,v1,notsummarized,0,10,315592.8,False,475476.4715789474,0.015207339034623926,True,lower,better,False,False
+eWeLink,v1,summarized,0,6,518650.1666666667,False,475476.4715789474,0.7678517857592246,False,not_significant,,False,False
+eWeLink,v2,notsummarized,0,8,240263.375,False,475476.4715789474,0.002074343245850898,True,lower,better,False,False
+eWeLink,v2,summarized,0,9,467969.0,False,475476.4715789474,0.9036987739783022,False,not_significant,,False,False
+eWeLink,v3,notsummarized,0,9,235596.88888888888,False,475476.4715789474,0.002012567066248381,True,lower,better,False,False
+eWeLink,v3,summarized,0,10,444056.7,False,475476.4715789474,0.7987205798663105,False,not_significant,,False,False

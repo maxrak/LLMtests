@@ -1,0 +1,523 @@
+===========================================
+Config file: config_token.json
+CSV file:    dati_success.csv
+Separator:   ','
+Fattori:     ['case', 'version', 'mode', 'RAG']
+Indici:      ['TotalToken', 'inputToken', 'outputToken']
+Conf level:  0.9
+===========================================
+
+=== ANOVA / OLS per indice 'TotalToken' ===
+Formula: TotalToken ~ C(case) + C(version) + C(mode) + RAG
+
+--- Riassunto modello OLS ---
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             TotalToken   R-squared:                       0.371
+Model:                            OLS   Adj. R-squared:                  0.359
+Method:                 Least Squares   F-statistic:                     30.43
+Date:                Tue, 13 Jan 2026   Prob (F-statistic):           9.35e-42
+Time:                        14:57:05   Log-Likelihood:                -6658.6
+No. Observations:                 475   AIC:                         1.334e+04
+Df Residuals:                     465   BIC:                         1.338e+04
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==================================================================================================
+                                     coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                       5.871e+05   4.01e+04     14.647      0.000    5.08e+05    6.66e+05
+C(case)[T.JetRacer]            -2.315e+05   4.16e+04     -5.568      0.000   -3.13e+05    -1.5e+05
+C(case)[T.Open Energy Monitor] -3.319e+05   4.12e+04     -8.063      0.000   -4.13e+05   -2.51e+05
+C(case)[T.Stack4Things]        -3.951e+05   5.45e+04     -7.252      0.000   -5.02e+05   -2.88e+05
+C(case)[T.WordPress]           -3.503e+05   5.08e+04     -6.894      0.000    -4.5e+05    -2.5e+05
+C(case)[T.eWeLink]             -2.657e+05   5.33e+04     -4.987      0.000    -3.7e+05   -1.61e+05
+C(version)[T.v2]                1.133e+04   3.37e+04      0.336      0.737   -5.48e+04    7.75e+04
+C(version)[T.v3]                -6.89e+04   3.38e+04     -2.041      0.042   -1.35e+05   -2576.039
+C(mode)[T.summarized]           2.231e+05   2.76e+04      8.092      0.000    1.69e+05    2.77e+05
+RAG                             2.723e+05   3.16e+04      8.619      0.000     2.1e+05    3.34e+05
+==============================================================================
+Omnibus:                        6.245   Durbin-Watson:                   1.746
+Prob(Omnibus):                  0.044   Jarque-Bera (JB):                6.365
+Skew:                           0.280   Prob(JB):                       0.0415
+Kurtosis:                       2.917   Cond. No.                         8.16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+--- ANOVA (Type II) ---
+                  sum_sq     df          F        PR(>F)  significant
+C(case)     8.464408e+12    5.0  18.872568  4.244949e-17         True
+C(version)  5.955516e+11    2.0   3.319661  3.702414e-02         True
+C(mode)     5.873827e+12    1.0  65.482542  5.160167e-15         True
+RAG         6.664279e+12    1.0  74.294653  1.061735e-16         True
+Residual    4.171081e+13  465.0        NaN           NaN        False
+
+--- Tukey HSD per fattore 'case' ---
+                    Multiple Comparison of Means - Tukey HSD, FWER=0.10                     
+============================================================================================
+       group1              group2         meandiff   p-adj     lower        upper     reject
+--------------------------------------------------------------------------------------------
+           BookInfo            JetRacer -245585.2778    0.0 -368424.7064 -122745.8493   True
+           BookInfo Open Energy Monitor -316921.0069    0.0 -438396.1348  -195445.879   True
+           BookInfo        Stack4Things -402016.0023    0.0 -563046.7561 -240985.2484   True
+           BookInfo           WordPress -469978.6332    0.0 -613325.4118 -326631.8547   True
+           BookInfo             eWeLink -394109.4781    0.0 -545019.3816 -243199.5747   True
+           JetRacer Open Energy Monitor   -71335.729 0.6383 -191610.5125   48939.0544  False
+           JetRacer        Stack4Things -156430.7244 0.1156 -316557.9255    3696.4766  False
+           JetRacer           WordPress -224393.3554 0.0007  -366724.363  -82062.3477   True
+           JetRacer             eWeLink -148524.2003 0.1062 -298469.5763    1421.1757  False
+Open Energy Monitor        Stack4Things  -85094.9954 0.7336 -244177.9989   73988.0081  False
+Open Energy Monitor           WordPress -153057.6263 0.0567 -294212.8502  -11902.4025   True
+Open Energy Monitor             eWeLink  -77188.4712 0.7586 -226018.2306   71641.2881  False
+       Stack4Things           WordPress   -67962.631 0.9176 -244313.1178  108387.8559  False
+       Stack4Things             eWeLink    7906.5242    1.0 -174644.8228  190457.8711  False
+          WordPress             eWeLink   75869.1551 0.8469  -91290.6172  243028.9274  False
+--------------------------------------------------------------------------------------------
+
+--- Tukey HSD per fattore 'version' ---
+      Multiple Comparison of Means - Tukey HSD, FWER=0.10      
+===============================================================
+group1 group2   meandiff  p-adj     lower       upper    reject
+---------------------------------------------------------------
+    v1     v2   7323.0062 0.9833   -78768.908 93414.9205  False
+    v1     v3 -81886.2342  0.125 -168113.8332  4341.3648  False
+    v2     v3 -89209.2404 0.0846 -175301.1547 -3117.3262   True
+---------------------------------------------------------------
+
+--- F-test per combinazioni di fattori (modelli annidati) ---
+  factors_removed  df_diff     F_stat       p_value  significant
+6      case + RAG      6.0  35.021171  6.060497e-35         True
+9      mode + RAG      2.0  67.900565  1.342500e-26         True
+5     case + mode      6.0  25.836488  1.560187e-26         True
+4  case + version      7.0  14.573388  3.418829e-17         True
+0            case      5.0  18.872568  4.244949e-17         True
+3             RAG      1.0  74.294653  1.061735e-16         True
+8   version + RAG      3.0  27.155776  3.368406e-16         True
+2            mode      1.0  65.482542  5.160167e-15         True
+7  version + mode      3.0  24.087715  1.663101e-14         True
+1         version      2.0   3.319661  3.702414e-02         True
+
+--- Tabella descrittiva per indice 'TotalToken' ---
+                   case version           mode  RAG   n    mean_value  is_binary_index    global_mean       p_value  significant    direction_raw direction_vs_better  n_too_small_for_test  low_variance_group
+0              BookInfo      v1  notsummarized    0  12  4.564782e+05            False  532495.338947  1.155300e-01        False  not_significant                None                 False               False
+1              BookInfo      v1  notsummarized    1   9  7.272437e+05            False  532495.338947  1.000742e-01        False  not_significant                None                 False               False
+2              BookInfo      v1     summarized    0   9  7.306714e+05            False  532495.338947  4.109888e-02         True           higher               worse                 False               False
+3              BookInfo      v1     summarized    1   8  1.128236e+06            False  532495.338947  6.309183e-05         True           higher               worse                 False               False
+4              BookInfo      v2  notsummarized    0   8  4.974910e+05            False  532495.338947  3.964394e-02         True            lower              better                 False               False
+5              BookInfo      v2  notsummarized    1   9  7.393529e+05            False  532495.338947  6.003064e-02         True           higher               worse                 False               False
+6              BookInfo      v2     summarized    0   8  8.510695e+05            False  532495.338947  6.401459e-03         True           higher               worse                 False               False
+7              BookInfo      v2     summarized    1   8  1.280127e+06            False  532495.338947  5.692186e-07         True           higher               worse                 False               False
+8              BookInfo      v3  notsummarized    0  10  5.175401e+05            False  532495.338947  8.381940e-01        False  not_significant                None                 False               False
+9              BookInfo      v3  notsummarized    1   8  1.055592e+06            False  532495.338947  6.998092e-05         True           higher               worse                 False               False
+10             BookInfo      v3     summarized    0   6  6.760150e+05            False  532495.338947  3.483220e-01        False  not_significant                None                 False               False
+11             BookInfo      v3     summarized    1   7  1.248991e+06            False  532495.338947  9.533574e-03         True           higher               worse                 False               False
+12             JetRacer      v1  notsummarized    0  10  3.726637e+05            False  532495.338947  6.510984e-04         True            lower              better                 False               False
+13             JetRacer      v1  notsummarized    1  10  6.081946e+05            False  532495.338947  5.047738e-01        False  not_significant                None                 False               False
+14             JetRacer      v1     summarized    0   9  8.847907e+05            False  532495.338947  2.014504e-03         True           higher               worse                 False               False
+15             JetRacer      v1     summarized    1   5  6.682582e+05            False  532495.338947  4.553243e-01        False  not_significant                None                 False               False
+16             JetRacer      v2  notsummarized    0  10  3.422460e+05            False  532495.338947  2.562562e-04         True            lower              better                 False               False
+17             JetRacer      v2  notsummarized    1  10  6.891431e+05            False  532495.338947  1.461532e-01        False  not_significant                None                 False               False
+18             JetRacer      v2     summarized    0  10  5.787398e+05            False  532495.338947  6.976965e-01        False  not_significant                None                 False               False
+19             JetRacer      v2     summarized    1   6  9.899297e+05            False  532495.338947  1.616779e-01        False  not_significant                None                 False               False
+20             JetRacer      v3  notsummarized    0  10  2.369543e+05            False  532495.338947  4.774267e-04         True            lower              better                 False               False
+21             JetRacer      v3  notsummarized    1   9  3.924243e+05            False  532495.338947  3.679794e-01        False  not_significant                None                 False               False
+22             JetRacer      v3     summarized    0  10  4.731878e+05            False  532495.338947  5.874652e-01        False  not_significant                None                 False               False
+23             JetRacer      v3     summarized    1   7  7.305087e+05            False  532495.338947  4.460167e-01        False  not_significant                None                 False               False
+24  Open Energy Monitor      v1  notsummarized    0   7  5.095246e+05            False  532495.338947  8.546925e-01        False  not_significant                None                 False               False
+25  Open Energy Monitor      v1  notsummarized    1   7  5.501337e+05            False  532495.338947  8.354089e-01        False  not_significant                None                 False               False
+26  Open Energy Monitor      v1     summarized    0  10  6.378363e+05            False  532495.338947  3.472724e-01        False  not_significant                None                 False               False
+27  Open Energy Monitor      v1     summarized    1  10  6.041368e+05            False  532495.338947  5.048523e-01        False  not_significant                None                 False               False
+28  Open Energy Monitor      v2  notsummarized    0  10  4.546250e+05            False  532495.338947  2.517112e-01        False  not_significant                None                 False               False
+29  Open Energy Monitor      v2  notsummarized    1  10  4.433966e+05            False  532495.338947  1.767376e-01        False  not_significant                None                 False               False
+30  Open Energy Monitor      v2     summarized    0   9  5.338810e+05            False  532495.338947  9.888344e-01        False  not_significant                None                 False               False
+31  Open Energy Monitor      v2     summarized    1   9  7.978764e+05            False  532495.338947  5.945487e-02         True           higher               worse                 False               False
+32  Open Energy Monitor      v3  notsummarized    0  10  2.885114e+05            False  532495.338947  9.175428e-03         True            lower              better                 False               False
+33  Open Energy Monitor      v3  notsummarized    1  10  2.737051e+05            False  532495.338947  1.181408e-02         True            lower              better                 False               False
+34  Open Energy Monitor      v3     summarized    0  10  2.911760e+05            False  532495.338947  3.338024e-02         True            lower              better                 False               False
+35  Open Energy Monitor      v3     summarized    1   9  4.914920e+05            False  532495.338947  6.539455e-01        False  not_significant                None                 False               False
+36         Stack4Things      v1  notsummarized    0   4  1.119762e+05            False  532495.338947  2.022346e-07         True            lower              better                 False               False
+37         Stack4Things      v1  notsummarized    1   4  5.779842e+05            False  532495.338947  5.125150e-01        False  not_significant                None                 False               False
+38         Stack4Things      v1     summarized    0   4  1.258928e+05            False  532495.338947  4.932193e-06         True            lower              better                 False               False
+39         Stack4Things      v1     summarized    1   3  7.551183e+05            False  532495.338947  5.493938e-01        False  not_significant                None                 False               False
+40         Stack4Things      v2  notsummarized    0   4  1.146710e+05            False  532495.338947  6.719069e-08         True            lower              better                 False               False
+41         Stack4Things      v2  notsummarized    1   4  5.232458e+05            False  532495.338947  9.530699e-01        False  not_significant                None                 False               False
+42         Stack4Things      v2     summarized    0   4  1.258928e+05            False  532495.338947  4.932193e-06         True            lower              better                 False               False
+43         Stack4Things      v2     summarized    1   3  1.097268e+06            False  532495.338947  1.576142e-02         True           higher               worse                 False               False
+44         Stack4Things      v3  notsummarized    0   4  1.146710e+05            False  532495.338947  6.719069e-08         True            lower              better                 False               False
+45         Stack4Things      v3  notsummarized    1   3  6.631337e+05            False  532495.338947  2.301378e-01        False  not_significant                None                 False               False
+46         Stack4Things      v3     summarized    0   4  1.258928e+05            False  532495.338947  4.932193e-06         True            lower              better                 False               False
+47         Stack4Things      v3     summarized    1   2  1.169838e+06            False  532495.338947  5.130778e-02         True           higher               worse                 False               False
+48            WordPress      v1  notsummarized    0  10  2.622827e+05            False  532495.338947  4.420669e-04         True            lower              better                 False               False
+49            WordPress      v1     summarized    0  11  3.873382e+05            False  532495.338947  1.253492e-01        False  not_significant                None                 False               False
+50            WordPress      v2  notsummarized    0  10  1.909178e+05            False  532495.338947  1.483063e-05         True            lower              better                 False               False
+51            WordPress      v2     summarized    0  10  3.983573e+05            False  532495.338947  1.515646e-01        False  not_significant                None                 False               False
+52            WordPress      v3  notsummarized    0  10  3.720016e+05            False  532495.338947  4.467969e-02         True            lower              better                 False               False
+53            WordPress      v3     summarized    0  10  3.711353e+05            False  532495.338947  1.555004e-01        False  not_significant                None                 False               False
+54              eWeLink      v1  notsummarized    0  10  3.551566e+05            False  532495.338947  1.671837e-02         True            lower              better                 False               False
+55              eWeLink      v1     summarized    0   6  5.852478e+05            False  532495.338947  7.508812e-01        False  not_significant                None                 False               False
+56              eWeLink      v2  notsummarized    0   8  2.658371e+05            False  532495.338947  1.854074e-03         True            lower              better                 False               False
+57              eWeLink      v2     summarized    0   9  5.239037e+05            False  532495.338947  9.012218e-01        False  not_significant                None                 False               False
+58              eWeLink      v3  notsummarized    0   9  2.623488e+05            False  532495.338947  2.008073e-03         True            lower              better                 False               False
+59              eWeLink      v3     summarized    0  10  4.905382e+05            False  532495.338947  7.576854e-01        False  not_significant                None                 False               False
+
+=== ANOVA / OLS per indice 'inputToken' ===
+Formula: inputToken ~ C(case) + C(version) + C(mode) + RAG
+
+--- Riassunto modello OLS ---
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             inputToken   R-squared:                       0.357
+Model:                            OLS   Adj. R-squared:                  0.344
+Method:                 Least Squares   F-statistic:                     28.64
+Date:                Tue, 13 Jan 2026   Prob (F-statistic):           1.37e-39
+Time:                        14:57:06   Log-Likelihood:                -5641.8
+No. Observations:                 475   AIC:                         1.130e+04
+Df Residuals:                     465   BIC:                         1.135e+04
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==================================================================================================
+                                     coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                       6.266e+04   4712.784     13.295      0.000    5.34e+04    7.19e+04
+C(case)[T.JetRacer]            -1.233e+04   4889.788     -2.521      0.012   -2.19e+04   -2720.163
+C(case)[T.Open Energy Monitor] -3.105e+04   4840.438     -6.415      0.000   -4.06e+04   -2.15e+04
+C(case)[T.Stack4Things]        -4.671e+04   6405.425     -7.293      0.000   -5.93e+04   -3.41e+04
+C(case)[T.WordPress]           -3.428e+04   5974.828     -5.738      0.000    -4.6e+04   -2.25e+04
+C(case)[T.eWeLink]             -2.468e+04   6265.205     -3.938      0.000    -3.7e+04   -1.24e+04
+C(version)[T.v2]               -2307.3122   3959.115     -0.583      0.560   -1.01e+04    5472.661
+C(version)[T.v3]                -1.76e+04   3968.458     -4.436      0.000   -2.54e+04   -9806.497
+C(mode)[T.summarized]            2.43e+04   3242.271      7.495      0.000    1.79e+04    3.07e+04
+RAG                             3.009e+04   3714.722      8.100      0.000    2.28e+04    3.74e+04
+==============================================================================
+Omnibus:                       41.926   Durbin-Watson:                   1.803
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               54.541
+Skew:                           0.687   Prob(JB):                     1.43e-12
+Kurtosis:                       3.932   Cond. No.                         8.16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+--- ANOVA (Type II) ---
+                  sum_sq     df          F        PR(>F)  significant
+C(case)     1.019230e+11    5.0  16.437849  5.970674e-15         True
+C(version)  2.887321e+10    2.0  11.641475  1.165934e-05         True
+C(mode)     6.966220e+10    1.0  56.174623  3.376915e-13         True
+RAG         8.136129e+10    1.0  65.608604  4.878848e-15         True
+Residual    5.766469e+11  465.0        NaN           NaN        False
+
+--- Tukey HSD per fattore 'case' ---
+                   Multiple Comparison of Means - Tukey HSD, FWER=0.10                   
+=========================================================================================
+       group1              group2         meandiff  p-adj     lower       upper    reject
+-----------------------------------------------------------------------------------------
+           BookInfo            JetRacer  -14292.093 0.1065 -28727.3016    143.1155  False
+           BookInfo Open Energy Monitor -29953.4724    0.0 -44228.3582 -15678.5867   True
+           BookInfo        Stack4Things -47558.7855    0.0 -66481.9647 -28635.6062   True
+           BookInfo           WordPress  -47778.355    0.0 -64623.4403 -30933.2698   True
+           BookInfo             eWeLink -39495.6388    0.0 -57229.4882 -21761.7893   True
+           JetRacer Open Energy Monitor -15661.3794 0.0478 -29795.2093  -1527.5495   True
+           JetRacer        Stack4Things -33266.6924 0.0001 -52083.6926 -14449.6922   True
+           JetRacer           WordPress  -33486.262    0.0 -50211.9812 -16760.5428   True
+           JetRacer             eWeLink -25203.5457 0.0031 -42824.0508  -7583.0406   True
+Open Energy Monitor        Stack4Things  -17605.313 0.1429 -36299.6066   1088.9806  False
+Open Energy Monitor           WordPress -17824.8826 0.0607 -34412.4321  -1237.3331   True
+Open Energy Monitor             eWeLink  -9542.1663 0.7168 -27031.5722   7947.2395  False
+       Stack4Things           WordPress   -219.5696    1.0 -20943.0139  20503.8748  False
+       Stack4Things             eWeLink   8063.1467 0.9254 -13388.9783  29515.2716  False
+          WordPress             eWeLink   8282.7163 0.8833 -11360.7012  27926.1338  False
+-----------------------------------------------------------------------------------------
+
+--- Tukey HSD per fattore 'version' ---
+     Multiple Comparison of Means - Tukey HSD, FWER=0.10      
+==============================================================
+group1 group2   meandiff  p-adj     lower      upper    reject
+--------------------------------------------------------------
+    v1     v2  -2471.1765 0.8645 -12359.2589   7416.906  False
+    v1     v3 -18594.1329 0.0004 -28497.7994 -8690.4664   True
+    v2     v3 -16122.9565 0.0025 -26011.0389  -6234.874   True
+--------------------------------------------------------------
+
+--- F-test per combinazioni di fattori (modelli annidati) ---
+  factors_removed  df_diff     F_stat       p_value  significant
+6      case + RAG      6.0  30.836827  3.408275e-31         True
+9      mode + RAG      2.0  59.161323  1.285307e-23         True
+5     case + mode      6.0  22.296421  4.139835e-23         True
+4  case + version      7.0  15.263646  5.213655e-18         True
+8   version + RAG      3.0  29.838232  1.169862e-17         True
+7  version + mode      3.0  26.554060  7.202641e-16         True
+3             RAG      1.0  65.608604  4.878848e-15         True
+0            case      5.0  16.437849  5.970674e-15         True
+2            mode      1.0  56.174623  3.376915e-13         True
+1         version      2.0  11.641475  1.165934e-05         True
+
+--- Tabella descrittiva per indice 'inputToken' ---
+                   case version           mode  RAG   n     mean_value  is_binary_index   global_mean       p_value  significant    direction_raw direction_vs_better  n_too_small_for_test  low_variance_group
+0              BookInfo      v1  notsummarized    0  12   51097.750000            False  57018.867368  3.077126e-01        False  not_significant                None                 False               False
+1              BookInfo      v1  notsummarized    1   9   80166.444444            False  57018.867368  1.127361e-01        False  not_significant                None                 False               False
+2              BookInfo      v1     summarized    0   9   91857.000000            False  57018.867368  1.150363e-02         True           higher               worse                 False               False
+3              BookInfo      v1     summarized    1   8  124941.875000            False  57018.867368  6.309582e-04         True           higher               worse                 False               False
+4              BookInfo      v2  notsummarized    0   8   51548.250000            False  57018.867368  4.989635e-02         True            lower              better                 False               False
+5              BookInfo      v2  notsummarized    1   9   74857.222222            False  57018.867368  1.184506e-01        False  not_significant                None                 False               False
+6              BookInfo      v2     summarized    0   8   99129.500000            False  57018.867368  4.724922e-03         True           higher               worse                 False               False
+7              BookInfo      v2     summarized    1   8  134555.125000            False  57018.867368  3.322153e-05         True           higher               worse                 False               False
+8              BookInfo      v3  notsummarized    0  10   46701.600000            False  57018.867368  1.458128e-01        False  not_significant                None                 False               False
+9              BookInfo      v3  notsummarized    1   8   82454.500000            False  57018.867368  4.179712e-03         True           higher               worse                 False               False
+10             BookInfo      v3     summarized    0   6   64404.000000            False  57018.867368  5.753994e-01        False  not_significant                None                 False               False
+11             BookInfo      v3     summarized    1   7  104520.571429            False  57018.867368  1.753724e-02         True           higher               worse                 False               False
+12             JetRacer      v1  notsummarized    0  10   40527.300000            False  57018.867368  1.278621e-03         True            lower              better                 False               False
+13             JetRacer      v1  notsummarized    1  10   84481.500000            False  57018.867368  1.192344e-01        False  not_significant                None                 False               False
+14             JetRacer      v1     summarized    0   9  103725.555556            False  57018.867368  7.130804e-03         True           higher               worse                 False               False
+15             JetRacer      v1     summarized    1   5   88225.000000            False  57018.867368  1.953985e-01        False  not_significant                None                 False               False
+16             JetRacer      v2  notsummarized    0  10   35202.600000            False  57018.867368  1.967978e-04         True            lower              better                 False               False
+17             JetRacer      v2  notsummarized    1  10   91758.400000            False  57018.867368  2.958008e-02         True           higher               worse                 False               False
+18             JetRacer      v2     summarized    0  10   64759.100000            False  57018.867368  6.168994e-01        False  not_significant                None                 False               False
+19             JetRacer      v2     summarized    1   6  133576.333333            False  57018.867368  1.009533e-01        False  not_significant                None                 False               False
+20             JetRacer      v3  notsummarized    0  10   23488.800000            False  57018.867368  2.158727e-04         True            lower              better                 False               False
+21             JetRacer      v3  notsummarized    1   9   52392.000000            False  57018.867368  8.277216e-01        False  not_significant                None                 False               False
+22             JetRacer      v3     summarized    0  10   47263.200000            False  57018.867368  3.883197e-01        False  not_significant                None                 False               False
+23             JetRacer      v3     summarized    1   7   93099.428571            False  57018.867368  2.919560e-01        False  not_significant                None                 False               False
+24  Open Energy Monitor      v1  notsummarized    0   7   65876.857143            False  57018.867368  6.130498e-01        False  not_significant                None                 False               False
+25  Open Energy Monitor      v1  notsummarized    1   7   63785.857143            False  57018.867368  5.473023e-01        False  not_significant                None                 False               False
+26  Open Energy Monitor      v1     summarized    0  10   74471.300000            False  57018.867368  2.025567e-01        False  not_significant                None                 False               False
+27  Open Energy Monitor      v1     summarized    1  10   60321.500000            False  57018.867368  7.476998e-01        False  not_significant                None                 False               False
+28  Open Energy Monitor      v2  notsummarized    0  10   51175.300000            False  57018.867368  4.936685e-01        False  not_significant                None                 False               False
+29  Open Energy Monitor      v2  notsummarized    1  10   46112.800000            False  57018.867368  1.488167e-01        False  not_significant                None                 False               False
+30  Open Energy Monitor      v2     summarized    0   9   60021.666667            False  57018.867368  7.944831e-01        False  not_significant                None                 False               False
+31  Open Energy Monitor      v2     summarized    1   9   77500.777778            False  57018.867368  1.315551e-01        False  not_significant                None                 False               False
+32  Open Energy Monitor      v3  notsummarized    0  10   28295.300000            False  57018.867368  2.193978e-03         True            lower              better                 False               False
+33  Open Energy Monitor      v3  notsummarized    1  10   29967.600000            False  57018.867368  2.792792e-02         True            lower              better                 False               False
+34  Open Energy Monitor      v3     summarized    0  10   33305.400000            False  57018.867368  7.768125e-02         True            lower              better                 False               False
+35  Open Energy Monitor      v3     summarized    1   9   43589.222222            False  57018.867368  1.357408e-01        False  not_significant                None                 False               False
+36         Stack4Things      v1  notsummarized    0   4     390.000000            False  57018.867368  3.278842e-10         True            lower              better                 False               False
+37         Stack4Things      v1  notsummarized    1   4   63395.500000            False  57018.867368  5.076155e-01        False  not_significant                None                 False               False
+38         Stack4Things      v1     summarized    0   4     578.500000            False  57018.867368  2.550069e-09         True            lower              better                 False               False
+39         Stack4Things      v1     summarized    1   3   83019.000000            False  57018.867368  5.411161e-01        False  not_significant                None                 False               False
+40         Stack4Things      v2  notsummarized    0   4     450.000000            False  57018.867368  3.289286e-10         True            lower              better                 False               False
+41         Stack4Things      v2  notsummarized    1   4   55275.500000            False  57018.867368  9.172233e-01        False  not_significant                None                 False               False
+42         Stack4Things      v2     summarized    0   4     578.500000            False  57018.867368  2.550069e-09         True            lower              better                 False               False
+43         Stack4Things      v2     summarized    1   3  118550.666667            False  57018.867368  4.659843e-02         True           higher               worse                 False               False
+44         Stack4Things      v3  notsummarized    0   4     450.000000            False  57018.867368  3.289286e-10         True            lower              better                 False               False
+45         Stack4Things      v3  notsummarized    1   3   66879.666667            False  57018.867368  4.197047e-01        False  not_significant                None                 False               False
+46         Stack4Things      v3     summarized    0   4     578.500000            False  57018.867368  2.550069e-09         True            lower              better                 False               False
+47         Stack4Things      v3     summarized    1   2   93832.500000            False  57018.867368  9.449954e-03         True           higher               worse                 False               False
+48            WordPress      v1  notsummarized    0  10   29349.200000            False  57018.867368  9.915244e-04         True            lower              better                 False               False
+49            WordPress      v1     summarized    0  11   43677.181818            False  57018.867368  1.906104e-01        False  not_significant                None                 False               False
+50            WordPress      v2  notsummarized    0  10   18662.500000            False  57018.867368  2.834950e-06         True            lower              better                 False               False
+51            WordPress      v2     summarized    0  10   42770.600000            False  57018.867368  1.486106e-01        False  not_significant                None                 False               False
+52            WordPress      v3  notsummarized    0  10   33547.400000            False  57018.867368  5.572674e-03         True            lower              better                 False               False
+53            WordPress      v3     summarized    0  10   36211.000000            False  57018.867368  5.533984e-02         True            lower              better                 False               False
+54              eWeLink      v1  notsummarized    0  10   39563.800000            False  57018.867368  3.479614e-02         True            lower              better                 False               False
+55              eWeLink      v1     summarized    0   6   66597.666667            False  57018.867368  6.329228e-01        False  not_significant                None                 False               False
+56              eWeLink      v2  notsummarized    0   8   25573.750000            False  57018.867368  8.951859e-04         True            lower              better                 False               False
+57              eWeLink      v2     summarized    0   9   55934.666667            False  57018.867368  8.811221e-01        False  not_significant                None                 False               False
+58              eWeLink      v3  notsummarized    0   9   26751.888889            False  57018.867368  2.148136e-03         True            lower              better                 False               False
+59              eWeLink      v3     summarized    0  10   46481.500000            False  57018.867368  4.149193e-01        False  not_significant                None                 False               False
+
+=== ANOVA / OLS per indice 'outputToken' ===
+Formula: outputToken ~ C(case) + C(version) + C(mode) + RAG
+
+--- Riassunto modello OLS ---
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            outputToken   R-squared:                       0.372
+Model:                            OLS   Adj. R-squared:                  0.359
+Method:                 Least Squares   F-statistic:                     30.56
+Date:                Tue, 13 Jan 2026   Prob (F-statistic):           6.64e-42
+Time:                        14:57:06   Log-Likelihood:                -6602.3
+No. Observations:                 475   AIC:                         1.322e+04
+Df Residuals:                     465   BIC:                         1.327e+04
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==================================================================================================
+                                     coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                       5.244e+05   3.56e+04     14.730      0.000    4.54e+05    5.94e+05
+C(case)[T.JetRacer]            -2.192e+05   3.69e+04     -5.935      0.000   -2.92e+05   -1.47e+05
+C(case)[T.Open Energy Monitor] -3.009e+05   3.66e+04     -8.229      0.000   -3.73e+05   -2.29e+05
+C(case)[T.Stack4Things]        -3.484e+05   4.84e+04     -7.199      0.000   -4.43e+05   -2.53e+05
+C(case)[T.WordPress]            -3.16e+05   4.51e+04     -7.002      0.000   -4.05e+05   -2.27e+05
+C(case)[T.eWeLink]             -2.411e+05   4.73e+04     -5.093      0.000   -3.34e+05   -1.48e+05
+C(version)[T.v2]                1.363e+04   2.99e+04      0.456      0.649   -4.51e+04    7.24e+04
+C(version)[T.v3]                -5.13e+04      3e+04     -1.711      0.088    -1.1e+05    7614.813
+C(mode)[T.summarized]           1.988e+05   2.45e+04      8.118      0.000    1.51e+05    2.47e+05
+RAG                             2.422e+05   2.81e+04      8.632      0.000    1.87e+05    2.97e+05
+==============================================================================
+Omnibus:                        5.403   Durbin-Watson:                   1.738
+Prob(Omnibus):                  0.067   Jarque-Bera (JB):                5.510
+Skew:                           0.258   Prob(JB):                       0.0636
+Kurtosis:                       2.894   Cond. No.                         8.16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+--- ANOVA (Type II) ---
+                  sum_sq     df          F        PR(>F)  significant
+C(case)     6.822796e+12    5.0  19.282339  1.862174e-17         True
+C(version)  3.704437e+11    2.0   2.617337  7.407226e-02         True
+C(mode)     4.664140e+12    1.0  65.908118  4.270691e-15         True
+RAG         5.272936e+12    1.0  74.510912  9.660627e-17         True
+Residual    3.290680e+13  465.0        NaN           NaN        False
+
+--- Tukey HSD per fattore 'case' ---
+                    Multiple Comparison of Means - Tukey HSD, FWER=0.10                     
+============================================================================================
+       group1              group2         meandiff   p-adj     lower        upper     reject
+--------------------------------------------------------------------------------------------
+           BookInfo            JetRacer -231293.1848    0.0 -340328.2788 -122258.0908   True
+           BookInfo Open Energy Monitor -286967.5344    0.0 -394791.6439  -179143.425   True
+           BookInfo        Stack4Things -354457.2168    0.0 -497391.8071 -211522.6266   True
+           BookInfo           WordPress -422200.2782    0.0 -549438.1664   -294962.39   True
+           BookInfo             eWeLink -354613.8394    0.0 -488564.9307  -220662.748   True
+           JetRacer Open Energy Monitor  -55674.3497 0.7542 -162433.0058   51084.3065  False
+           JetRacer        Stack4Things  -123164.032  0.217 -265296.6081    18968.544  False
+           JetRacer           WordPress -190907.0934 0.0014 -317243.3601  -64570.8268   True
+           JetRacer             eWeLink -123320.6546 0.1561 -256415.6092    9774.3001  False
+Open Energy Monitor        Stack4Things  -67489.6824 0.8163 -208695.4047   73716.0399  False
+Open Energy Monitor           WordPress -135232.7438 0.0587 -260525.3578   -9940.1298   True
+Open Energy Monitor             eWeLink  -67646.3049 0.7683 -199751.0126   64458.4028  False
+       Stack4Things           WordPress  -67743.0614 0.8714  -224275.798   88789.6752  False
+       Stack4Things             eWeLink    -156.6225    1.0 -162193.3847  161880.1396  False
+          WordPress             eWeLink   67586.4388 0.8449  -80788.4088  215961.2865  False
+--------------------------------------------------------------------------------------------
+
+--- Tukey HSD per fattore 'version' ---
+      Multiple Comparison of Means - Tukey HSD, FWER=0.10      
+===============================================================
+group1 group2   meandiff  p-adj     lower       upper    reject
+---------------------------------------------------------------
+    v1     v2   9794.1827 0.9626  -66816.9336 86405.2991  False
+    v1     v3 -63292.1013 0.2074 -140023.9602 13439.7577  False
+    v2     v3  -73086.284 0.1227 -149697.4003  3524.8324  False
+---------------------------------------------------------------
+
+--- F-test per combinazioni di fattori (modelli annidati) ---
+  factors_removed  df_diff     F_stat       p_value  significant
+6      case + RAG      6.0  35.404680  2.788421e-35         True
+5     case + mode      6.0  26.254325  6.251297e-27         True
+9      mode + RAG      2.0  68.212125  1.054980e-26         True
+0            case      5.0  19.282339  1.862174e-17         True
+4  case + version      7.0  14.644333  2.816421e-17         True
+3             RAG      1.0  74.510912  9.660627e-17         True
+8   version + RAG      3.0  26.753014  5.600747e-16         True
+2            mode      1.0  65.908118  4.270691e-15         True
+7  version + mode      3.0  23.757679  2.538964e-14         True
+1         version      2.0   2.617337  7.407226e-02         True
+
+--- Tabella descrittiva per indice 'outputToken' ---
+                   case version           mode  RAG   n    mean_value  is_binary_index    global_mean       p_value  significant    direction_raw direction_vs_better  n_too_small_for_test  low_variance_group
+0              BookInfo      v1  notsummarized    0  12  4.053804e+05            False  475476.471579  9.986177e-02         True            lower              better                 False               False
+1              BookInfo      v1  notsummarized    1   9  6.470772e+05            False  475476.471579  9.933429e-02         True           higher               worse                 False               False
+2              BookInfo      v1     summarized    0   9  6.388144e+05            False  475476.471579  5.041970e-02         True           higher               worse                 False               False
+3              BookInfo      v1     summarized    1   8  1.003294e+06            False  475476.471579  4.355429e-05         True           higher               worse                 False               False
+4              BookInfo      v2  notsummarized    0   8  4.459428e+05            False  475476.471579  3.977590e-02         True            lower              better                 False               False
+5              BookInfo      v2  notsummarized    1   9  6.644957e+05            False  475476.471579  5.611268e-02         True           higher               worse                 False               False
+6              BookInfo      v2     summarized    0   8  7.519400e+05            False  475476.471579  6.772774e-03         True           higher               worse                 False               False
+7              BookInfo      v2     summarized    1   8  1.145572e+06            False  475476.471579  3.089559e-07         True           higher               worse                 False               False
+8              BookInfo      v3  notsummarized    0  10  4.708385e+05            False  475476.471579  9.444868e-01        False  not_significant                None                 False               False
+9              BookInfo      v3  notsummarized    1   8  9.731370e+05            False  475476.471579  5.490210e-05         True           higher               worse                 False               False
+10             BookInfo      v3     summarized    0   6  6.116110e+05            False  475476.471579  3.341129e-01        False  not_significant                None                 False               False
+11             BookInfo      v3     summarized    1   7  1.144470e+06            False  475476.471579  9.144351e-03         True           higher               worse                 False               False
+12             JetRacer      v1  notsummarized    0  10  3.321364e+05            False  475476.471579  6.078685e-04         True            lower              better                 False               False
+13             JetRacer      v1  notsummarized    1  10  5.237131e+05            False  475476.471579  6.171666e-01        False  not_significant                None                 False               False
+14             JetRacer      v1     summarized    0   9  7.810651e+05            False  475476.471579  1.622201e-03         True           higher               worse                 False               False
+15             JetRacer      v1     summarized    1   5  5.800332e+05            False  475476.471579  5.089604e-01        False  not_significant                None                 False               False
+16             JetRacer      v2  notsummarized    0  10  3.070434e+05            False  475476.471579  2.738028e-04         True            lower              better                 False               False
+17             JetRacer      v2  notsummarized    1  10  5.973847e+05            False  475476.471579  1.860976e-01        False  not_significant                None                 False               False
+18             JetRacer      v2     summarized    0  10  5.139807e+05            False  475476.471579  7.106216e-01        False  not_significant                None                 False               False
+19             JetRacer      v2     summarized    1   6  8.563533e+05            False  475476.471579  1.743075e-01        False  not_significant                None                 False               False
+20             JetRacer      v3  notsummarized    0  10  2.134655e+05            False  475476.471579  5.287078e-04         True            lower              better                 False               False
+21             JetRacer      v3  notsummarized    1   9  3.400323e+05            False  475476.471579  3.152468e-01        False  not_significant                None                 False               False
+22             JetRacer      v3     summarized    0  10  4.259246e+05            False  475476.471579  6.139846e-01        False  not_significant                None                 False               False
+23             JetRacer      v3     summarized    1   7  6.374093e+05            False  475476.471579  4.734119e-01        False  not_significant                None                 False               False
+24  Open Energy Monitor      v1  notsummarized    0   7  4.436477e+05            False  475476.471579  7.693933e-01        False  not_significant                None                 False               False
+25  Open Energy Monitor      v1  notsummarized    1   7  4.863479e+05            False  475476.471579  8.831828e-01        False  not_significant                None                 False               False
+26  Open Energy Monitor      v1     summarized    0  10  5.633650e+05            False  475476.471579  3.724028e-01        False  not_significant                None                 False               False
+27  Open Energy Monitor      v1     summarized    1  10  5.438153e+05            False  475476.471579  4.825720e-01        False  not_significant                None                 False               False
+28  Open Energy Monitor      v2  notsummarized    0  10  4.034497e+05            False  475476.471579  2.279146e-01        False  not_significant                None                 False               False
+29  Open Energy Monitor      v2  notsummarized    1  10  3.972838e+05            False  475476.471579  1.819903e-01        False  not_significant                None                 False               False
+30  Open Energy Monitor      v2     summarized    0   9  4.738593e+05            False  475476.471579  9.853260e-01        False  not_significant                None                 False               False
+31  Open Energy Monitor      v2     summarized    1   9  7.203757e+05            False  475476.471579  5.503623e-02         True           higher               worse                 False               False
+32  Open Energy Monitor      v3  notsummarized    0  10  2.602161e+05            False  475476.471579  1.068655e-02         True            lower              better                 False               False
+33  Open Energy Monitor      v3  notsummarized    1  10  2.437375e+05            False  475476.471579  1.049419e-02         True            lower              better                 False               False
+34  Open Energy Monitor      v3     summarized    0  10  2.578706e+05            False  475476.471579  2.971694e-02         True            lower              better                 False               False
+35  Open Energy Monitor      v3     summarized    1   9  4.479028e+05            False  475476.471579  7.398284e-01        False  not_significant                None                 False               False
+36         Stack4Things      v1  notsummarized    0   4  1.115862e+05            False  475476.471579  3.019182e-07         True            lower              better                 False               False
+37         Stack4Things      v1  notsummarized    1   4  5.145888e+05            False  475476.471579  5.152499e-01        False  not_significant                None                 False               False
+38         Stack4Things      v1     summarized    0   4  1.253142e+05            False  475476.471579  7.505733e-06         True            lower              better                 False               False
+39         Stack4Things      v1     summarized    1   3  6.720993e+05            False  475476.471579  5.506467e-01        False  not_significant                None                 False               False
+40         Stack4Things      v2  notsummarized    0   4  1.142210e+05            False  475476.471579  1.029687e-07         True            lower              better                 False               False
+41         Stack4Things      v2  notsummarized    1   4  4.679702e+05            False  475476.471579  9.575272e-01        False  not_significant                None                 False               False
+42         Stack4Things      v2     summarized    0   4  1.253142e+05            False  475476.471579  7.505733e-06         True            lower              better                 False               False
+43         Stack4Things      v2     summarized    1   3  9.787177e+05            False  475476.471579  1.310679e-02         True           higher               worse                 False               False
+44         Stack4Things      v3  notsummarized    0   4  1.142210e+05            False  475476.471579  1.029687e-07         True            lower              better                 False               False
+45         Stack4Things      v3  notsummarized    1   3  5.962540e+05            False  475476.471579  2.150091e-01        False  not_significant                None                 False               False
+46         Stack4Things      v3     summarized    0   4  1.253142e+05            False  475476.471579  7.505733e-06         True            lower              better                 False               False
+47         Stack4Things      v3     summarized    1   2  1.076005e+06            False  475476.471579  5.386301e-02         True           higher               worse                 False               False
+48            WordPress      v1  notsummarized    0  10  2.329335e+05            False  475476.471579  4.006084e-04         True            lower              better                 False               False
+49            WordPress      v1     summarized    0  11  3.436610e+05            False  475476.471579  1.190784e-01        False  not_significant                None                 False               False
+50            WordPress      v2  notsummarized    0  10  1.722553e+05            False  475476.471579  1.798268e-05         True            lower              better                 False               False
+51            WordPress      v2     summarized    0  10  3.555867e+05            False  475476.471579  1.521105e-01        False  not_significant                None                 False               False
+52            WordPress      v3  notsummarized    0  10  3.384542e+05            False  475476.471579  5.575010e-02         True            lower              better                 False               False
+53            WordPress      v3     summarized    0  10  3.349243e+05            False  475476.471579  1.718460e-01        False  not_significant                None                 False               False
+54              eWeLink      v1  notsummarized    0  10  3.155928e+05            False  475476.471579  1.520734e-02         True            lower              better                 False               False
+55              eWeLink      v1     summarized    0   6  5.186502e+05            False  475476.471579  7.678518e-01        False  not_significant                None                 False               False
+56              eWeLink      v2  notsummarized    0   8  2.402634e+05            False  475476.471579  2.074343e-03         True            lower              better                 False               False
+57              eWeLink      v2     summarized    0   9  4.679690e+05            False  475476.471579  9.036988e-01        False  not_significant                None                 False               False
+58              eWeLink      v3  notsummarized    0   9  2.355969e+05            False  475476.471579  2.012567e-03         True            lower              better                 False               False
+59              eWeLink      v3     summarized    0  10  4.440567e+05            False  475476.471579  7.987206e-01        False  not_significant                None                 False               False
+
+===========================================
+TABElLA RIASSUNTIVA FATTORI PIÙ SIGNIFICATIVI PER OGNI INDICE
+===========================================
+          index  index_type          test_type factors_or_combination       p_value  significant
+4    TotalToken  continuous  ANOVA_combination             case + RAG  6.060497e-35         True
+5    TotalToken  continuous  ANOVA_combination             mode + RAG  1.342500e-26         True
+6    TotalToken  continuous  ANOVA_combination            case + mode  1.560187e-26         True
+7    TotalToken  continuous  ANOVA_combination         case + version  3.418829e-17         True
+0    TotalToken  continuous         ANOVA_main                C(case)  4.244949e-17         True
+8    TotalToken  continuous  ANOVA_combination                   case  4.244949e-17         True
+3    TotalToken  continuous         ANOVA_main                    RAG  1.061735e-16         True
+9    TotalToken  continuous  ANOVA_combination                    RAG  1.061735e-16         True
+10   TotalToken  continuous  ANOVA_combination          version + RAG  3.368406e-16         True
+2    TotalToken  continuous         ANOVA_main                C(mode)  5.160167e-15         True
+11   TotalToken  continuous  ANOVA_combination                   mode  5.160167e-15         True
+12   TotalToken  continuous  ANOVA_combination         version + mode  1.663101e-14         True
+1    TotalToken  continuous         ANOVA_main             C(version)  3.702414e-02         True
+13   TotalToken  continuous  ANOVA_combination                version  3.702414e-02         True
+18   inputToken  continuous  ANOVA_combination             case + RAG  3.408275e-31         True
+19   inputToken  continuous  ANOVA_combination             mode + RAG  1.285307e-23         True
+20   inputToken  continuous  ANOVA_combination            case + mode  4.139835e-23         True
+21   inputToken  continuous  ANOVA_combination         case + version  5.213655e-18         True
+22   inputToken  continuous  ANOVA_combination          version + RAG  1.169862e-17         True
+23   inputToken  continuous  ANOVA_combination         version + mode  7.202641e-16         True
+17   inputToken  continuous         ANOVA_main                    RAG  4.878848e-15         True
+24   inputToken  continuous  ANOVA_combination                    RAG  4.878848e-15         True
+14   inputToken  continuous         ANOVA_main                C(case)  5.970674e-15         True
+25   inputToken  continuous  ANOVA_combination                   case  5.970674e-15         True
+16   inputToken  continuous         ANOVA_main                C(mode)  3.376915e-13         True
+26   inputToken  continuous  ANOVA_combination                   mode  3.376915e-13         True
+15   inputToken  continuous         ANOVA_main             C(version)  1.165934e-05         True
+27   inputToken  continuous  ANOVA_combination                version  1.165934e-05         True
+32  outputToken  continuous  ANOVA_combination             case + RAG  2.788421e-35         True
+33  outputToken  continuous  ANOVA_combination            case + mode  6.251297e-27         True
+34  outputToken  continuous  ANOVA_combination             mode + RAG  1.054980e-26         True
+28  outputToken  continuous         ANOVA_main                C(case)  1.862174e-17         True
+35  outputToken  continuous  ANOVA_combination                   case  1.862174e-17         True
+36  outputToken  continuous  ANOVA_combination         case + version  2.816421e-17         True
+31  outputToken  continuous         ANOVA_main                    RAG  9.660627e-17         True
+37  outputToken  continuous  ANOVA_combination                    RAG  9.660627e-17         True
+38  outputToken  continuous  ANOVA_combination          version + RAG  5.600747e-16         True
+30  outputToken  continuous         ANOVA_main                C(mode)  4.270691e-15         True
+39  outputToken  continuous  ANOVA_combination                   mode  4.270691e-15         True
+40  outputToken  continuous  ANOVA_combination         version + mode  2.538964e-14         True
+29  outputToken  continuous         ANOVA_main             C(version)  7.407226e-02         True
+41  outputToken  continuous  ANOVA_combination                version  7.407226e-02         True
+
+File di output salvati come:
+- results/doe_token_summary.csv
+- results/doe_token_desc_TotalToken.csv
+- results/doe_token_desc_inputToken.csv
+- results/doe_token_desc_outputToken.csv

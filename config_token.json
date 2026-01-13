@@ -1,0 +1,26 @@
+{
+  "csv_file": "dati_success.csv",
+  "separator": ",",
+  "factors": [
+    "case",
+    "version",
+    "mode",
+    "RAG"
+  ],
+  "indices": {
+    "TotalToken": {
+      "better": "low"
+    },
+    "inputToken": {
+      "better": "low"
+    },
+    "outputToken": {
+      "better": "low"
+    }
+
+  },
+  "confidence_level": 0.90,
+  "max_combination_order": 2,
+  "min_n_for_test": 2,
+  "output_prefix": "results/doe_token"
+}

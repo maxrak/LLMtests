@@ -1,0 +1,128 @@
+===========================================
+Config file: config_success.json
+CSV file:    dati_processo.csv
+Separator:   ','
+Fattori:     ['case', 'version', 'mode', 'RAG']
+Indici:      ['success']
+Conf level:  0.9
+===========================================
+
+=== LOGISTIC REGRESSION per indice 'success' ===
+Formula: success ~ C(case) + C(version) + C(mode) + RAG
+
+--- Info generali modello ---
+                          value
+n_obs                440.000000
+log_likelihood      -245.606261
+log_likelihood_null -303.164065
+pseudo_r2_mcfadden     0.189857
+aic                  511.212522
+bic                  552.080270
+
+--- Coefficienti (logit) ---
+                                   Coef.  Std.Err.         z         P>|z|    [0.025    0.975]
+Intercept                      -2.000285  0.345738 -5.785550  7.227564e-09 -2.677920 -1.322651
+C(case)[T.JetRacer]             1.259333  0.329096  3.826644  1.299023e-04  0.614317  1.904349
+C(case)[T.Open Energy Monitor]  1.495967  0.328112  4.559318  5.131996e-06  0.852879  2.139055
+C(case)[T.Stack4Things]        -1.092181  0.590125 -1.850762  6.420377e-02 -2.248804  0.064443
+C(case)[T.WordPress]            2.662255  0.431925  6.163694  7.106719e-10  1.815697  3.508813
+C(case)[T.eWeLink]              2.485776  0.445844  5.575442  2.469025e-08  1.611938  3.359614
+C(version)[T.v2]               -0.150949  0.266780 -0.565818  5.715176e-01 -0.673829  0.371931
+C(version)[T.v3]                1.106424  0.273023  4.052499  5.067342e-05  0.571309  1.641539
+C(mode)[T.summarized]           0.158027  0.220558  0.716486  4.736910e-01 -0.274259  0.590312
+RAG                             0.676522  0.251305  2.692037  7.101709e-03  0.183974  1.169071
+
+--- Likelihood Ratio tests (fattori / combinazioni) ---
+  factors_removed  df_diff     lr_stat       p_value  significant
+0            case      5.0   88.695780  0.000000e+00         True
+4  case + version      7.0  113.898104  0.000000e+00         True
+5     case + mode      6.0   89.868792  0.000000e+00         True
+6      case + RAG      6.0   88.695995  1.110223e-16         True
+8   version + RAG      3.0   32.781834  3.580641e-07         True
+1         version      2.0   26.396608  1.853743e-06         True
+7  version + mode      3.0   26.912046  6.142684e-06         True
+3             RAG      1.0    7.371086  6.628090e-03         True
+9      mode + RAG      2.0    7.758996  2.066120e-02         True
+2            mode      1.0    0.513430  4.736577e-01        False
+
+--- Tabella descrittiva per indice 'success' ---
+                   case version           mode  RAG   n  mean_value  is_binary_index  global_mean   p_value  significant    direction_raw direction_vs_better  n_too_small_for_test  low_variance_group
+0              BookInfo      v1  notsummarized    0  12    0.166667             True     0.454545  0.077583         True            lower               worse                 False               False
+1              BookInfo      v1  notsummarized    1   9    0.222222             True     0.454545  0.195891        False  not_significant                None                 False               False
+2              BookInfo      v1     summarized    0   9    0.222222             True     0.454545  0.195891        False  not_significant                None                 False               False
+3              BookInfo      v1     summarized    1   7    0.428571             True     0.454545  1.000000        False  not_significant                None                 False               False
+4              BookInfo      v2  notsummarized    0   8    0.125000             True     0.454545  0.079389         True            lower               worse                 False               False
+5              BookInfo      v2  notsummarized    1   8    0.375000             True     0.454545  0.735490        False  not_significant                None                 False               False
+6              BookInfo      v2     summarized    0   8    0.125000             True     0.454545  0.079389         True            lower               worse                 False               False
+7              BookInfo      v2     summarized    1   8    0.000000             True     0.454545  0.009658         True            lower               worse                 False               False
+8              BookInfo      v3  notsummarized    0  10    0.200000             True     0.454545  0.123901        False  not_significant                None                 False               False
+9              BookInfo      v3  notsummarized    1   8    0.125000             True     0.454545  0.079389         True            lower               worse                 False               False
+10             BookInfo      v3     summarized    0   6    0.500000             True     0.454545  1.000000        False  not_significant                None                 False               False
+11             BookInfo      v3     summarized    1   7    0.428571             True     0.454545  1.000000        False  not_significant                None                 False               False
+12             JetRacer      v1  notsummarized    0  10    0.200000             True     0.454545  0.123901        False  not_significant                None                 False               False
+13             JetRacer      v1  notsummarized    1  10    0.600000             True     0.454545  0.527817        False  not_significant                None                 False               False
+14             JetRacer      v1     summarized    0   9    0.222222             True     0.454545  0.195891        False  not_significant                None                 False               False
+15             JetRacer      v1     summarized    1   4    0.750000             True     0.454545  0.336111        False  not_significant                None                 False               False
+16             JetRacer      v2  notsummarized    0  10    0.100000             True     0.454545  0.026653         True            lower               worse                 False               False
+17             JetRacer      v2  notsummarized    1  10    0.400000             True     0.454545  1.000000        False  not_significant                None                 False               False
+18             JetRacer      v2     summarized    0  10    0.400000             True     0.454545  1.000000        False  not_significant                None                 False               False
+19             JetRacer      v2     summarized    1   5    0.600000             True     0.454545  0.664702        False  not_significant                None                 False               False
+20             JetRacer      v3  notsummarized    0  10    0.600000             True     0.454545  0.527817        False  not_significant                None                 False               False
+21             JetRacer      v3  notsummarized    1   7    0.857143             True     0.454545  0.052050         True           higher              better                 False               False
+22             JetRacer      v3     summarized    0   9    0.666667             True     0.454545  0.316122        False  not_significant                None                 False               False
+23             JetRacer      v3     summarized    1   5    0.800000             True     0.454545  0.184109        False  not_significant                None                 False               False
+24  Open Energy Monitor      v1  notsummarized    0   7    0.142857             True     0.454545  0.135847        False  not_significant                None                 False               False
+25  Open Energy Monitor      v1  notsummarized    1   6    0.333333             True     0.454545  0.695184        False  not_significant                None                 False               False
+26  Open Energy Monitor      v1     summarized    0  10    0.500000             True     0.454545  1.000000        False  not_significant                None                 False               False
+27  Open Energy Monitor      v1     summarized    1   9    0.444444             True     0.454545  1.000000        False  not_significant                None                 False               False
+28  Open Energy Monitor      v2  notsummarized    0   9    0.333333             True     0.454545  0.523883        False  not_significant                None                 False               False
+29  Open Energy Monitor      v2  notsummarized    1  10    0.600000             True     0.454545  0.527817        False  not_significant                None                 False               False
+30  Open Energy Monitor      v2     summarized    0   7    0.571429             True     0.454545  0.709039        False  not_significant                None                 False               False
+31  Open Energy Monitor      v2     summarized    1   9    0.333333             True     0.454545  0.523883        False  not_significant                None                 False               False
+32  Open Energy Monitor      v3  notsummarized    0   8    0.750000             True     0.454545  0.152864        False  not_significant                None                 False               False
+33  Open Energy Monitor      v3  notsummarized    1   7    0.714286             True     0.454545  0.257080        False  not_significant                None                 False               False
+34  Open Energy Monitor      v3     summarized    0   9    0.888889             True     0.454545  0.014048         True           higher              better                 False               False
+35  Open Energy Monitor      v3     summarized    1   9    0.888889             True     0.454545  0.014048         True           higher              better                 False               False
+36         Stack4Things      v1  notsummarized    0   4    0.000000             True     0.454545  0.131207        False  not_significant                None                 False               False
+37         Stack4Things      v1  notsummarized    1   4    0.250000             True     0.454545  0.631173        False  not_significant                None                 False               False
+38         Stack4Things      v1     summarized    0   4    0.000000             True     0.454545  0.131207        False  not_significant                None                 False               False
+39         Stack4Things      v1     summarized    1   3    0.333333             True     0.454545  1.000000        False  not_significant                None                 False               False
+40         Stack4Things      v2  notsummarized    0   4    0.000000             True     0.454545  0.131207        False  not_significant                None                 False               False
+41         Stack4Things      v2  notsummarized    1   4    0.250000             True     0.454545  0.631173        False  not_significant                None                 False               False
+42         Stack4Things      v2     summarized    0   4    0.000000             True     0.454545  0.131207        False  not_significant                None                 False               False
+43         Stack4Things      v2     summarized    1   3    0.000000             True     0.454545  0.256198        False  not_significant                None                 False               False
+44         Stack4Things      v3  notsummarized    0   4    0.000000             True     0.454545  0.131207        False  not_significant                None                 False               False
+45         Stack4Things      v3  notsummarized    1   3    0.333333             True     0.454545  1.000000        False  not_significant                None                 False               False
+46         Stack4Things      v3     summarized    0   4    0.000000             True     0.454545  0.131207        False  not_significant                None                 False               False
+47         Stack4Things      v3     summarized    1   2    0.000000             True     0.454545  0.504132        False  not_significant                None                 False               False
+48            WordPress      v1  notsummarized    0   8    0.750000             True     0.454545  0.152864        False  not_significant                None                 False               False
+49            WordPress      v1     summarized    0  10    0.600000             True     0.454545  0.527817        False  not_significant                None                 False               False
+50            WordPress      v2  notsummarized    0   6    0.833333             True     0.454545  0.098659         True           higher              better                 False               False
+51            WordPress      v2     summarized    0  10    0.600000             True     0.454545  0.527817        False  not_significant                None                 False               False
+52            WordPress      v3  notsummarized    0   9    0.777778             True     0.454545  0.089042         True           higher              better                 False               False
+53            WordPress      v3     summarized    0  10    0.900000             True     0.454545  0.007226         True           higher              better                 False               False
+54              eWeLink      v1  notsummarized    0   8    0.625000             True     0.454545  0.481561        False  not_significant                None                 False               False
+55              eWeLink      v1     summarized    0   3    0.666667             True     0.454545  0.594290        False  not_significant                None                 False               False
+56              eWeLink      v2  notsummarized    0   6    0.666667             True     0.454545  0.420850        False  not_significant                None                 False               False
+57              eWeLink      v2     summarized    0   9    0.555556             True     0.454545  0.740300        False  not_significant                None                 False               False
+58              eWeLink      v3  notsummarized    0   9    1.000000             True     0.454545  0.000828         True           higher              better                 False               False
+59              eWeLink      v3     summarized    0  10    0.700000             True     0.454545  0.201974        False  not_significant                None                 False               False
+
+===========================================
+TABElLA RIASSUNTIVA FATTORI PIÙ SIGNIFICATIVI PER OGNI INDICE
+===========================================
+     index index_type test_type factors_or_combination       p_value  significant
+0  success     binary        LR                   case  0.000000e+00         True
+1  success     binary        LR         case + version  0.000000e+00         True
+2  success     binary        LR            case + mode  0.000000e+00         True
+3  success     binary        LR             case + RAG  1.110223e-16         True
+4  success     binary        LR          version + RAG  3.580641e-07         True
+5  success     binary        LR                version  1.853743e-06         True
+6  success     binary        LR         version + mode  6.142684e-06         True
+7  success     binary        LR                    RAG  6.628090e-03         True
+8  success     binary        LR             mode + RAG  2.066120e-02         True
+9  success     binary        LR                   mode  4.736577e-01        False
+
+File di output salvati come:
+- results/doe_processo_summary.csv
+- results/doe_processo_desc_success.csv

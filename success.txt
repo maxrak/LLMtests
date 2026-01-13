@@ -1,0 +1,583 @@
+===========================================
+Config file: config_success.json
+CSV file:    dati_processo.csv
+Separator:   ','
+Fattori:     ['case', 'version', 'mode', 'RAG']
+Indici:      ['success', 'iterations']
+Conf level:  0.95
+===========================================
+
+=== LOGISTIC REGRESSION per indice 'success' ===
+Formula: success ~ C(case) + C(version) + C(mode) + RAG
+
+--- Info generali modello ---
+                          value
+n_obs                433.000000
+log_likelihood      -240.970742
+log_likelihood_null -299.290381
+pseudo_r2_mcfadden     0.194860
+aic                  501.941485
+bic                  542.648862
+
+--- Coefficienti (logit) ---
+                                   Coef.  Std.Err.         z         P>|z|  \
+Intercept                      -1.984883  0.348228 -5.699958  1.198367e-08   
+C(case)[T.JetRacer]             1.358425  0.328920  4.129961  3.628254e-05   
+C(case)[T.Open Energy Monitor]  1.672138  0.331362  5.046256  4.505521e-07   
+C(case)[T.Stack4Things]        -0.923343  0.546136 -1.690682  9.089758e-02   
+C(case)[T.WordPress]            2.727418  0.451211  6.044666  1.497195e-09   
+C(case)[T.eWeLink]              2.416575  0.449347  5.377975  7.532813e-08   
+C(version)[T.v2]               -0.381661  0.266977 -1.429567  1.528412e-01   
+C(version)[T.v3]                1.007585  0.275624  3.655646  2.565347e-04   
+C(mode)[T.summarized]           0.287253  0.222478  1.291149  1.966520e-01   
+RAG                             0.818922  0.252059  3.248934  1.158383e-03   
+
+                                  [0.025    0.975]  
+Intercept                      -2.667396 -1.302369  
+C(case)[T.JetRacer]             0.713755  2.003096  
+C(case)[T.Open Energy Monitor]  1.022680  2.321596  
+C(case)[T.Stack4Things]        -1.993750  0.147065  
+C(case)[T.WordPress]            1.843062  3.611775  
+C(case)[T.eWeLink]              1.535872  3.297278  
+C(version)[T.v2]               -0.904927  0.141604  
+C(version)[T.v3]                0.467371  1.547798  
+C(mode)[T.summarized]          -0.148797  0.723302  
+RAG                             0.324896  1.312948  
+
+--- Likelihood Ratio tests (fattori / combinazioni) ---
+  factors_removed  df_diff     lr_stat       p_value  significant
+0            case      5.0   88.689766  0.000000e+00         True
+4  case + version      7.0  113.906499  0.000000e+00         True
+5     case + mode      6.0   91.401755  0.000000e+00         True
+6      case + RAG      6.0   89.487707  0.000000e+00         True
+8   version + RAG      3.0   36.361587  6.279558e-08         True
+1         version      2.0   27.313855  1.171849e-06         True
+7  version + mode      3.0   28.813412  2.450986e-06         True
+3             RAG      1.0   10.838453  9.941377e-04         True
+9      mode + RAG      2.0   12.367761  2.062410e-03         True
+2            mode      1.0    1.670660  1.961702e-01        False
+
+--- Tabella descrittiva per indice 'success' ---
+                   case version           mode  RAG   n  mean_value  \
+0              BookInfo      v1  notsummarized    0  12    0.166667   
+1              BookInfo      v1  notsummarized    1   9    0.222222   
+2              BookInfo      v1     summarized    0   9    0.222222   
+3              BookInfo      v1     summarized    1   7    0.428571   
+4              BookInfo      v2  notsummarized    0   8    0.125000   
+5              BookInfo      v2  notsummarized    1   8    0.375000   
+6              BookInfo      v2     summarized    0   8    0.125000   
+7              BookInfo      v2     summarized    1   8    0.000000   
+8              BookInfo      v3  notsummarized    0  10    0.200000   
+9              BookInfo      v3  notsummarized    1   7    0.142857   
+10             BookInfo      v3     summarized    0   6    0.500000   
+11             BookInfo      v3     summarized    1   8    0.500000   
+12             JetRacer      v1  notsummarized    0  10    0.200000   
+13             JetRacer      v1  notsummarized    1  10    0.600000   
+14             JetRacer      v1     summarized    0   9    0.222222   
+15             JetRacer      v1     summarized    1   7    0.857143   
+16             JetRacer      v2  notsummarized    0  10    0.100000   
+17             JetRacer      v2  notsummarized    1  10    0.400000   
+18             JetRacer      v2     summarized    0  10    0.400000   
+19             JetRacer      v2     summarized    1   5    0.600000   
+20             JetRacer      v3  notsummarized    0  10    0.600000   
+21             JetRacer      v3  notsummarized    1   7    0.857143   
+22             JetRacer      v3     summarized    0   8    0.750000   
+23             JetRacer      v3     summarized    1   4    1.000000   
+24  Open Energy Monitor      v1  notsummarized    0   7    0.285714   
+25  Open Energy Monitor      v1  notsummarized    1   8    0.500000   
+26  Open Energy Monitor      v1     summarized    0  10    0.600000   
+27  Open Energy Monitor      v1     summarized    1   9    0.555556   
+28  Open Energy Monitor      v2  notsummarized    0   9    0.333333   
+29  Open Energy Monitor      v2  notsummarized    1  10    0.600000   
+30  Open Energy Monitor      v2     summarized    0   6    0.666667   
+31  Open Energy Monitor      v2     summarized    1   9    0.333333   
+32  Open Energy Monitor      v3  notsummarized    0   8    0.750000   
+33  Open Energy Monitor      v3  notsummarized    1   6    0.833333   
+34  Open Energy Monitor      v3     summarized    0   8    0.875000   
+35  Open Energy Monitor      v3     summarized    1   9    0.888889   
+36         Stack4Things      v1  notsummarized    0   4    0.000000   
+37         Stack4Things      v1  notsummarized    1   4    0.250000   
+38         Stack4Things      v1     summarized    0   4    0.000000   
+39         Stack4Things      v1     summarized    1   4    0.500000   
+40         Stack4Things      v2  notsummarized    0   4    0.000000   
+41         Stack4Things      v2  notsummarized    1   4    0.250000   
+42         Stack4Things      v2     summarized    0   4    0.000000   
+43         Stack4Things      v2     summarized    1   3    0.000000   
+44         Stack4Things      v3  notsummarized    0   4    0.000000   
+45         Stack4Things      v3  notsummarized    1   3    0.333333   
+46         Stack4Things      v3     summarized    0   4    0.000000   
+47         Stack4Things      v3     summarized    1   2    0.000000   
+48            WordPress      v1  notsummarized    0   6    0.833333   
+49            WordPress      v1     summarized    0  10    0.600000   
+50            WordPress      v2  notsummarized    0   6    0.833333   
+51            WordPress      v2     summarized    0   8    0.625000   
+52            WordPress      v3  notsummarized    0   8    0.750000   
+53            WordPress      v3     summarized    0   9    0.888889   
+54              eWeLink      v1  notsummarized    0   7    0.571429   
+55              eWeLink      v1     summarized    0   4    0.750000   
+56              eWeLink      v2  notsummarized    0   4    0.500000   
+57              eWeLink      v2     summarized    0   9    0.555556   
+58              eWeLink      v3  notsummarized    0   9    1.000000   
+59              eWeLink      v3     summarized    0  10    0.700000   
+
+    is_binary_index  global_mean   p_value  significant    direction_raw  \
+0              True     0.468822  0.042985         True            lower   
+1              True     0.468822  0.187328        False  not_significant   
+2              True     0.468822  0.187328        False  not_significant   
+3              True     0.468822  1.000000        False  not_significant   
+4              True     0.468822  0.074573        False  not_significant   
+5              True     0.468822  0.730791        False  not_significant   
+6              True     0.468822  0.074573        False  not_significant   
+7              True     0.468822  0.008671         True            lower   
+8              True     0.468822  0.116210        False  not_significant   
+9              True     0.468822  0.130103        False  not_significant   
+10             True     0.468822  1.000000        False  not_significant   
+11             True     0.468822  1.000000        False  not_significant   
+12             True     0.468822  0.116210        False  not_significant   
+13             True     0.468822  0.530781        False  not_significant   
+14             True     0.468822  0.187328        False  not_significant   
+15             True     0.468822  0.056390        False  not_significant   
+16             True     0.468822  0.023895         True            lower   
+17             True     0.468822  0.758654        False  not_significant   
+18             True     0.468822  0.758654        False  not_significant   
+19             True     0.468822  0.670591        False  not_significant   
+20             True     0.468822  0.530781        False  not_significant   
+21             True     0.468822  0.056390        False  not_significant   
+22             True     0.468822  0.158459        False  not_significant   
+23             True     0.468822  0.048310         True           higher   
+24             True     0.468822  0.459479        False  not_significant   
+25             True     0.468822  1.000000        False  not_significant   
+26             True     0.468822  0.530781        False  not_significant   
+27             True     0.468822  0.742603        False  not_significant   
+28             True     0.468822  0.515423        False  not_significant   
+29             True     0.468822  0.530781        False  not_significant   
+30             True     0.468822  0.428669        False  not_significant   
+31             True     0.468822  0.515423        False  not_significant   
+32             True     0.468822  0.158459        False  not_significant   
+33             True     0.468822  0.105262        False  not_significant   
+34             True     0.468822  0.029825         True           higher   
+35             True     0.468822  0.015617         True           higher   
+36             True     0.468822  0.127918        False  not_significant   
+37             True     0.468822  0.627911        False  not_significant   
+38             True     0.468822  0.127918        False  not_significant   
+39             True     0.468822  1.000000        False  not_significant   
+40             True     0.468822  0.127918        False  not_significant   
+41             True     0.468822  0.627911        False  not_significant   
+42             True     0.468822  0.127918        False  not_significant   
+43             True     0.468822  0.252916        False  not_significant   
+44             True     0.468822  0.127918        False  not_significant   
+45             True     0.468822  1.000000        False  not_significant   
+46             True     0.468822  0.127918        False  not_significant   
+47             True     0.468822  0.501944        False  not_significant   
+48             True     0.468822  0.105262        False  not_significant   
+49             True     0.468822  0.530781        False  not_significant   
+50             True     0.468822  0.105262        False  not_significant   
+51             True     0.468822  0.486778        False  not_significant   
+52             True     0.468822  0.158459        False  not_significant   
+53             True     0.468822  0.015617         True           higher   
+54             True     0.468822  0.712887        False  not_significant   
+55             True     0.468822  0.346858        False  not_significant   
+56             True     0.468822  1.000000        False  not_significant   
+57             True     0.468822  0.742603        False  not_significant   
+58             True     0.468822  0.001094         True           higher   
+59             True     0.468822  0.205738        False  not_significant   
+
+   direction_vs_better  
+0                worse  
+1                 None  
+2                 None  
+3                 None  
+4                 None  
+5                 None  
+6                 None  
+7                worse  
+8                 None  
+9                 None  
+10                None  
+11                None  
+12                None  
+13                None  
+14                None  
+15                None  
+16               worse  
+17                None  
+18                None  
+19                None  
+20                None  
+21                None  
+22                None  
+23              better  
+24                None  
+25                None  
+26                None  
+27                None  
+28                None  
+29                None  
+30                None  
+31                None  
+32                None  
+33                None  
+34              better  
+35              better  
+36                None  
+37                None  
+38                None  
+39                None  
+40                None  
+41                None  
+42                None  
+43                None  
+44                None  
+45                None  
+46                None  
+47                None  
+48                None  
+49                None  
+50                None  
+51                None  
+52                None  
+53              better  
+54                None  
+55                None  
+56                None  
+57                None  
+58              better  
+59                None  
+
+=== ANOVA / OLS per indice 'iterations' ===
+Formula: iterations ~ C(case) + C(version) + C(mode) + RAG
+
+--- Riassunto modello OLS ---
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             iterations   R-squared:                       0.245
+Model:                            OLS   Adj. R-squared:                  0.229
+Method:                 Least Squares   F-statistic:                     15.27
+Date:                Mon, 12 Jan 2026   Prob (F-statistic):           1.35e-21
+Time:                        23:20:14   Log-Likelihood:                -1564.3
+No. Observations:                 433   AIC:                             3149.
+Df Residuals:                     423   BIC:                             3189.
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==================================================================================================
+                                     coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                         29.0646      1.242     23.408      0.000      26.624      31.505
+C(case)[T.JetRacer]               -6.6410      1.284     -5.170      0.000      -9.166      -4.116
+C(case)[T.Open Energy Monitor]    -7.7772      1.288     -6.036      0.000     -10.310      -5.245
+C(case)[T.Stack4Things]            1.4459      1.642      0.881      0.379      -1.781       4.673
+C(case)[T.WordPress]             -11.9012      1.673     -7.113      0.000     -15.190      -8.613
+C(case)[T.eWeLink]                -9.3539      1.724     -5.427      0.000     -12.742      -5.966
+C(version)[T.v2]                   1.8149      1.061      1.710      0.088      -0.271       3.901
+C(version)[T.v3]                  -4.5009      1.071     -4.202      0.000      -6.606      -2.396
+C(mode)[T.summarized]             -0.9842      0.876     -1.123      0.262      -2.707       0.738
+RAG                               -2.6752      0.985     -2.717      0.007      -4.610      -0.740
+==============================================================================
+Omnibus:                       31.276   Durbin-Watson:                   1.854
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               17.503
+Skew:                          -0.333   Prob(JB):                     0.000158
+Kurtosis:                       2.275   Cond. No.                         7.96
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+--- ANOVA (Type II) ---
+                  sum_sq     df          F        PR(>F)  significant
+C(case)      7868.203925    5.0  19.114372  3.705442e-17         True
+C(version)   2963.811088    2.0  18.000102  3.144590e-08         True
+C(mode)       103.851967    1.0   1.261447  2.620143e-01        False
+RAG           607.889978    1.0   7.383791  6.851655e-03         True
+Residual    34824.583400  423.0        NaN           NaN        False
+
+--- Tukey HSD per fattore 'case' ---
+              Multiple Comparison of Means - Tukey HSD, FWER=0.05              
+===============================================================================
+       group1              group2       meandiff p-adj   lower    upper  reject
+-------------------------------------------------------------------------------
+           BookInfo            JetRacer    -6.36    0.0  -10.199  -2.521   True
+           BookInfo Open Energy Monitor  -7.9238    0.0 -11.7725 -4.0752   True
+           BookInfo        Stack4Things   1.5736  0.942  -3.3372  6.4845  False
+           BookInfo           WordPress -11.0294    0.0 -15.8301 -6.2286   True
+           BookInfo             eWeLink  -8.7958    0.0 -13.7462 -3.8455   True
+           JetRacer Open Energy Monitor  -1.5638  0.854  -5.4125  2.2848  False
+           JetRacer        Stack4Things   7.9336 0.0001   3.0228 12.8445   True
+           JetRacer           WordPress  -4.6694 0.0619  -9.4701  0.1314  False
+           JetRacer             eWeLink  -2.4358 0.7219  -7.3862  2.5145  False
+Open Energy Monitor        Stack4Things   9.4975    0.0    4.579 14.4159   True
+Open Energy Monitor           WordPress  -3.1055 0.4355  -7.9141   1.703  False
+Open Energy Monitor             eWeLink   -0.872  0.996  -5.8298  4.0859  False
+       Stack4Things           WordPress  -12.603    0.0 -18.2974 -6.9086   True
+       Stack4Things             eWeLink -10.3695    0.0 -16.1905 -4.5484   True
+          WordPress             eWeLink   2.2335 0.8746   -3.495   7.962  False
+-------------------------------------------------------------------------------
+
+--- Tukey HSD per fattore 'version' ---
+Multiple Comparison of Means - Tukey HSD, FWER=0.05 
+====================================================
+group1 group2 meandiff p-adj   lower   upper  reject
+----------------------------------------------------
+    v1     v2   1.5997 0.3577 -1.1469  4.3463  False
+    v1     v3  -4.8648 0.0001 -7.6264 -2.1031   True
+    v2     v3  -6.4644    0.0 -9.2585 -3.6704   True
+----------------------------------------------------
+
+--- F-test per combinazioni di fattori (modelli annidati) ---
+  factors_removed  df_diff     F_stat       p_value  significant
+4  case + version      7.0  19.276275  2.209483e-22         True
+0            case      5.0  19.114372  3.705442e-17         True
+5     case + mode      6.0  16.356106  5.738802e-17         True
+6      case + RAG      6.0  15.999905  1.321681e-16         True
+8   version + RAG      3.0  14.092881  9.008077e-09         True
+1         version      2.0  18.000102  3.144590e-08         True
+7  version + mode      3.0  12.381988  8.895170e-08         True
+3             RAG      1.0   7.383791  6.851655e-03         True
+9      mode + RAG      2.0   4.292466  1.427154e-02         True
+2            mode      1.0   1.261447  2.620143e-01        False
+
+--- Tabella descrittiva per indice 'iterations' ---
+                   case version           mode  RAG   n  mean_value  \
+0              BookInfo      v1  notsummarized    0  12   27.000000   
+1              BookInfo      v1  notsummarized    1   9   25.333333   
+2              BookInfo      v1     summarized    0   9   26.111111   
+3              BookInfo      v1     summarized    1   7   28.857143   
+4              BookInfo      v2  notsummarized    0   8   29.625000   
+5              BookInfo      v2  notsummarized    1   8   24.625000   
+6              BookInfo      v2     summarized    0   8   27.750000   
+7              BookInfo      v2     summarized    1   8   30.000000   
+8              BookInfo      v3  notsummarized    0  10   25.000000   
+9              BookInfo      v3  notsummarized    1   7   28.142857   
+10             BookInfo      v3     summarized    0   6   21.666667   
+11             BookInfo      v3     summarized    1   8   24.000000   
+12             JetRacer      v1  notsummarized    0  10   27.900000   
+13             JetRacer      v1  notsummarized    1  10   19.500000   
+14             JetRacer      v1     summarized    0   9   29.222222   
+15             JetRacer      v1     summarized    1   7   10.571429   
+16             JetRacer      v2  notsummarized    0  10   27.500000   
+17             JetRacer      v2  notsummarized    1  10   22.400000   
+18             JetRacer      v2     summarized    0  10   22.400000   
+19             JetRacer      v2     summarized    1   5   20.400000   
+20             JetRacer      v3  notsummarized    0  10   16.400000   
+21             JetRacer      v3  notsummarized    1   7    9.428571   
+22             JetRacer      v3     summarized    0   8   16.250000   
+23             JetRacer      v3     summarized    1   4    5.500000   
+24  Open Energy Monitor      v1  notsummarized    0   7   22.857143   
+25  Open Energy Monitor      v1  notsummarized    1   8   23.000000   
+26  Open Energy Monitor      v1     summarized    0  10   18.900000   
+27  Open Energy Monitor      v1     summarized    1   9   17.555556   
+28  Open Energy Monitor      v2  notsummarized    0   9   24.555556   
+29  Open Energy Monitor      v2  notsummarized    1  10   20.600000   
+30  Open Energy Monitor      v2     summarized    0   6   19.333333   
+31  Open Energy Monitor      v2     summarized    1   9   24.111111   
+32  Open Energy Monitor      v3  notsummarized    0   8   14.625000   
+33  Open Energy Monitor      v3  notsummarized    1   6   10.166667   
+34  Open Energy Monitor      v3     summarized    0   8    9.750000   
+35  Open Energy Monitor      v3     summarized    1   9   15.111111   
+36         Stack4Things      v1  notsummarized    0   4   30.000000   
+37         Stack4Things      v1  notsummarized    1   4   28.000000   
+38         Stack4Things      v1     summarized    0   4   30.000000   
+39         Stack4Things      v1     summarized    1   4   19.750000   
+40         Stack4Things      v2  notsummarized    0   4   30.000000   
+41         Stack4Things      v2  notsummarized    1   4   23.750000   
+42         Stack4Things      v2     summarized    0   4   30.000000   
+43         Stack4Things      v2     summarized    1   3   30.000000   
+44         Stack4Things      v3  notsummarized    0   4   30.000000   
+45         Stack4Things      v3  notsummarized    1   3   27.000000   
+46         Stack4Things      v3     summarized    0   4   30.000000   
+47         Stack4Things      v3     summarized    1   2   30.000000   
+48            WordPress      v1  notsummarized    0   6   13.500000   
+49            WordPress      v1     summarized    0  10   16.200000   
+50            WordPress      v2  notsummarized    0   6   15.166667   
+51            WordPress      v2     summarized    0   8   17.750000   
+52            WordPress      v3  notsummarized    0   8   16.875000   
+53            WordPress      v3     summarized    0   9   13.111111   
+54              eWeLink      v1  notsummarized    0   7   19.714286   
+55              eWeLink      v1     summarized    0   4   14.000000   
+56              eWeLink      v2  notsummarized    0   4   23.250000   
+57              eWeLink      v2     summarized    0   9   22.111111   
+58              eWeLink      v3  notsummarized    0   9   12.888889   
+59              eWeLink      v3     summarized    0  10   16.100000   
+
+    is_binary_index  global_mean       p_value  significant    direction_raw  \
+0             False     21.34873  2.167562e-02         True           higher   
+1             False     21.34873  2.334146e-01        False  not_significant   
+2             False     21.34873  1.086204e-01        False  not_significant   
+3             False     21.34873  4.029762e-05         True           higher   
+4             False     21.34873  9.905342e-08         True           higher   
+5             False     21.34873  3.091077e-01        False  not_significant   
+6             False     21.34873  2.486553e-02         True           higher   
+7             False     21.34873  0.000000e+00         True           higher   
+8             False     21.34873  3.017953e-01        False  not_significant   
+9             False     21.34873  1.059994e-02         True           higher   
+10            False     21.34873  9.426011e-01        False  not_significant   
+11            False     21.34873  3.189295e-01        False  not_significant   
+12            False     21.34873  9.380888e-03         True           higher   
+13            False     21.34873  5.559707e-01        False  not_significant   
+14            False     21.34873  3.645461e-07         True           higher   
+15            False     21.34873  2.432437e-02         True            lower   
+16            False     21.34873  3.612852e-02         True           higher   
+17            False     21.34873  7.532024e-01        False  not_significant   
+18            False     21.34873  7.597088e-01        False  not_significant   
+19            False     21.34873  8.589147e-01        False  not_significant   
+20            False     21.34873  2.246280e-01        False  not_significant   
+21            False     21.34873  1.626696e-02         True            lower   
+22            False     21.34873  1.940060e-01        False  not_significant   
+23            False     21.34873  9.154625e-04         True            lower   
+24            False     21.34873  7.570020e-01        False  not_significant   
+25            False     21.34873  5.911030e-01        False  not_significant   
+26            False     21.34873  5.135794e-01        False  not_significant   
+27            False     21.34873  3.770011e-01        False  not_significant   
+28            False     21.34873  2.989740e-01        False  not_significant   
+29            False     21.34873  8.057322e-01        False  not_significant   
+30            False     21.34873  6.193962e-01        False  not_significant   
+31            False     21.34873  3.765811e-01        False  not_significant   
+32            False     21.34873  1.373825e-01        False  not_significant   
+33            False     21.34873  3.988771e-02         True            lower   
+34            False     21.34873  1.039900e-02         True            lower   
+35            False     21.34873  3.931474e-02         True            lower   
+36            False     21.34873  0.000000e+00         True           higher   
+37            False     21.34873  4.486499e-02         True           higher   
+38            False     21.34873  0.000000e+00         True           higher   
+39            False     21.34873  8.098541e-01        False  not_significant   
+40            False     21.34873  0.000000e+00         True           higher   
+41            False     21.34873  7.264428e-01        False  not_significant   
+42            False     21.34873  0.000000e+00         True           higher   
+43            False     21.34873  0.000000e+00         True           higher   
+44            False     21.34873  0.000000e+00         True           higher   
+45            False     21.34873  2.002846e-01        False  not_significant   
+46            False     21.34873  0.000000e+00         True           higher   
+47            False     21.34873  0.000000e+00         True           higher   
+48            False     21.34873  1.173974e-01        False  not_significant   
+49            False     21.34873  2.240653e-01        False  not_significant   
+50            False     21.34873  1.029376e-01        False  not_significant   
+51            False     21.34873  3.622140e-01        False  not_significant   
+52            False     21.34873  2.676348e-01        False  not_significant   
+53            False     21.34873  4.669873e-02         True            lower   
+54            False     21.34873  6.903315e-01        False  not_significant   
+55            False     21.34873  2.711424e-01        False  not_significant   
+56            False     21.34873  7.268285e-01        False  not_significant   
+57            False     21.34873  8.032550e-01        False  not_significant   
+58            False     21.34873  1.470947e-02         True            lower   
+59            False     21.34873  1.842587e-01        False  not_significant   
+
+   direction_vs_better  
+0                worse  
+1                 None  
+2                 None  
+3                worse  
+4                worse  
+5                 None  
+6                worse  
+7                worse  
+8                 None  
+9                worse  
+10                None  
+11                None  
+12               worse  
+13                None  
+14               worse  
+15              better  
+16               worse  
+17                None  
+18                None  
+19                None  
+20                None  
+21              better  
+22                None  
+23              better  
+24                None  
+25                None  
+26                None  
+27                None  
+28                None  
+29                None  
+30                None  
+31                None  
+32                None  
+33              better  
+34              better  
+35              better  
+36               worse  
+37               worse  
+38               worse  
+39                None  
+40               worse  
+41                None  
+42               worse  
+43               worse  
+44               worse  
+45                None  
+46               worse  
+47               worse  
+48                None  
+49                None  
+50                None  
+51                None  
+52                None  
+53              better  
+54                None  
+55                None  
+56                None  
+57                None  
+58              better  
+59                None  
+
+===========================================
+TABElLA RIASSUNTIVA FATTORI PIÙ SIGNIFICATIVI PER OGNI INDICE
+===========================================
+         index  index_type          test_type factors_or_combination  \
+14  iterations  continuous  ANOVA_combination         case + version   
+15  iterations  continuous  ANOVA_combination                   case   
+10  iterations  continuous         ANOVA_main                C(case)   
+16  iterations  continuous  ANOVA_combination            case + mode   
+17  iterations  continuous  ANOVA_combination             case + RAG   
+18  iterations  continuous  ANOVA_combination          version + RAG   
+11  iterations  continuous         ANOVA_main             C(version)   
+19  iterations  continuous  ANOVA_combination                version   
+20  iterations  continuous  ANOVA_combination         version + mode   
+21  iterations  continuous  ANOVA_combination                    RAG   
+13  iterations  continuous         ANOVA_main                    RAG   
+22  iterations  continuous  ANOVA_combination             mode + RAG   
+12  iterations  continuous         ANOVA_main                C(mode)   
+23  iterations  continuous  ANOVA_combination                   mode   
+0      success      binary                 LR                   case   
+1      success      binary                 LR         case + version   
+2      success      binary                 LR            case + mode   
+3      success      binary                 LR             case + RAG   
+4      success      binary                 LR          version + RAG   
+5      success      binary                 LR                version   
+6      success      binary                 LR         version + mode   
+7      success      binary                 LR                    RAG   
+8      success      binary                 LR             mode + RAG   
+9      success      binary                 LR                   mode   
+
+         p_value  significant  
+14  2.209483e-22         True  
+15  3.705442e-17         True  
+10  3.705442e-17         True  
+16  5.738802e-17         True  
+17  1.321681e-16         True  
+18  9.008077e-09         True  
+11  3.144590e-08         True  
+19  3.144590e-08         True  
+20  8.895170e-08         True  
+21  6.851655e-03         True  
+13  6.851655e-03         True  
+22  1.427154e-02         True  
+12  2.620143e-01        False  
+23  2.620143e-01        False  
+0   0.000000e+00         True  
+1   0.000000e+00         True  
+2   0.000000e+00         True  
+3   0.000000e+00         True  
+4   6.279558e-08         True  
+5   1.171849e-06         True  
+6   2.450986e-06         True  
+7   9.941377e-04         True  
+8   2.062410e-03         True  
+9   1.961702e-01        False  
+
+File di output salvati come:
+- doe_processo_summary.csv
+- doe_processo_desc_success.csv
+- doe_processo_desc_iterations.csv
