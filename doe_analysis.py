@@ -50,7 +50,7 @@ from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 pd.set_option('display.max_rows', None) # Mostra tutte le righe
 pd.set_option('display.max_columns', None) # Mostra tutte le colonne
-pd.set_option('display.width', 1000)       # Imposta la larghezza (ad esempio, 1000 caratteri)
+pd.set_option('display.width', 2000)       # Imposta la larghezza (ad esempio, 1000 caratteri)
 
 # -------------------------------------------------------------------
 # Utility

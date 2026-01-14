@@ -1,0 +1,11 @@
+index,index_type,test_type,factors_or_combination,p_value,significant
+success,binary,LR,case,0.0,True
+success,binary,LR,case + version,0.0,True
+success,binary,LR,case + mode,0.0,True
+success,binary,LR,case + RAG,0.0,True
+success,binary,LR,version + RAG,1.3614297178499157e-07,True
+success,binary,LR,version,1.5697381039458946e-07,True
+success,binary,LR,version + mode,6.551081039862794e-07,True
+success,binary,LR,RAG,0.06755407602174412,True
+success,binary,LR,mode + RAG,0.17521475503696637,False
+success,binary,LR,mode,0.6509826072288323,False

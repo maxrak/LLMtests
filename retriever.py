@@ -55,7 +55,7 @@ COL_UPDATED = "updated at"
 CSV_FIELDNAMES = [COL_CASE, COL_VERSION, COL_MODE, COL_RAG, COL_SUCCESS, COL_ITER,COL_CREATED,COL_UPDATED, COL_TOTTOK, COL_INTOK,COL_OUTTOK]
 
 
-def CSVgen(rows, output_csv_path="dati_processo.csv"):
+def CSVgen(rows, output_csv_path="dati/dati_success.csv"):
     """
     Genera un CSV per l'analisi a partire da 'rows'.
 
@@ -109,7 +109,7 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
 
             success = 1 if iters_int < 30 else 0
 
-            if success == macm :
+            if (success == macm) and (case != "default_app") :
                 writer.writerow({
                     COL_CASE: case,
                     COL_VERSION: version,
@@ -127,7 +127,7 @@ def CSVgen(rows, output_csv_path="dati_processo.csv"):
     return output_csv_path
 
 
-def CSVgenSelected(rows, output_csv_path="dati_processo.csv",selection=1):
+def CSVgenSelected(rows, output_csv_path="dati/dati_iter.csv",selection=1):
     """
     Genera un CSV per l'analisi a partire da 'rows'.
 
@@ -223,7 +223,7 @@ def macmvalidity():
 
 
 
-def CSVvalidity(rows, output_csv_path="dati_validity.csv"):
+def CSVvalidity(rows, output_csv_path="dati/dati_validity.csv"):
     """
     Genera un CSV per l'analisi a partire da 'rows'.
 
@@ -310,10 +310,10 @@ def CSVvalidity(rows, output_csv_path="dati_validity.csv"):
 def test():
     rows=sessions()
     #pprint(rows)
-    CSVgen(rows, "dati_success.csv")
-    CSVgenSelected(rows, "dati_iter.csv",1)
+    CSVgen(rows, "dati/dati_success.csv")
+    CSVgenSelected(rows, "dati/dati_iter.csv",1)
     rows=macmvalidity()
     #pprint(rows)
-    CSVvalidity(rows,"dati_validity.csv")
+    CSVvalidity(rows,"dati/dati_validity.csv")
 
 test()

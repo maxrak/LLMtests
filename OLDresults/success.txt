@@ -1,0 +1,11 @@
+===========================================
+Config file: config_success.json
+CSV file:    dati/dati_success.csv
+Separator:   ','
+Fattori:     ['case', 'version', 'mode', 'RAG']
+Indici:      ['success']
+Conf level:  0.9
+===========================================
+
+=== LOGISTIC REGRESSION per indice 'success' ===
+Formula: success ~ C(case) + C(version) + C(mode) + RAG

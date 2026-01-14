@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 from scipy import stats
-
+import matplotlib.pyplot as plt
+import numpy as np
 
 def summarize_metric(group, metric, confidence=0.95):
     """
@@ -235,12 +236,7 @@ def save_results_to_csv(results_global, results_grouped, output_path):
     df_out.to_csv(output_path, index=False)
     print(f"[OK] Risultati salvati in: {output_path}")
 
-import matplotlib.pyplot as plt
-import numpy as np
 
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 
 def plot_statistics(results_global, results_grouped, output_prefix="statistiche"):
     """
@@ -374,7 +370,7 @@ if __name__ == "__main__":
     print_results(results_global, results_grouped)
     
     # Salva risultati in CSV
-    save_results_to_csv(results_global, results_grouped, "statistiche_edit_distance.csv")
+    save_results_to_csv(results_global, results_grouped, "results/statistiche_edit_distance.csv")
 
     # Genera grafici
     plot_statistics(results_global, results_grouped, output_prefix="imgs/statistiche_edit_distance")

@@ -1,0 +1,385 @@
+=== STATISTICHE GLOBALI ===
+
+Metrica: graph_edit_distance
+  n                    : 184
+  media                : 54.810
+  deviazione standard  : 28.028
+  coefficiente variaz. : 51.14 %
+  errore standard      : 2.066
+  IC 90%         : [51.394, 58.226]
+  Affidabilità statistica: alta (n≥30, buona approssimazione alla normale)
+
+Metrica: validity_edit_distance
+  n                    : 184
+  media                : 18.940
+  deviazione standard  : 11.842
+  coefficiente variaz. : 62.52 %
+  errore standard      : 0.873
+  IC 90%         : [17.497, 20.383]
+  Affidabilità statistica: alta (n≥30, buona approssimazione alla normale)
+
+
+=== STATISTICHE PER (case, version) ===
+
+--- case=BookInfo, version=v1 ---
+
+  Metrica: graph_edit_distance
+    n                    : 5
+    media                : 89.800
+    deviazione standard  : 8.258
+    coefficiente variaz. : 9.20 %
+    errore standard      : 3.693
+    IC 90%         : [81.927, 97.673]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+  Metrica: validity_edit_distance
+    n                    : 5
+    media                : 27.200
+    deviazione standard  : 16.208
+    coefficiente variaz. : 59.59 %
+    errore standard      : 7.248
+    IC 90%         : [11.747, 42.653]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+--- case=BookInfo, version=v2 ---
+
+  Metrica: graph_edit_distance
+    n                    : 4
+    media                : 94.750
+    deviazione standard  : 8.180
+    coefficiente variaz. : 8.63 %
+    errore standard      : 4.090
+    IC 90%         : [85.124, 104.376]
+    Affidabilità statistica: molto bassa (2≤n<5, stime poco affidabili)
+
+  Metrica: validity_edit_distance
+    n                    : 4
+    media                : 29.500
+    deviazione standard  : 15.759
+    coefficiente variaz. : 53.42 %
+    errore standard      : 7.879
+    IC 90%         : [10.957, 48.043]
+    Affidabilità statistica: molto bassa (2≤n<5, stime poco affidabili)
+
+--- case=BookInfo, version=v3 ---
+
+  Metrica: graph_edit_distance
+    n                    : 9
+    media                : 89.000
+    deviazione standard  : 13.892
+    coefficiente variaz. : 15.61 %
+    errore standard      : 4.631
+    IC 90%         : [80.389, 97.611]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+  Metrica: validity_edit_distance
+    n                    : 9
+    media                : 31.444
+    deviazione standard  : 15.796
+    coefficiente variaz. : 50.24 %
+    errore standard      : 5.265
+    IC 90%         : [21.653, 41.236]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+--- case=JetRacer, version=v1 ---
+
+  Metrica: graph_edit_distance
+    n                    : 9
+    media                : 77.222
+    deviazione standard  : 11.300
+    coefficiente variaz. : 14.63 %
+    errore standard      : 3.767
+    IC 90%         : [70.218, 84.227]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+  Metrica: validity_edit_distance
+    n                    : 9
+    media                : 21.000
+    deviazione standard  : 10.087
+    coefficiente variaz. : 48.03 %
+    errore standard      : 3.362
+    IC 90%         : [14.748, 27.252]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+--- case=JetRacer, version=v2 ---
+
+  Metrica: graph_edit_distance
+    n                    : 12
+    media                : 82.500
+    deviazione standard  : 9.090
+    coefficiente variaz. : 11.02 %
+    errore standard      : 2.624
+    IC 90%         : [77.787, 87.213]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 12
+    media                : 31.333
+    deviazione standard  : 17.432
+    coefficiente variaz. : 55.63 %
+    errore standard      : 5.032
+    IC 90%         : [22.296, 40.371]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+--- case=JetRacer, version=v3 ---
+
+  Metrica: graph_edit_distance
+    n                    : 22
+    media                : 79.818
+    deviazione standard  : 8.545
+    coefficiente variaz. : 10.71 %
+    errore standard      : 1.822
+    IC 90%         : [76.683, 82.953]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 22
+    media                : 22.545
+    deviazione standard  : 12.704
+    coefficiente variaz. : 56.35 %
+    errore standard      : 2.709
+    IC 90%         : [17.885, 27.206]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+--- case=Open Energy Monitor, version=v1 ---
+
+  Metrica: graph_edit_distance
+    n                    : 11
+    media                : 54.455
+    deviazione standard  : 22.726
+    coefficiente variaz. : 41.73 %
+    errore standard      : 6.852
+    IC 90%         : [42.035, 66.874]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 11
+    media                : 16.364
+    deviazione standard  : 8.152
+    coefficiente variaz. : 49.82 %
+    errore standard      : 2.458
+    IC 90%         : [11.909, 20.819]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+--- case=Open Energy Monitor, version=v2 ---
+
+  Metrica: graph_edit_distance
+    n                    : 16
+    media                : 50.062
+    deviazione standard  : 8.813
+    coefficiente variaz. : 17.60 %
+    errore standard      : 2.203
+    IC 90%         : [46.200, 53.925]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 16
+    media                : 12.938
+    deviazione standard  : 7.169
+    coefficiente variaz. : 55.41 %
+    errore standard      : 1.792
+    IC 90%         : [9.796, 16.079]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+--- case=Open Energy Monitor, version=v3 ---
+
+  Metrica: graph_edit_distance
+    n                    : 27
+    media                : 51.556
+    deviazione standard  : 7.944
+    coefficiente variaz. : 15.41 %
+    errore standard      : 1.529
+    IC 90%         : [48.948, 54.163]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 27
+    media                : 13.111
+    deviazione standard  : 7.500
+    coefficiente variaz. : 57.21 %
+    errore standard      : 1.443
+    IC 90%         : [10.649, 15.573]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+--- case=Stack4Things, version=v1 ---
+
+  Metrica: graph_edit_distance
+    n                    : 1
+    media                : 137.000
+    deviazione standard  : n.d.
+    coefficiente variaz. : 0.00 %
+    errore standard      : n.d.
+    IC                    : n.d.
+    Affidabilità statistica: trascurabile (n=1, non è possibile stimare la variabilità)
+
+  Metrica: validity_edit_distance
+    n                    : 1
+    media                : 25.000
+    deviazione standard  : n.d.
+    coefficiente variaz. : 0.00 %
+    errore standard      : n.d.
+    IC                    : n.d.
+    Affidabilità statistica: trascurabile (n=1, non è possibile stimare la variabilità)
+
+--- case=Stack4Things, version=v2 ---
+
+  Metrica: graph_edit_distance
+    n                    : 1
+    media                : 145.000
+    deviazione standard  : n.d.
+    coefficiente variaz. : 0.00 %
+    errore standard      : n.d.
+    IC                    : n.d.
+    Affidabilità statistica: trascurabile (n=1, non è possibile stimare la variabilità)
+
+  Metrica: validity_edit_distance
+    n                    : 1
+    media                : 19.000
+    deviazione standard  : n.d.
+    coefficiente variaz. : 0.00 %
+    errore standard      : n.d.
+    IC                    : n.d.
+    Affidabilità statistica: trascurabile (n=1, non è possibile stimare la variabilità)
+
+--- case=Stack4Things, version=v3 ---
+
+  Metrica: graph_edit_distance
+    n                    : 1
+    media                : 142.000
+    deviazione standard  : n.d.
+    coefficiente variaz. : 0.00 %
+    errore standard      : n.d.
+    IC                    : n.d.
+    Affidabilità statistica: trascurabile (n=1, non è possibile stimare la variabilità)
+
+  Metrica: validity_edit_distance
+    n                    : 1
+    media                : 16.000
+    deviazione standard  : n.d.
+    coefficiente variaz. : 0.00 %
+    errore standard      : n.d.
+    IC                    : n.d.
+    Affidabilità statistica: trascurabile (n=1, non è possibile stimare la variabilità)
+
+--- case=WordPress, version=v1 ---
+
+  Metrica: graph_edit_distance
+    n                    : 8
+    media                : 32.125
+    deviazione standard  : 14.066
+    coefficiente variaz. : 43.78 %
+    errore standard      : 4.973
+    IC 90%         : [22.703, 41.547]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+  Metrica: validity_edit_distance
+    n                    : 8
+    media                : 17.750
+    deviazione standard  : 9.736
+    coefficiente variaz. : 54.85 %
+    errore standard      : 3.442
+    IC 90%         : [11.229, 24.271]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+--- case=WordPress, version=v2 ---
+
+  Metrica: graph_edit_distance
+    n                    : 11
+    media                : 27.455
+    deviazione standard  : 10.250
+    coefficiente variaz. : 37.34 %
+    errore standard      : 3.091
+    IC 90%         : [21.853, 33.056]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 11
+    media                : 15.273
+    deviazione standard  : 8.223
+    coefficiente variaz. : 53.84 %
+    errore standard      : 2.479
+    IC 90%         : [10.779, 19.766]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+--- case=WordPress, version=v3 ---
+
+  Metrica: graph_edit_distance
+    n                    : 16
+    media                : 33.438
+    deviazione standard  : 10.302
+    coefficiente variaz. : 30.81 %
+    errore standard      : 2.575
+    IC 90%         : [28.923, 37.952]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 16
+    media                : 21.875
+    deviazione standard  : 10.158
+    coefficiente variaz. : 46.44 %
+    errore standard      : 2.539
+    IC 90%         : [17.423, 26.327]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+--- case=eWeLink, version=v1 ---
+
+  Metrica: graph_edit_distance
+    n                    : 7
+    media                : 19.000
+    deviazione standard  : 3.786
+    coefficiente variaz. : 19.93 %
+    errore standard      : 1.431
+    IC 90%         : [16.219, 21.781]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+  Metrica: validity_edit_distance
+    n                    : 7
+    media                : 9.429
+    deviazione standard  : 4.237
+    coefficiente variaz. : 44.94 %
+    errore standard      : 1.601
+    IC 90%         : [6.317, 12.540]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+--- case=eWeLink, version=v2 ---
+
+  Metrica: graph_edit_distance
+    n                    : 8
+    media                : 27.250
+    deviazione standard  : 7.246
+    coefficiente variaz. : 26.59 %
+    errore standard      : 2.562
+    IC 90%         : [22.397, 32.103]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+  Metrica: validity_edit_distance
+    n                    : 8
+    media                : 16.000
+    deviazione standard  : 9.196
+    coefficiente variaz. : 57.48 %
+    errore standard      : 3.251
+    IC 90%         : [9.840, 22.160]
+    Affidabilità statistica: bassa (5≤n<10, risultati da interpretare con cautela)
+
+--- case=eWeLink, version=v3 ---
+
+  Metrica: graph_edit_distance
+    n                    : 16
+    media                : 22.125
+    deviazione standard  : 5.032
+    coefficiente variaz. : 22.74 %
+    errore standard      : 1.258
+    IC 90%         : [19.920, 24.330]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+
+  Metrica: validity_edit_distance
+    n                    : 16
+    media                : 14.500
+    deviazione standard  : 6.055
+    coefficiente variaz. : 41.76 %
+    errore standard      : 1.514
+    IC 90%         : [11.846, 17.154]
+    Affidabilità statistica: moderata (10≤n<30, IC ragionevole ma campione contenuto)
+[OK] Risultati salvati in: results/statistiche_edit_distance.csv
+[OK] Grafico salvato in: imgs/statistiche_edit_distance_graph_edit_distance_paper.png
+[OK] Grafico salvato in: imgs/statistiche_edit_distance_validity_edit_distance_paper.png

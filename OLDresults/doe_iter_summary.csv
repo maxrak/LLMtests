@@ -1,0 +1,15 @@
+index,index_type,test_type,factors_or_combination,p_value,significant
+iterations,continuous,ANOVA_combination,version,0.0019528321784866094,True
+iterations,continuous,ANOVA_main,C(version),0.0019528321784867799,True
+iterations,continuous,ANOVA_combination,case + version,0.0029286708960655082,True
+iterations,continuous,ANOVA_combination,version + RAG,0.004905996001335213,True
+iterations,continuous,ANOVA_combination,version + mode,0.005472161491769736,True
+iterations,continuous,ANOVA_combination,case,0.07457134132792537,True
+iterations,continuous,ANOVA_main,C(case),0.07457134132792652,True
+iterations,continuous,ANOVA_combination,case + mode,0.11307919758679227,True
+iterations,continuous,ANOVA_combination,case + RAG,0.12047948693673675,True
+iterations,continuous,ANOVA_combination,mode,0.6698568205370417,False
+iterations,continuous,ANOVA_main,C(mode),0.6698568205370619,False
+iterations,continuous,ANOVA_combination,RAG,0.7124814327136735,False
+iterations,continuous,ANOVA_main,RAG,0.7124814327137448,False
+iterations,continuous,ANOVA_combination,mode + RAG,0.8648723709872809,False

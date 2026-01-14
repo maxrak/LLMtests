@@ -1,5 +1,5 @@
 {
-  "csv_file": "dati_success.csv",
+  "csv_file": "dati/dati_success.csv",
   "separator": ",",
   "factors": [
     "case",

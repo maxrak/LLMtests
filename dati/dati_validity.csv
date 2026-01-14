@@ -5,7 +5,6 @@ BookInfo,v3,0,summarized,6,,,66,4
 JetRacer,v3,0,notsummarized,8,,,77,11
 JetRacer,v2,0,summarized,20,,,77,28
 JetRacer,v3,0,summarized,18,,,78,16
-JetRacer,v1,1,summarized,5,,,84,46
 JetRacer,v2,1,notsummarized,9,,,90,31
 JetRacer,v3,1,notsummarized,5,,,82,20
 JetRacer,v3,1,summarized,9,,,100,56
@@ -20,22 +19,18 @@ Open Energy Monitor,v2,1,summarized,11,,,52,12
 Open Energy Monitor,v3,1,notsummarized,9,,,40,3
 Open Energy Monitor,v3,1,summarized,19,,,49,12
 Stack4Things,v2,1,notsummarized,5,,,145,19
-WordPress,v1,0,notsummarized,17,,,21,7
 WordPress,v2,0,summarized,11,,,20,15
 WordPress,v3,0,notsummarized,7,,,24,12
 WordPress,v3,0,summarized,6,,,40,28
 eWeLink,v2,0,summarized,25,,,14,5
 eWeLink,v3,0,notsummarized,8,,,19,14
 eWeLink,v3,0,summarized,26,,,28,23
-BookInfo,v1,0,summarized,9,,,96,35
 BookInfo,v1,1,summarized,28,,,84,41
 BookInfo,v2,1,notsummarized,7,,,105,45
 BookInfo,v3,1,notsummarized,17,,,101,44
 BookInfo,v3,1,summarized,12,,,78,28
 JetRacer,v3,0,notsummarized,4,,,79,10
 JetRacer,v3,0,summarized,8,,,83,26
-JetRacer,v1,1,notsummarized,12,,,103,29
-JetRacer,v1,1,summarized,11,,,112,75
 JetRacer,v2,1,notsummarized,13,,,98,47
 JetRacer,v2,1,summarized,11,,,97,75
 BookInfo,v2,0,notsummarized,27,,,85,8
@@ -55,7 +50,6 @@ Open Energy Monitor,v1,1,summarized,7,,,117,16
 Open Energy Monitor,v2,1,notsummarized,14,,,28,4
 Open Energy Monitor,v3,1,notsummarized,7,,,45,10
 Open Energy Monitor,v3,1,summarized,10,,,46,5
-WordPress,v1,0,notsummarized,3,,,26,7
 WordPress,v1,0,summarized,3,,,36,20
 WordPress,v2,0,notsummarized,14,,,18,8
 WordPress,v2,0,summarized,7,,,34,24
@@ -66,24 +60,19 @@ eWeLink,v2,0,summarized,15,,,35,24
 eWeLink,v3,0,notsummarized,12,,,21,13
 eWeLink,v3,0,summarized,14,,,28,19
 BookInfo,v3,0,summarized,13,,,99,41
-BookInfo,v1,1,notsummarized,10,,,102,36
-BookInfo,v1,1,summarized,29,,,108,57
 BookInfo,v2,1,notsummarized,21,,,95,29
 JetRacer,v1,0,notsummarized,29,,,75,12
-JetRacer,v1,0,summarized,26,,,82,27
 JetRacer,v2,0,summarized,11,,,81,20
 JetRacer,v3,0,summarized,5,,,78,27
 JetRacer,v1,1,notsummarized,15,,,61,13
 JetRacer,v2,1,summarized,6,,,74,27
 JetRacer,v3,1,notsummarized,3,,,63,16
 JetRacer,v3,1,summarized,4,,,95,18
-Open Energy Monitor,v1,0,notsummarized,8,,,54,11
 Open Energy Monitor,v3,1,summarized,20,,,57,15
 Stack4Things,v3,1,notsummarized,21,,,142,16
 BookInfo,v3,0,summarized,21,,,87,32
 JetRacer,v3,0,notsummarized,12,,,74,14
 JetRacer,v3,0,summarized,20,,,92,37
-WordPress,v1,0,notsummarized,5,,,21,7
 WordPress,v2,0,notsummarized,14,,,23,9
 WordPress,v2,0,summarized,14,,,36,18
 WordPress,v3,0,notsummarized,27,,,33,23
@@ -99,9 +88,7 @@ Open Energy Monitor,v1,1,summarized,8,,,45,8
 Open Energy Monitor,v2,1,summarized,13,,,48,7
 Open Energy Monitor,v3,1,notsummarized,5,,,45,3
 Open Energy Monitor,v3,1,summarized,10,,,48,9
-Stack4Things,v1,1,notsummarized,22,,,137,13
 Stack4Things,v1,1,summarized,6,,,137,25
-BookInfo,v1,1,notsummarized,8,,,95,30
 BookInfo,v1,1,summarized,25,,,84,13
 JetRacer,v3,1,summarized,5,,,73,26
 JetRacer,v1,1,notsummarized,10,,,62,22
@@ -112,7 +99,6 @@ eWeLink,v1,0,notsummarized,15,,,25,16
 WordPress,v2,0,notsummarized,9,,,20,3
 eWeLink,v3,0,summarized,4,,,26,15
 eWeLink,v3,0,notsummarized,14,,,22,17
-BookInfo,v2,1,notsummarized,19,,,109,54
 Open Energy Monitor,v1,1,notsummarized,14,,,42,16
 eWeLink,v3,0,notsummarized,16,,,23,19
 Open Energy Monitor,v3,0,summarized,4,,,65,28

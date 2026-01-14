@@ -1,0 +1,61 @@
+case,version,mode,RAG,n,mean_value,is_binary_index,global_mean,p_value,significant,direction_raw,direction_vs_better,n_too_small_for_test,low_variance_group
+BookInfo,v1,notsummarized,0,12,0.16666666666666666,True,0.4442231075697211,0.0783091230336782,True,lower,worse,False,False
+BookInfo,v1,notsummarized,1,8,0.0,True,0.4442231075697211,0.010619789424545967,True,lower,worse,False,False
+BookInfo,v1,summarized,0,9,0.1111111111111111,True,0.4442231075697211,0.04971350321839954,True,lower,worse,False,False
+BookInfo,v1,summarized,1,8,0.375,True,0.4442231075697211,1.0,False,not_significant,,False,False
+BookInfo,v2,notsummarized,0,10,0.2,True,0.4442231075697211,0.20156842897462024,False,not_significant,,False,False
+BookInfo,v2,notsummarized,1,11,0.18181818181818182,True,0.4442231075697211,0.126574763523423,False,not_significant,,False,False
+BookInfo,v2,summarized,0,8,0.125,True,0.4442231075697211,0.08400681775909238,True,lower,worse,False,False
+BookInfo,v2,summarized,1,8,0.0,True,0.4442231075697211,0.010619789424545967,True,lower,worse,False,False
+BookInfo,v3,notsummarized,0,10,0.2,True,0.4442231075697211,0.20156842897462024,False,not_significant,,False,False
+BookInfo,v3,notsummarized,1,8,0.125,True,0.4442231075697211,0.08400681775909238,True,lower,worse,False,False
+BookInfo,v3,summarized,0,6,0.5,True,0.4442231075697211,1.0,False,not_significant,,False,False
+BookInfo,v3,summarized,1,7,0.42857142857142855,True,0.4442231075697211,1.0,False,not_significant,,False,False
+JetRacer,v1,notsummarized,0,10,0.2,True,0.4442231075697211,0.20156842897462024,False,not_significant,,False,False
+JetRacer,v1,notsummarized,1,10,0.6,True,0.4442231075697211,0.35553559450333905,False,not_significant,,False,False
+JetRacer,v1,summarized,0,9,0.1111111111111111,True,0.4442231075697211,0.04971350321839954,True,lower,worse,False,False
+JetRacer,v1,summarized,1,5,0.6,True,0.4442231075697211,0.6612309313247481,False,not_significant,,False,False
+JetRacer,v2,notsummarized,0,11,0.18181818181818182,True,0.4442231075697211,0.126574763523423,False,not_significant,,False,False
+JetRacer,v2,notsummarized,1,11,0.36363636363636365,True,0.4442231075697211,0.7644676192965693,False,not_significant,,False,False
+JetRacer,v2,summarized,0,12,0.4166666666666667,True,0.4442231075697211,1.0,False,not_significant,,False,False
+JetRacer,v2,summarized,1,6,0.6666666666666666,True,0.4442231075697211,0.4166018727694121,False,not_significant,,False,False
+JetRacer,v3,notsummarized,0,10,0.6,True,0.4442231075697211,0.35553559450333905,False,not_significant,,False,False
+JetRacer,v3,notsummarized,1,10,0.7,True,0.4442231075697211,0.12072984553843197,False,not_significant,,False,False
+JetRacer,v3,summarized,0,10,0.7,True,0.4442231075697211,0.12072984553843197,False,not_significant,,False,False
+JetRacer,v3,summarized,1,7,0.5714285714285714,True,0.4442231075697211,0.7072658251052026,False,not_significant,,False,False
+Open Energy Monitor,v1,notsummarized,0,8,0.0,True,0.4442231075697211,0.010619789424545967,True,lower,worse,False,False
+Open Energy Monitor,v1,notsummarized,1,7,0.42857142857142855,True,0.4442231075697211,1.0,False,not_significant,,False,False
+Open Energy Monitor,v1,summarized,0,12,0.5,True,0.4442231075697211,0.7755940778044719,False,not_significant,,False,False
+Open Energy Monitor,v1,summarized,1,11,0.45454545454545453,True,0.4442231075697211,1.0,False,not_significant,,False,False
+Open Energy Monitor,v2,notsummarized,0,12,0.4166666666666667,True,0.4442231075697211,1.0,False,not_significant,,False,False
+Open Energy Monitor,v2,notsummarized,1,12,0.6666666666666666,True,0.4442231075697211,0.14992615370469436,False,not_significant,,False,False
+Open Energy Monitor,v2,summarized,0,10,0.6,True,0.4442231075697211,0.35553559450333905,False,not_significant,,False,False
+Open Energy Monitor,v2,summarized,1,9,0.3333333333333333,True,0.4442231075697211,0.7398178133126989,False,not_significant,,False,False
+Open Energy Monitor,v3,notsummarized,0,10,0.8,True,0.4442231075697211,0.02793262334545091,True,higher,better,False,False
+Open Energy Monitor,v3,notsummarized,1,11,0.7272727272727273,True,0.4442231075697211,0.07166249867931904,True,higher,better,False,False
+Open Energy Monitor,v3,summarized,0,11,0.8181818181818182,True,0.4442231075697211,0.014969014689758215,True,higher,better,False,False
+Open Energy Monitor,v3,summarized,1,10,0.8,True,0.4442231075697211,0.02793262334545091,True,higher,better,False,False
+Stack4Things,v1,notsummarized,0,4,0.0,True,0.4442231075697211,0.13435254259770227,False,not_significant,,False,False
+Stack4Things,v1,notsummarized,1,3,0.0,True,0.4442231075697211,0.25933318518753673,False,not_significant,,False,False
+Stack4Things,v1,summarized,0,4,0.0,True,0.4442231075697211,0.13435254259770227,False,not_significant,,False,False
+Stack4Things,v1,summarized,1,3,0.3333333333333333,True,0.4442231075697211,1.0,False,not_significant,,False,False
+Stack4Things,v2,notsummarized,0,4,0.0,True,0.4442231075697211,0.13435254259770227,False,not_significant,,False,False
+Stack4Things,v2,notsummarized,1,4,0.25,True,0.4442231075697211,0.63427511295704,False,not_significant,,False,False
+Stack4Things,v2,summarized,0,4,0.0,True,0.4442231075697211,0.13435254259770227,False,not_significant,,False,False
+Stack4Things,v2,summarized,1,3,0.0,True,0.4442231075697211,0.25933318518753673,False,not_significant,,False,False
+Stack4Things,v3,notsummarized,0,4,0.0,True,0.4442231075697211,0.13435254259770227,False,not_significant,,False,False
+Stack4Things,v3,notsummarized,1,3,0.3333333333333333,True,0.4442231075697211,1.0,False,not_significant,,False,False
+Stack4Things,v3,summarized,0,4,0.0,True,0.4442231075697211,0.13435254259770227,False,not_significant,,False,False
+Stack4Things,v3,summarized,1,2,0.0,True,0.4442231075697211,0.5062221234583579,False,not_significant,,False,False
+WordPress,v1,notsummarized,0,11,0.7272727272727273,True,0.4442231075697211,0.07166249867931904,True,higher,better,False,False
+WordPress,v1,summarized,0,10,0.5,True,0.4442231075697211,0.7589945880286952,False,not_significant,,False,False
+WordPress,v2,notsummarized,0,11,0.8181818181818182,True,0.4442231075697211,0.014969014689758215,True,higher,better,False,False
+WordPress,v2,summarized,0,12,0.5833333333333334,True,0.4442231075697211,0.3908618638192467,False,not_significant,,False,False
+WordPress,v3,notsummarized,0,10,0.7,True,0.4442231075697211,0.12072984553843197,False,not_significant,,False,False
+WordPress,v3,summarized,0,10,0.9,True,0.4442231075697211,0.006854950797075772,True,higher,better,False,False
+eWeLink,v1,notsummarized,0,11,0.45454545454545453,True,0.4442231075697211,1.0,False,not_significant,,False,False
+eWeLink,v1,summarized,0,8,0.375,True,0.4442231075697211,1.0,False,not_significant,,False,False
+eWeLink,v2,notsummarized,0,10,0.6,True,0.4442231075697211,0.35553559450333905,False,not_significant,,False,False
+eWeLink,v2,summarized,0,9,0.5555555555555556,True,0.4442231075697211,0.5228048683627531,False,not_significant,,False,False
+eWeLink,v3,notsummarized,0,9,1.0,True,0.4442231075697211,0.0006736127722181265,True,higher,better,False,False
+eWeLink,v3,summarized,0,10,0.7,True,0.4442231075697211,0.12072984553843197,False,not_significant,,False,False

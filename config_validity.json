@@ -1,5 +1,5 @@
 {
-  "csv_file": "dati_validity.csv",
+  "csv_file": "dati/dati_validity.csv",
   "separator": ",",
   "factors": [
     "case",
