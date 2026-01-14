@@ -497,5 +497,5 @@ if __name__ == "__main__":
 
     # Genera grafici
     plot_statistics(results_global, results_grouped, output_prefix="imgs/statistiche_edit_distance")
-    plot_validity_edit_distance_pdf(args.csv_path)
+    #plot_validity_edit_distance_pdf(args.csv_path)
     plot_validity_edit_distance_pdf_kde(args.csv_path)
