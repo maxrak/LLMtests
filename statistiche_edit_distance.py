@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 from scipy import stats
@@ -351,6 +352,46 @@ def plot_statistics(results_global, results_grouped, output_prefix="statistiche"
         plt.savefig(out_path, dpi=300)
         plt.close()
         print(f"[OK] Grafico salvato in: {out_path}")
+
+
+def plot_validity_edit_distance_pdf(
+    csv_path: str,
+    output_filename: str = "validity_edit_distance_pdf.png",
+    column: str = "validity_edit_distance",
+    bins: int = 30,
+    title: str = "PDF of validity_edit_distance",
+    output_dir: str = "imgs"
+):
+    """
+    Legge un CSV, genera la PDF empirica della colonna validity_edit_distance
+    e salva il plot dentro la cartella output_dir.
+    """
+
+    # Carica i dati
+    df = pd.read_csv(csv_path)
+
+    if column not in df.columns:
+        raise ValueError(f"La colonna '{column}' non è presente nel CSV.")
+
+    vals = df[column].dropna()
+
+    # Crea la cartella di output se non esiste
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Path completo del file di output
+    output_path = os.path.join(output_dir, output_filename)
+
+    # Genera il grafico
+    plt.figure()
+    plt.hist(vals, bins=bins, density=True)
+    plt.xlabel(column)
+    plt.ylabel("Density")
+    plt.title(title)
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300)
+    plt.close()  # chiude la figura per evitare overload
+
+    print(f"Plot salvato in: {output_path}")
         
 if __name__ == "__main__":
     import argparse
@@ -374,3 +415,4 @@ if __name__ == "__main__":
 
     # Genera grafici
     plot_statistics(results_global, results_grouped, output_prefix="imgs/statistiche_edit_distance")
+    plot_validity_edit_distance_pdf(args.csv_path)
