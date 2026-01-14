@@ -392,7 +392,89 @@ def plot_validity_edit_distance_pdf(
     plt.close()  # chiude la figura per evitare overload
 
     print(f"Plot salvato in: {output_path}")
-        
+
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+def plot_validity_edit_distance_pdf_kde(
+    csv_path: str,
+    output_filename: str = "validity_edit_distance_pdf_kde.png",
+    column: str = "validity_edit_distance",
+    bins: int = 30,
+    title: str = "PDF + KDE of validity_edit_distance",
+    output_dir: str = "imgs"
+):
+    """
+    Legge un CSV, genera istogramma normalizzato (PDF empirica) + KDE
+    per la colonna `validity_edit_distance` e salva il plot in output_dir.
+
+    Parameters
+    ----------
+    csv_path : str
+        Percorso al file CSV.
+    output_filename : str, optional
+        Nome del file immagine di output.
+    column : str, optional
+        Colonna da usare per il plot.
+    bins : int, optional
+        Numero di bin per l'istogramma.
+    title : str, optional
+        Titolo del grafico.
+    output_dir : str, optional
+        Cartella in cui salvare l'immagine.
+    """
+
+    # Carica il dataset
+    df = pd.read_csv(csv_path)
+
+    if column not in df.columns:
+        raise ValueError(f"La colonna '{column}' non è presente nel CSV.")
+
+    # Rimuove NaN
+    vals = df[column].dropna().values
+
+    # Crea cartella di output se non esiste
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, output_filename)
+
+    # Figura
+    plt.figure()
+
+    # Istogramma normalizzato (PDF empirica)
+    plt.hist(vals, bins=bins, density=True, alpha=0.5)
+
+    # Calcolo KDE (Gaussian) senza dipendere da scipy
+    n = len(vals)
+    std = np.std(vals)
+    if n < 2 or std == 0:
+        raise ValueError("Non ci sono abbastanza dati (o varianza nulla) per calcolare la KDE.")
+
+    # Bandwidth di Silverman
+    h = 1.06 * std * n ** (-1/5)
+
+    xs = np.linspace(vals.min(), vals.max(), 500)
+    ys = np.zeros_like(xs)
+    for v in vals:
+        ys += np.exp(-0.5 * ((xs - v) / h) ** 2) / (np.sqrt(2 * np.pi) * h)
+    ys /= n
+
+    # Linea KDE
+    plt.plot(xs, ys)
+
+    # Etichette e titolo
+    plt.xlabel(column)
+    plt.ylabel("Density")
+    plt.title(title)
+    plt.tight_layout()
+
+    # Salvataggio e chiusura
+    plt.savefig(output_path, dpi=300)
+    plt.close()
+
+    print(f"Plot salvato in: {output_path}")
+
 if __name__ == "__main__":
     import argparse
 
@@ -416,3 +498,4 @@ if __name__ == "__main__":
     # Genera grafici
     plot_statistics(results_global, results_grouped, output_prefix="imgs/statistiche_edit_distance")
     plot_validity_edit_distance_pdf(args.csv_path)
+    plot_validity_edit_distance_pdf_kde(args.csv_path)
