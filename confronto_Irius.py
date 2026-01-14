@@ -103,7 +103,8 @@ def load_threats_from_csv(
             thr_norm = thr.strip().lower()
 
             if comp_norm and thr_norm:
-                threats.add((comp_norm, thr_norm))
+                 threats.add((comp_norm, thr_norm))
+            #threats.add((thr_norm))
 
     return threats
 
