@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-CSV_PATH = "dati/tmv3.csv"   # cambia se necessario
+CSV_PATH = "dati/dati_irius.csv"   # cambia se necessario
 #CSV_PATH = "dati/threat_metrics.csv"   # cambia se necessario
 IMG_DIR = "imgs"
 RESULTS_DIR = "results"
