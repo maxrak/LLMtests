@@ -1,0 +1,29 @@
+index,index_type,test_type,factors_or_combination,p_value,significant
+precision,continuous,ANOVA_combination,app_id + summarized,2.526184930689737e-06,True
+precision,continuous,ANOVA_main,summarized,6.287587581637644e-05,True
+precision,continuous,ANOVA_combination,summarized,6.287587581637728e-05,True
+precision,continuous,ANOVA_combination,summarized + rag,7.072077379313112e-05,True
+precision,continuous,ANOVA_combination,version + summarized,0.0001572958775067549,True
+precision,continuous,ANOVA_combination,app_id + version,0.0006461322532470899,True
+precision,continuous,ANOVA_main,C(app_id),0.0009552697931434527,True
+precision,continuous,ANOVA_combination,app_id,0.0009552697931434971,True
+precision,continuous,ANOVA_combination,app_id + rag,0.0010030791930161127,True
+precision,continuous,ANOVA_combination,version + rag,0.10846548814118524,True
+precision,continuous,ANOVA_main,C(version),0.11433981112243652,True
+precision,continuous,ANOVA_combination,version,0.11433981112243652,True
+precision,continuous,ANOVA_combination,rag,0.14364085274693766,True
+precision,continuous,ANOVA_main,rag,0.14364085274694233,True
+recall,continuous,ANOVA_combination,app_id + rag,2.268347238929442e-13,True
+recall,continuous,ANOVA_combination,app_id + summarized,9.514075812602779e-13,True
+recall,continuous,ANOVA_combination,app_id,1.1399534591720314e-12,True
+recall,continuous,ANOVA_main,C(app_id),1.1399534591720486e-12,True
+recall,continuous,ANOVA_combination,app_id + version,2.315116242532343e-12,True
+recall,continuous,ANOVA_combination,version + rag,0.01727623613528317,True
+recall,continuous,ANOVA_combination,version,0.023762344931146966,True
+recall,continuous,ANOVA_main,C(version),0.023762344931148,True
+recall,continuous,ANOVA_combination,version + summarized,0.02846613776581301,True
+recall,continuous,ANOVA_combination,summarized + rag,0.06814988962575302,True
+recall,continuous,ANOVA_combination,rag,0.07247476506675606,True
+recall,continuous,ANOVA_main,rag,0.07247476506675662,True
+recall,continuous,ANOVA_combination,summarized,0.1890158851871852,True
+recall,continuous,ANOVA_main,summarized,0.18901588518719545,True

@@ -174,9 +174,7 @@ def reliability_comment(n):
         return "trascurabile (n=1, non è possibile stimare la variabilità)"
     else:
         return "nessun dato"
-    
-import pandas as pd
-import numpy as np
+
 
 def save_results_to_csv(results_global, results_grouped, output_path):
     """
