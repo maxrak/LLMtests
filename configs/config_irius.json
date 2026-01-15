@@ -1,6 +1,8 @@
 {
   "case_studies": [
-    "WordPress"
+    "WordPress",
+    "JetRacer"
+
   ],
   "output_dir": "dati",
   "irius_root": "IriusRisk"
