@@ -118,40 +118,47 @@ def find_reference_tm(manual_dir: str) -> str:
 
     candidate_files: List[str] = []
     for fname in os.listdir(manual_dir):
-        if fname.lower().endswith("human.csv"):
+        if fname.lower().endswith(".csv"):
             candidate_files.append(os.path.join(manual_dir, fname))
 
     if not candidate_files:
         raise FileNotFoundError(
-            f"Nella cartella '{manual_dir}' non è stato trovato un file '*human.csv'."
+            f"Nella cartella '{manual_dir}' non è stato trovato un file '*.csv'."
         )
     if len(candidate_files) > 1:
         raise RuntimeError(
-            "Trovati più file '*human.csv' in '{manual_dir}':\n" +
+            "Trovati più file '*.csv' in '{manual_dir}':\n" +
             "\n".join(candidate_files)
         )
 
     return candidate_files[0]
 
 
-def find_generated_tms(llm_dir: str) -> List[str]:
+def find_generated_tms(llm_dir: str) -> List[Tuple[str, str]]:
     """
     Restituisce la lista dei CSV in LLM-Based-TM (escludendo eventuali '*human.csv').
+    Ora cerca anche nelle sottocartelle RAG e NORAG.
+    Ritorna una lista di tuple (path_file, rag_type) dove rag_type è "RAG" o "NORAG".
     """
     if not os.path.isdir(llm_dir):
         raise FileNotFoundError(f"La cartella '{llm_dir}' non esiste.")
 
-    files: List[str] = []
-    for fname in os.listdir(llm_dir):
-        if fname.lower().endswith(".csv") and not fname.lower().endswith("human.csv"):
-            files.append(os.path.join(llm_dir, fname))
+    files: List[Tuple[str, str]] = []
+    
+    # Cerca nelle sottocartelle RAG e NORAG
+    for rag_type in ["RAG", "NORAG"]:
+        subdir = os.path.join(llm_dir, rag_type)
+        if os.path.isdir(subdir):
+            for fname in os.listdir(subdir):
+                if fname.lower().endswith(".csv") and not fname.lower().endswith("human.csv"):
+                    files.append((os.path.join(subdir, fname), rag_type))
 
     if not files:
         raise FileNotFoundError(
-            f"Nella cartella '{llm_dir}' non è stato trovato nessun generated TM."
+            f"Nella cartella '{llm_dir}' non è stato trovato nessun generated TM nelle sottocartelle RAG/NORAG."
         )
 
-    return sorted(files)
+    return sorted(files, key=lambda x: x[0])
 
 
 def safe_ratio(num: int, den: int) -> float:
@@ -213,7 +220,7 @@ def evaluate_case_study(
 
     current_index = starting_index
 
-    for gen_path in generated_files:
+    for gen_path, rag_type in generated_files:
         gen_threats = load_threats_from_csv(gen_path)
 
         tp = len(gen_threats & ref_threats)
@@ -253,6 +260,7 @@ def evaluate_case_study(
         row = {
             "Index": current_index,
             "case_study": case_study,
+            "RAG": rag_type,
             "FILE": os.path.basename(gen_path),
             "TP": tp,
             "FP": fp,
@@ -269,7 +277,7 @@ def evaluate_case_study(
         results_rows.append(row)
 
         print(
-            f"[INFO] {current_index}. {case_study} / {os.path.basename(gen_path)} -> "
+            f"[INFO] {current_index}. {case_study} / {rag_type} / {os.path.basename(gen_path)} -> "
             f"TP={tp}, FP={fp}, FN={fn}, support={support}, "
             f"recall={recall:.4f}, precision={precision:.4f}, "
             f"F1={f1:.4f}, F2={f2:.4f}, "
@@ -422,7 +430,7 @@ def write_results_csv(output_file: str, rows: List[Dict[str, Any]]) -> None:
         writer = csv.DictWriter(
             f,
             fieldnames=[
-                "Index", "case_study", "FILE",
+                "Index", "case_study", "RAG", "FILE",
                 "TP", "FP", "FN",
                 "support", "recall", "precision",
                 "F1-score", "F2-score",

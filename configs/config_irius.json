@@ -1,7 +1,10 @@
 {
   "case_studies": [
     "WordPress",
-    "JetRacer"
+    "JetRacer",
+    "OEM",
+    "Bookinfo",
+    "Stack4things"
 
   ],
   "output_dir": "dati",
